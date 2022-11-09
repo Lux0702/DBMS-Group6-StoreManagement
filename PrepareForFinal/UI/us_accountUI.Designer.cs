@@ -41,16 +41,15 @@
             this.btn_findAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btn_accountAdd = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_customerList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_productName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_productID = new Guna.UI2.WinForms.Guna2TextBox();
             this.lb_accountEmployeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_accountUsername = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_accountPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.lb_accountRepassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_accountPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_accountUsername = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_accountSave = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +84,7 @@
             this.lb_accountStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.lb_accountStatus.Location = new System.Drawing.Point(950, 258);
             this.lb_accountStatus.Name = "lb_accountStatus";
-            this.lb_accountStatus.Size = new System.Drawing.Size(93, 28);
+            this.lb_accountStatus.Size = new System.Drawing.Size(157, 28);
             this.lb_accountStatus.TabIndex = 21;
             this.lb_accountStatus.Text = "Tình trạng";
             // 
@@ -152,7 +151,7 @@
             this.btn_accountDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_accountDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.btn_accountDelete.HoverState.Parent = this.btn_accountDelete;
-            this.btn_accountDelete.Location = new System.Drawing.Point(1039, 432);
+            this.btn_accountDelete.Location = new System.Drawing.Point(1037, 432);
             this.btn_accountDelete.Name = "btn_accountDelete";
             this.btn_accountDelete.ShadowDecoration.Parent = this.btn_accountDelete;
             this.btn_accountDelete.Size = new System.Drawing.Size(94, 49);
@@ -170,10 +169,10 @@
             this.btn_accountUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_accountUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.btn_accountUpdate.HoverState.Parent = this.btn_accountUpdate;
-            this.btn_accountUpdate.Location = new System.Drawing.Point(880, 432);
+            this.btn_accountUpdate.Location = new System.Drawing.Point(832, 432);
             this.btn_accountUpdate.Name = "btn_accountUpdate";
             this.btn_accountUpdate.ShadowDecoration.Parent = this.btn_accountUpdate;
-            this.btn_accountUpdate.Size = new System.Drawing.Size(147, 49);
+            this.btn_accountUpdate.Size = new System.Drawing.Size(105, 49);
             this.btn_accountUpdate.TabIndex = 5;
             this.btn_accountUpdate.Text = "Sửa";
             // 
@@ -209,7 +208,7 @@
             this.btn_accountAdd.Location = new System.Drawing.Point(721, 432);
             this.btn_accountAdd.Name = "btn_accountAdd";
             this.btn_accountAdd.ShadowDecoration.Parent = this.btn_accountAdd;
-            this.btn_accountAdd.Size = new System.Drawing.Size(147, 49);
+            this.btn_accountAdd.Size = new System.Drawing.Size(105, 49);
             this.btn_accountAdd.TabIndex = 5;
             this.btn_accountAdd.Text = "Thêm";
             // 
@@ -242,7 +241,7 @@
             this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_customerList.EnableHeadersVisualStyles = false;
             this.dtgv_customerList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_customerList.Location = new System.Drawing.Point(13, 68);
+            this.dtgv_customerList.Location = new System.Drawing.Point(20, 66);
             this.dtgv_customerList.Name = "dtgv_customerList";
             this.dtgv_customerList.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -282,58 +281,6 @@
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // txt_productName
-            // 
-            this.txt_productName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_productName.DefaultText = "";
-            this.txt_productName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_productName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_productName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productName.DisabledState.Parent = this.txt_productName;
-            this.txt_productName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_productName.FocusedState.Parent = this.txt_productName;
-            this.txt_productName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productName.HoverState.Parent = this.txt_productName;
-            this.txt_productName.Location = new System.Drawing.Point(237, 161);
-            this.txt_productName.Margin = new System.Windows.Forms.Padding(6, 19, 6, 19);
-            this.txt_productName.Name = "txt_productName";
-            this.txt_productName.PasswordChar = '\0';
-            this.txt_productName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_productName.PlaceholderText = "";
-            this.txt_productName.SelectedText = "";
-            this.txt_productName.ShadowDecoration.Parent = this.txt_productName;
-            this.txt_productName.Size = new System.Drawing.Size(309, 70);
-            this.txt_productName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_productName.TabIndex = 1;
-            // 
-            // txt_productID
-            // 
-            this.txt_productID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_productID.DefaultText = "";
-            this.txt_productID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_productID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_productID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productID.DisabledState.Parent = this.txt_productID;
-            this.txt_productID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_productID.FocusedState.Parent = this.txt_productID;
-            this.txt_productID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productID.HoverState.Parent = this.txt_productID;
-            this.txt_productID.Location = new System.Drawing.Point(20, 161);
-            this.txt_productID.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_productID.Name = "txt_productID";
-            this.txt_productID.PasswordChar = '\0';
-            this.txt_productID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_productID.PlaceholderText = "";
-            this.txt_productID.SelectedText = "";
-            this.txt_productID.ShadowDecoration.Parent = this.txt_productID;
-            this.txt_productID.Size = new System.Drawing.Size(178, 70);
-            this.txt_productID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_productID.TabIndex = 1;
-            // 
             // lb_accountEmployeeID
             // 
             this.lb_accountEmployeeID.AutoSize = false;
@@ -342,7 +289,7 @@
             this.lb_accountEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.lb_accountEmployeeID.Location = new System.Drawing.Point(721, 259);
             this.lb_accountEmployeeID.Name = "lb_accountEmployeeID";
-            this.lb_accountEmployeeID.Size = new System.Drawing.Size(139, 25);
+            this.lb_accountEmployeeID.Size = new System.Drawing.Size(164, 25);
             this.lb_accountEmployeeID.TabIndex = 14;
             this.lb_accountEmployeeID.Text = "Mã nhân viên";
             // 
@@ -364,12 +311,11 @@
             this.btn_customerInfo.Controls.Add(this.guna2TextBox1);
             this.btn_customerInfo.Controls.Add(this.txt_customerID);
             this.btn_customerInfo.Controls.Add(this.btn_accountDelete);
+            this.btn_customerInfo.Controls.Add(this.btn_accountSave);
             this.btn_customerInfo.Controls.Add(this.btn_accountUpdate);
             this.btn_customerInfo.Controls.Add(this.btn_findAccount);
             this.btn_customerInfo.Controls.Add(this.btn_accountAdd);
             this.btn_customerInfo.Controls.Add(this.dtgv_customerList);
-            this.btn_customerInfo.Controls.Add(this.txt_productName);
-            this.btn_customerInfo.Controls.Add(this.txt_productID);
             this.btn_customerInfo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_customerInfo.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.btn_customerInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
@@ -382,69 +328,17 @@
             this.btn_customerInfo.TabIndex = 15;
             this.btn_customerInfo.Text = "Thông tin tài khoản";
             // 
-            // guna2TextBox1
+            // lb_accountRepassword
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(721, 66);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(9, 23, 9, 23);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(289, 37);
-            this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox1.TabIndex = 13;
-            // 
-            // lb_accountUsername
-            // 
-            this.lb_accountUsername.AutoSize = false;
-            this.lb_accountUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.lb_accountUsername.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_accountUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_accountUsername.Location = new System.Drawing.Point(721, 39);
-            this.lb_accountUsername.Name = "lb_accountUsername";
-            this.lb_accountUsername.Size = new System.Drawing.Size(139, 25);
-            this.lb_accountUsername.TabIndex = 14;
-            this.lb_accountUsername.Text = "Tên đăng nhập";
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(721, 136);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(14, 45, 14, 45);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(289, 37);
-            this.guna2TextBox2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox2.TabIndex = 13;
+            this.lb_accountRepassword.AutoSize = false;
+            this.lb_accountRepassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.lb_accountRepassword.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_accountRepassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_accountRepassword.Location = new System.Drawing.Point(721, 181);
+            this.lb_accountRepassword.Name = "lb_accountRepassword";
+            this.lb_accountRepassword.Size = new System.Drawing.Size(139, 25);
+            this.lb_accountRepassword.TabIndex = 14;
+            this.lb_accountRepassword.Text = "Nhập lại mật khẩu";
             // 
             // lb_accountPassword
             // 
@@ -457,6 +351,18 @@
             this.lb_accountPassword.Size = new System.Drawing.Size(139, 25);
             this.lb_accountPassword.TabIndex = 14;
             this.lb_accountPassword.Text = "Mật khẩu";
+            // 
+            // lb_accountUsername
+            // 
+            this.lb_accountUsername.AutoSize = false;
+            this.lb_accountUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.lb_accountUsername.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_accountUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_accountUsername.Location = new System.Drawing.Point(721, 39);
+            this.lb_accountUsername.Name = "lb_accountUsername";
+            this.lb_accountUsername.Size = new System.Drawing.Size(241, 25);
+            this.lb_accountUsername.TabIndex = 14;
+            this.lb_accountUsername.Text = "Tên đăng nhập";
             // 
             // guna2TextBox3
             // 
@@ -484,17 +390,75 @@
             this.guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.guna2TextBox3.TabIndex = 13;
             // 
-            // lb_accountRepassword
+            // guna2TextBox2
             // 
-            this.lb_accountRepassword.AutoSize = false;
-            this.lb_accountRepassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.lb_accountRepassword.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_accountRepassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_accountRepassword.Location = new System.Drawing.Point(721, 181);
-            this.lb_accountRepassword.Name = "lb_accountRepassword";
-            this.lb_accountRepassword.Size = new System.Drawing.Size(139, 25);
-            this.lb_accountRepassword.TabIndex = 14;
-            this.lb_accountRepassword.Text = "Nhập lại mật khẩu";
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Location = new System.Drawing.Point(721, 136);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(14, 45, 14, 45);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Size = new System.Drawing.Size(289, 37);
+            this.guna2TextBox2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.guna2TextBox2.TabIndex = 13;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(721, 66);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(9, 23, 9, 23);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(289, 37);
+            this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.guna2TextBox1.TabIndex = 13;
+            // 
+            // btn_accountSave
+            // 
+            this.btn_accountSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_accountSave.BorderRadius = 5;
+            this.btn_accountSave.CheckedState.Parent = this.btn_accountSave;
+            this.btn_accountSave.CustomImages.Parent = this.btn_accountSave;
+            this.btn_accountSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_accountSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_accountSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_accountSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_accountSave.HoverState.Parent = this.btn_accountSave;
+            this.btn_accountSave.Location = new System.Drawing.Point(943, 432);
+            this.btn_accountSave.Name = "btn_accountSave";
+            this.btn_accountSave.ShadowDecoration.Parent = this.btn_accountSave;
+            this.btn_accountSave.Size = new System.Drawing.Size(88, 49);
+            this.btn_accountSave.TabIndex = 5;
+            this.btn_accountSave.Text = "Lưu";
             // 
             // us_accountUI
             // 
@@ -520,8 +484,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_findAccount;
         private Guna.UI2.WinForms.Guna2Button btn_accountAdd;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_customerList;
-        private Guna.UI2.WinForms.Guna2TextBox txt_productName;
-        private Guna.UI2.WinForms.Guna2TextBox txt_productID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountEmployeeID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountRepassword;
@@ -530,5 +492,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2Button btn_accountSave;
     }
 }

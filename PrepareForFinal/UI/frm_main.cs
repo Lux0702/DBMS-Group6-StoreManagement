@@ -25,6 +25,7 @@ namespace PrepareForFinal.UI
             this.us_productUI.Visible = false;
             this.us_customerUI.Visible = false;
             this.us_accountUI.Visible = false;
+            this.us_supplyUI.Visible = false;
         }
 
         private void makeDefaulColor()
@@ -101,6 +102,16 @@ namespace PrepareForFinal.UI
             this.btn_showAccountUI.BackColor = System.Drawing.Color.FromArgb(242, 222, 186);
             us_accountUI.Visible = true;
             us_accountUI.BringToFront();
+        }
+
+        private void btn_showSupplyUI_Click(object sender, EventArgs e)
+        {
+            pn_notify.Text = "Đây là trang nhà cung cấp";
+            makeDefaulColor();
+            hideUIItem();
+            this.btn_showSupplyUI.BackColor = System.Drawing.Color.FromArgb(242, 222, 186);
+            us_supplyUI.Visible = true;
+            us_supplyUI.BringToFront();
         }
     }
 }

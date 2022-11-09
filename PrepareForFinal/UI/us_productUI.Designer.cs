@@ -36,11 +36,8 @@
             this.txt_Findproduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.pn_productImage = new Guna.UI2.WinForms.Guna2Panel();
             this.dtgv_productList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btn_productAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btn_findproduct = new Guna.UI2.WinForms.Guna2Button();
             this.btn_productUpImage = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productDelete = new Guna.UI2.WinForms.Guna2Button();
             this.num_productQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.num_productPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.dtp_productImportDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -60,6 +57,10 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_productDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productAdd = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_productList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_productQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_productPrice)).BeginInit();
@@ -145,6 +146,7 @@
             // 
             // pn_productImage
             // 
+            this.pn_productImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.pn_productImage.Location = new System.Drawing.Point(733, 175);
             this.pn_productImage.Name = "pn_productImage";
             this.pn_productImage.ShadowDecoration.Parent = this.pn_productImage;
@@ -212,24 +214,6 @@
             this.dtgv_productList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_productList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btn_productAdd
-            // 
-            this.btn_productAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productAdd.BorderRadius = 5;
-            this.btn_productAdd.CheckedState.Parent = this.btn_productAdd;
-            this.btn_productAdd.CustomImages.Parent = this.btn_productAdd;
-            this.btn_productAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_productAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productAdd.HoverState.Parent = this.btn_productAdd;
-            this.btn_productAdd.Location = new System.Drawing.Point(734, 432);
-            this.btn_productAdd.Name = "btn_productAdd";
-            this.btn_productAdd.ShadowDecoration.Parent = this.btn_productAdd;
-            this.btn_productAdd.Size = new System.Drawing.Size(147, 49);
-            this.btn_productAdd.TabIndex = 5;
-            this.btn_productAdd.Text = "Thêm";
-            // 
             // btn_findproduct
             // 
             this.btn_findproduct.BackColor = System.Drawing.Color.Transparent;
@@ -268,42 +252,6 @@
             this.btn_productUpImage.Size = new System.Drawing.Size(189, 49);
             this.btn_productUpImage.TabIndex = 5;
             this.btn_productUpImage.Text = "Tải lên";
-            // 
-            // btn_productUpdate
-            // 
-            this.btn_productUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productUpdate.BorderRadius = 5;
-            this.btn_productUpdate.CheckedState.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.CustomImages.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_productUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productUpdate.HoverState.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.Location = new System.Drawing.Point(887, 432);
-            this.btn_productUpdate.Name = "btn_productUpdate";
-            this.btn_productUpdate.ShadowDecoration.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.Size = new System.Drawing.Size(147, 49);
-            this.btn_productUpdate.TabIndex = 5;
-            this.btn_productUpdate.Text = "Sửa";
-            // 
-            // btn_productDelete
-            // 
-            this.btn_productDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productDelete.BorderRadius = 5;
-            this.btn_productDelete.CheckedState.Parent = this.btn_productDelete;
-            this.btn_productDelete.CustomImages.Parent = this.btn_productDelete;
-            this.btn_productDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
-            this.btn_productDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productDelete.HoverState.Parent = this.btn_productDelete;
-            this.btn_productDelete.Location = new System.Drawing.Point(1040, 432);
-            this.btn_productDelete.Name = "btn_productDelete";
-            this.btn_productDelete.ShadowDecoration.Parent = this.btn_productDelete;
-            this.btn_productDelete.Size = new System.Drawing.Size(94, 49);
-            this.btn_productDelete.TabIndex = 5;
-            this.btn_productDelete.Text = "Xóa";
             // 
             // num_productQuantity
             // 
@@ -398,6 +346,10 @@
             this.btn_productGroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_productGroupButton.BorderRadius = 5;
             this.btn_productGroupButton.BorderThickness = 2;
+            this.btn_productGroupButton.Controls.Add(this.btn_productDelete);
+            this.btn_productGroupButton.Controls.Add(this.btn_productSave);
+            this.btn_productGroupButton.Controls.Add(this.btn_productUpdate);
+            this.btn_productGroupButton.Controls.Add(this.btn_productAdd);
             this.btn_productGroupButton.Controls.Add(this.lb_productvalidateDate);
             this.btn_productGroupButton.Controls.Add(this.lb_productImportDate);
             this.btn_productGroupButton.Controls.Add(this.lb_productQuantity);
@@ -409,11 +361,8 @@
             this.btn_productGroupButton.Controls.Add(this.dtp_productImportDate);
             this.btn_productGroupButton.Controls.Add(this.num_productPrice);
             this.btn_productGroupButton.Controls.Add(this.num_productQuantity);
-            this.btn_productGroupButton.Controls.Add(this.btn_productDelete);
-            this.btn_productGroupButton.Controls.Add(this.btn_productUpdate);
             this.btn_productGroupButton.Controls.Add(this.btn_productUpImage);
             this.btn_productGroupButton.Controls.Add(this.btn_findproduct);
-            this.btn_productGroupButton.Controls.Add(this.btn_productAdd);
             this.btn_productGroupButton.Controls.Add(this.dtgv_productList);
             this.btn_productGroupButton.Controls.Add(this.pn_productImage);
             this.btn_productGroupButton.Controls.Add(this.txt_Findproduct);
@@ -593,6 +542,78 @@
             this.guna2HtmlLabel4.TabIndex = 2;
             this.guna2HtmlLabel4.Text = "Số lượng còn";
             // 
+            // btn_productDelete
+            // 
+            this.btn_productDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productDelete.BorderRadius = 5;
+            this.btn_productDelete.CheckedState.Parent = this.btn_productDelete;
+            this.btn_productDelete.CustomImages.Parent = this.btn_productDelete;
+            this.btn_productDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
+            this.btn_productDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productDelete.HoverState.Parent = this.btn_productDelete;
+            this.btn_productDelete.Location = new System.Drawing.Point(1049, 436);
+            this.btn_productDelete.Name = "btn_productDelete";
+            this.btn_productDelete.ShadowDecoration.Parent = this.btn_productDelete;
+            this.btn_productDelete.Size = new System.Drawing.Size(94, 49);
+            this.btn_productDelete.TabIndex = 27;
+            this.btn_productDelete.Text = "Xóa";
+            // 
+            // btn_productSave
+            // 
+            this.btn_productSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productSave.BorderRadius = 5;
+            this.btn_productSave.CheckedState.Parent = this.btn_productSave;
+            this.btn_productSave.CustomImages.Parent = this.btn_productSave;
+            this.btn_productSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productSave.HoverState.Parent = this.btn_productSave;
+            this.btn_productSave.Location = new System.Drawing.Point(955, 436);
+            this.btn_productSave.Name = "btn_productSave";
+            this.btn_productSave.ShadowDecoration.Parent = this.btn_productSave;
+            this.btn_productSave.Size = new System.Drawing.Size(88, 49);
+            this.btn_productSave.TabIndex = 28;
+            this.btn_productSave.Text = "Lưu";
+            // 
+            // btn_productUpdate
+            // 
+            this.btn_productUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productUpdate.BorderRadius = 5;
+            this.btn_productUpdate.CheckedState.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.CustomImages.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productUpdate.HoverState.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.Location = new System.Drawing.Point(844, 436);
+            this.btn_productUpdate.Name = "btn_productUpdate";
+            this.btn_productUpdate.ShadowDecoration.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.Size = new System.Drawing.Size(105, 49);
+            this.btn_productUpdate.TabIndex = 29;
+            this.btn_productUpdate.Text = "Sửa";
+            // 
+            // btn_productAdd
+            // 
+            this.btn_productAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productAdd.BorderRadius = 5;
+            this.btn_productAdd.CheckedState.Parent = this.btn_productAdd;
+            this.btn_productAdd.CustomImages.Parent = this.btn_productAdd;
+            this.btn_productAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productAdd.HoverState.Parent = this.btn_productAdd;
+            this.btn_productAdd.Location = new System.Drawing.Point(733, 436);
+            this.btn_productAdd.Name = "btn_productAdd";
+            this.btn_productAdd.ShadowDecoration.Parent = this.btn_productAdd;
+            this.btn_productAdd.Size = new System.Drawing.Size(105, 49);
+            this.btn_productAdd.TabIndex = 30;
+            this.btn_productAdd.Text = "Thêm";
+            // 
             // us_productUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -616,11 +637,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_Findproduct;
         private Guna.UI2.WinForms.Guna2Panel pn_productImage;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_productList;
-        private Guna.UI2.WinForms.Guna2Button btn_productAdd;
         private Guna.UI2.WinForms.Guna2Button btn_findproduct;
         private Guna.UI2.WinForms.Guna2Button btn_productUpImage;
-        private Guna.UI2.WinForms.Guna2Button btn_productUpdate;
-        private Guna.UI2.WinForms.Guna2Button btn_productDelete;
         private Guna.UI2.WinForms.Guna2NumericUpDown num_productQuantity;
         private Guna.UI2.WinForms.Guna2NumericUpDown num_productPrice;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_productImportDate;
@@ -640,5 +658,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_productName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_productID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_prodcutImage;
+        private Guna.UI2.WinForms.Guna2Button btn_productDelete;
+        private Guna.UI2.WinForms.Guna2Button btn_productSave;
+        private Guna.UI2.WinForms.Guna2Button btn_productUpdate;
+        private Guna.UI2.WinForms.Guna2Button btn_productAdd;
     }
 }

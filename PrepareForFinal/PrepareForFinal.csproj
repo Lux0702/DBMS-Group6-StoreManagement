@@ -253,11 +253,23 @@
     <Compile Include="UI\us_navigation.Designer.cs">
       <DependentUpon>us_navigation.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\us_PaymentUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\us_PaymentUI.Designer.cs">
+      <DependentUpon>us_PaymentUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\us_productUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\us_productUI.Designer.cs">
       <DependentUpon>us_productUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\us_supplyUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\us_supplyUI.Designer.cs">
+      <DependentUpon>us_supplyUI.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -287,8 +299,14 @@
     <EmbeddedResource Include="UI\us_navigation.resx">
       <DependentUpon>us_navigation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\us_PaymentUI.resx">
+      <DependentUpon>us_PaymentUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\us_productUI.resx">
       <DependentUpon>us_productUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\us_supplyUI.resx">
+      <DependentUpon>us_supplyUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
