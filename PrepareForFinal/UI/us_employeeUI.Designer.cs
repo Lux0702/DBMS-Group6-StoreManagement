@@ -32,442 +32,442 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lb_customerID = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_customerDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.cb_customerStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lb_customerStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_customerPoint = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.num_customerPoint = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.lb_customerPhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_customerAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_customerName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rb_customerFemale = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rb_customerMale = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.txt_customerPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_findCustomer = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_customerAddress = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_customerGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_customerName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_customerID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_customerBirth = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_employeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_employeeDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.cb_employeeStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lb_employeeStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_employeeSalary = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.num_employeeSalary = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.lb_employeePhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_employeeAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_employeeName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rb_employeeFemale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rb_employeeMale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txt_employeePhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_findEmployee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_employeeAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_employeeGender = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_employeeName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_employeeID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_employeeBirth = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_productID = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtp_customerBirthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btn_findCustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.dtp_employeeBirthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btn_findEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_customerList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txt_productName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_productID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.num_customerPoint)).BeginInit();
+            this.lb_employeeRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cb_employeeRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtp_employeeHireDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lb_employeeHireDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.num_employeeSalary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lb_customerID
+            // lb_employeeID
             // 
-            this.lb_customerID.AutoSize = false;
-            this.lb_customerID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.lb_customerID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerID.Location = new System.Drawing.Point(14, 53);
-            this.lb_customerID.Name = "lb_customerID";
-            this.lb_customerID.Size = new System.Drawing.Size(139, 25);
-            this.lb_customerID.TabIndex = 12;
-            this.lb_customerID.Text = "Mã nhân viên";
+            this.lb_employeeID.AutoSize = false;
+            this.lb_employeeID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.lb_employeeID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeID.Location = new System.Drawing.Point(14, 53);
+            this.lb_employeeID.Name = "lb_employeeID";
+            this.lb_employeeID.Size = new System.Drawing.Size(139, 25);
+            this.lb_employeeID.TabIndex = 12;
+            this.lb_employeeID.Text = "Mã nhân viên";
             // 
-            // btn_customerDelete
+            // btn_employeeDelete
             // 
-            this.btn_customerDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerDelete.BorderRadius = 5;
-            this.btn_customerDelete.CheckedState.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.CustomImages.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
-            this.btn_customerDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerDelete.HoverState.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.Location = new System.Drawing.Point(1037, 436);
-            this.btn_customerDelete.Name = "btn_customerDelete";
-            this.btn_customerDelete.ShadowDecoration.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.Size = new System.Drawing.Size(94, 49);
-            this.btn_customerDelete.TabIndex = 23;
-            this.btn_customerDelete.Text = "Xóa";
+            this.btn_employeeDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeDelete.BorderRadius = 5;
+            this.btn_employeeDelete.CheckedState.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.CustomImages.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
+            this.btn_employeeDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeDelete.HoverState.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.Location = new System.Drawing.Point(1037, 436);
+            this.btn_employeeDelete.Name = "btn_employeeDelete";
+            this.btn_employeeDelete.ShadowDecoration.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.Size = new System.Drawing.Size(94, 49);
+            this.btn_employeeDelete.TabIndex = 23;
+            this.btn_employeeDelete.Text = "Xóa";
             // 
-            // btn_customerSave
+            // btn_employeeSave
             // 
-            this.btn_customerSave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerSave.BorderRadius = 5;
-            this.btn_customerSave.CheckedState.Parent = this.btn_customerSave;
-            this.btn_customerSave.CustomImages.Parent = this.btn_customerSave;
-            this.btn_customerSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerSave.HoverState.Parent = this.btn_customerSave;
-            this.btn_customerSave.Location = new System.Drawing.Point(943, 436);
-            this.btn_customerSave.Name = "btn_customerSave";
-            this.btn_customerSave.ShadowDecoration.Parent = this.btn_customerSave;
-            this.btn_customerSave.Size = new System.Drawing.Size(88, 49);
-            this.btn_customerSave.TabIndex = 24;
-            this.btn_customerSave.Text = "Lưu";
+            this.btn_employeeSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeSave.BorderRadius = 5;
+            this.btn_employeeSave.CheckedState.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.CustomImages.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeSave.HoverState.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.Location = new System.Drawing.Point(943, 436);
+            this.btn_employeeSave.Name = "btn_employeeSave";
+            this.btn_employeeSave.ShadowDecoration.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.Size = new System.Drawing.Size(88, 49);
+            this.btn_employeeSave.TabIndex = 24;
+            this.btn_employeeSave.Text = "Lưu";
             // 
-            // btn_customerUpdate
+            // btn_employeeUpdate
             // 
-            this.btn_customerUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerUpdate.BorderRadius = 5;
-            this.btn_customerUpdate.CheckedState.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.CustomImages.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerUpdate.HoverState.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.Location = new System.Drawing.Point(832, 436);
-            this.btn_customerUpdate.Name = "btn_customerUpdate";
-            this.btn_customerUpdate.ShadowDecoration.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.Size = new System.Drawing.Size(105, 49);
-            this.btn_customerUpdate.TabIndex = 25;
-            this.btn_customerUpdate.Text = "Sửa";
+            this.btn_employeeUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeUpdate.BorderRadius = 5;
+            this.btn_employeeUpdate.CheckedState.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.CustomImages.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeUpdate.HoverState.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.Location = new System.Drawing.Point(832, 436);
+            this.btn_employeeUpdate.Name = "btn_employeeUpdate";
+            this.btn_employeeUpdate.ShadowDecoration.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.Size = new System.Drawing.Size(105, 49);
+            this.btn_employeeUpdate.TabIndex = 25;
+            this.btn_employeeUpdate.Text = "Sửa";
             // 
-            // btn_customerAdd
+            // btn_employeeAdd
             // 
-            this.btn_customerAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerAdd.BorderRadius = 5;
-            this.btn_customerAdd.CheckedState.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.CustomImages.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerAdd.HoverState.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.Location = new System.Drawing.Point(721, 436);
-            this.btn_customerAdd.Name = "btn_customerAdd";
-            this.btn_customerAdd.ShadowDecoration.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.Size = new System.Drawing.Size(105, 49);
-            this.btn_customerAdd.TabIndex = 26;
-            this.btn_customerAdd.Text = "Thêm";
+            this.btn_employeeAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeAdd.BorderRadius = 5;
+            this.btn_employeeAdd.CheckedState.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.CustomImages.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeAdd.HoverState.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.Location = new System.Drawing.Point(721, 436);
+            this.btn_employeeAdd.Name = "btn_employeeAdd";
+            this.btn_employeeAdd.ShadowDecoration.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.Size = new System.Drawing.Size(105, 49);
+            this.btn_employeeAdd.TabIndex = 26;
+            this.btn_employeeAdd.Text = "Thêm";
             // 
-            // cb_customerStatus
+            // cb_employeeStatus
             // 
-            this.cb_customerStatus.BackColor = System.Drawing.Color.Transparent;
-            this.cb_customerStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_customerStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_customerStatus.FocusedColor = System.Drawing.Color.Empty;
-            this.cb_customerStatus.FocusedState.Parent = this.cb_customerStatus;
-            this.cb_customerStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_customerStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.cb_customerStatus.FormattingEnabled = true;
-            this.cb_customerStatus.HoverState.Parent = this.cb_customerStatus;
-            this.cb_customerStatus.ItemHeight = 30;
-            this.cb_customerStatus.Items.AddRange(new object[] {
+            this.cb_employeeStatus.BackColor = System.Drawing.Color.Transparent;
+            this.cb_employeeStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_employeeStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_employeeStatus.FocusedColor = System.Drawing.Color.Empty;
+            this.cb_employeeStatus.FocusedState.Parent = this.cb_employeeStatus;
+            this.cb_employeeStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_employeeStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.cb_employeeStatus.FormattingEnabled = true;
+            this.cb_employeeStatus.HoverState.Parent = this.cb_employeeStatus;
+            this.cb_employeeStatus.ItemHeight = 30;
+            this.cb_employeeStatus.Items.AddRange(new object[] {
             "Working",
             "Retired"});
-            this.cb_customerStatus.ItemsAppearance.Parent = this.cb_customerStatus;
-            this.cb_customerStatus.Location = new System.Drawing.Point(950, 177);
-            this.cb_customerStatus.Name = "cb_customerStatus";
-            this.cb_customerStatus.ShadowDecoration.Parent = this.cb_customerStatus;
-            this.cb_customerStatus.Size = new System.Drawing.Size(183, 36);
-            this.cb_customerStatus.TabIndex = 22;
+            this.cb_employeeStatus.ItemsAppearance.Parent = this.cb_employeeStatus;
+            this.cb_employeeStatus.Location = new System.Drawing.Point(950, 177);
+            this.cb_employeeStatus.Name = "cb_employeeStatus";
+            this.cb_employeeStatus.ShadowDecoration.Parent = this.cb_employeeStatus;
+            this.cb_employeeStatus.Size = new System.Drawing.Size(183, 36);
+            this.cb_employeeStatus.TabIndex = 22;
             // 
-            // lb_customerStatus
+            // lb_employeeStatus
             // 
-            this.lb_customerStatus.AutoSize = false;
-            this.lb_customerStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerStatus.Location = new System.Drawing.Point(950, 148);
-            this.lb_customerStatus.Name = "lb_customerStatus";
-            this.lb_customerStatus.Size = new System.Drawing.Size(93, 28);
-            this.lb_customerStatus.TabIndex = 21;
-            this.lb_customerStatus.Text = "Tình trạng";
+            this.lb_employeeStatus.AutoSize = false;
+            this.lb_employeeStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeStatus.Location = new System.Drawing.Point(950, 148);
+            this.lb_employeeStatus.Name = "lb_employeeStatus";
+            this.lb_employeeStatus.Size = new System.Drawing.Size(93, 28);
+            this.lb_employeeStatus.TabIndex = 21;
+            this.lb_employeeStatus.Text = "Tình trạng";
             // 
-            // lb_customerPoint
+            // lb_employeeSalary
             // 
-            this.lb_customerPoint.AutoSize = false;
-            this.lb_customerPoint.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerPoint.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerPoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerPoint.Location = new System.Drawing.Point(950, 241);
-            this.lb_customerPoint.Name = "lb_customerPoint";
-            this.lb_customerPoint.Size = new System.Drawing.Size(93, 28);
-            this.lb_customerPoint.TabIndex = 21;
-            this.lb_customerPoint.Text = "Lương";
+            this.lb_employeeSalary.AutoSize = false;
+            this.lb_employeeSalary.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeSalary.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeSalary.Location = new System.Drawing.Point(950, 241);
+            this.lb_employeeSalary.Name = "lb_employeeSalary";
+            this.lb_employeeSalary.Size = new System.Drawing.Size(93, 28);
+            this.lb_employeeSalary.TabIndex = 21;
+            this.lb_employeeSalary.Text = "Lương";
             // 
-            // num_customerPoint
+            // num_employeeSalary
             // 
-            this.num_customerPoint.BackColor = System.Drawing.Color.Transparent;
-            this.num_customerPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.num_customerPoint.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.num_customerPoint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.num_customerPoint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.num_customerPoint.DisabledState.Parent = this.num_customerPoint;
-            this.num_customerPoint.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.num_customerPoint.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.num_customerPoint.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.num_customerPoint.FocusedState.Parent = this.num_customerPoint;
-            this.num_customerPoint.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_customerPoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.num_customerPoint.Increment = new decimal(new int[] {
+            this.num_employeeSalary.BackColor = System.Drawing.Color.Transparent;
+            this.num_employeeSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.num_employeeSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.num_employeeSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.num_employeeSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.num_employeeSalary.DisabledState.Parent = this.num_employeeSalary;
+            this.num_employeeSalary.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.num_employeeSalary.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.num_employeeSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.num_employeeSalary.FocusedState.Parent = this.num_employeeSalary;
+            this.num_employeeSalary.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_employeeSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.num_employeeSalary.Increment = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.num_customerPoint.Location = new System.Drawing.Point(950, 270);
-            this.num_customerPoint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.num_customerPoint.Maximum = new decimal(new int[] {
+            this.num_employeeSalary.Location = new System.Drawing.Point(950, 270);
+            this.num_employeeSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.num_employeeSalary.Maximum = new decimal(new int[] {
             20000000,
             0,
             0,
             0});
-            this.num_customerPoint.Name = "num_customerPoint";
-            this.num_customerPoint.ShadowDecoration.Parent = this.num_customerPoint;
-            this.num_customerPoint.Size = new System.Drawing.Size(155, 36);
-            this.num_customerPoint.TabIndex = 20;
-            this.num_customerPoint.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.num_employeeSalary.Name = "num_employeeSalary";
+            this.num_employeeSalary.ShadowDecoration.Parent = this.num_employeeSalary;
+            this.num_employeeSalary.Size = new System.Drawing.Size(155, 36);
+            this.num_employeeSalary.TabIndex = 20;
+            this.num_employeeSalary.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             // 
-            // lb_customerPhone
+            // lb_employeePhone
             // 
-            this.lb_customerPhone.AutoSize = false;
-            this.lb_customerPhone.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerPhone.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerPhone.Location = new System.Drawing.Point(950, 55);
-            this.lb_customerPhone.Name = "lb_customerPhone";
-            this.lb_customerPhone.Size = new System.Drawing.Size(160, 25);
-            this.lb_customerPhone.TabIndex = 8;
-            this.lb_customerPhone.Text = "Số điện thoại";
+            this.lb_employeePhone.AutoSize = false;
+            this.lb_employeePhone.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeePhone.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeePhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeePhone.Location = new System.Drawing.Point(950, 55);
+            this.lb_employeePhone.Name = "lb_employeePhone";
+            this.lb_employeePhone.Size = new System.Drawing.Size(160, 25);
+            this.lb_employeePhone.TabIndex = 8;
+            this.lb_employeePhone.Text = "Số điện thoại";
             // 
-            // lb_customerAddress
+            // lb_employeeAddress
             // 
-            this.lb_customerAddress.AutoSize = false;
-            this.lb_customerAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerAddress.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerAddress.Location = new System.Drawing.Point(721, 55);
-            this.lb_customerAddress.Name = "lb_customerAddress";
-            this.lb_customerAddress.Size = new System.Drawing.Size(160, 25);
-            this.lb_customerAddress.TabIndex = 8;
-            this.lb_customerAddress.Text = "Địa chỉ";
+            this.lb_employeeAddress.AutoSize = false;
+            this.lb_employeeAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeAddress.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeAddress.Location = new System.Drawing.Point(721, 55);
+            this.lb_employeeAddress.Name = "lb_employeeAddress";
+            this.lb_employeeAddress.Size = new System.Drawing.Size(160, 25);
+            this.lb_employeeAddress.TabIndex = 8;
+            this.lb_employeeAddress.Text = "Địa chỉ";
             // 
-            // lb_customerName
+            // lb_employeeName
             // 
-            this.lb_customerName.AutoSize = false;
-            this.lb_customerName.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerName.Location = new System.Drawing.Point(154, 55);
-            this.lb_customerName.Name = "lb_customerName";
-            this.lb_customerName.Size = new System.Drawing.Size(206, 25);
-            this.lb_customerName.TabIndex = 8;
-            this.lb_customerName.Text = "Tên nhân viên";
+            this.lb_employeeName.AutoSize = false;
+            this.lb_employeeName.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeName.Location = new System.Drawing.Point(154, 55);
+            this.lb_employeeName.Name = "lb_employeeName";
+            this.lb_employeeName.Size = new System.Drawing.Size(206, 25);
+            this.lb_employeeName.TabIndex = 8;
+            this.lb_employeeName.Text = "Tên nhân viên";
             // 
-            // rb_customerFemale
+            // rb_employeeFemale
             // 
-            this.rb_customerFemale.AutoSize = true;
-            this.rb_customerFemale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rb_customerFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerFemale.CheckedState.BorderThickness = 0;
-            this.rb_customerFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.rb_customerFemale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_customerFemale.CheckedState.InnerOffset = -4;
-            this.rb_customerFemale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rb_customerFemale.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_customerFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerFemale.Location = new System.Drawing.Point(453, 88);
-            this.rb_customerFemale.Name = "rb_customerFemale";
-            this.rb_customerFemale.Size = new System.Drawing.Size(47, 27);
-            this.rb_customerFemale.TabIndex = 16;
-            this.rb_customerFemale.TabStop = true;
-            this.rb_customerFemale.Text = "Nữ";
-            this.rb_customerFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerFemale.UncheckedState.BorderThickness = 2;
-            this.rb_customerFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_customerFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_customerFemale.UseVisualStyleBackColor = true;
+            this.rb_employeeFemale.AutoSize = true;
+            this.rb_employeeFemale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rb_employeeFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeFemale.CheckedState.BorderThickness = 0;
+            this.rb_employeeFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.rb_employeeFemale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rb_employeeFemale.CheckedState.InnerOffset = -4;
+            this.rb_employeeFemale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rb_employeeFemale.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_employeeFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeFemale.Location = new System.Drawing.Point(453, 88);
+            this.rb_employeeFemale.Name = "rb_employeeFemale";
+            this.rb_employeeFemale.Size = new System.Drawing.Size(47, 27);
+            this.rb_employeeFemale.TabIndex = 16;
+            this.rb_employeeFemale.TabStop = true;
+            this.rb_employeeFemale.Text = "Nữ";
+            this.rb_employeeFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeFemale.UncheckedState.BorderThickness = 2;
+            this.rb_employeeFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rb_employeeFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rb_employeeFemale.UseVisualStyleBackColor = true;
             // 
-            // rb_customerMale
+            // rb_employeeMale
             // 
-            this.rb_customerMale.AutoSize = true;
-            this.rb_customerMale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rb_customerMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerMale.CheckedState.BorderThickness = 0;
-            this.rb_customerMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.rb_customerMale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_customerMale.CheckedState.InnerOffset = -4;
-            this.rb_customerMale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rb_customerMale.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_customerMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerMale.Location = new System.Drawing.Point(377, 88);
-            this.rb_customerMale.Name = "rb_customerMale";
-            this.rb_customerMale.Size = new System.Drawing.Size(61, 27);
-            this.rb_customerMale.TabIndex = 15;
-            this.rb_customerMale.TabStop = true;
-            this.rb_customerMale.Text = "Nam";
-            this.rb_customerMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_customerMale.UncheckedState.BorderThickness = 2;
-            this.rb_customerMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_customerMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_customerMale.UseVisualStyleBackColor = true;
+            this.rb_employeeMale.AutoSize = true;
+            this.rb_employeeMale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rb_employeeMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeMale.CheckedState.BorderThickness = 0;
+            this.rb_employeeMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.rb_employeeMale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rb_employeeMale.CheckedState.InnerOffset = -4;
+            this.rb_employeeMale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rb_employeeMale.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_employeeMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeMale.Location = new System.Drawing.Point(377, 88);
+            this.rb_employeeMale.Name = "rb_employeeMale";
+            this.rb_employeeMale.Size = new System.Drawing.Size(61, 27);
+            this.rb_employeeMale.TabIndex = 15;
+            this.rb_employeeMale.TabStop = true;
+            this.rb_employeeMale.Text = "Nam";
+            this.rb_employeeMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employeeMale.UncheckedState.BorderThickness = 2;
+            this.rb_employeeMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rb_employeeMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rb_employeeMale.UseVisualStyleBackColor = true;
             // 
-            // txt_customerPhone
+            // txt_employeePhone
             // 
-            this.txt_customerPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerPhone.DefaultText = "";
-            this.txt_customerPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_customerPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_customerPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerPhone.DisabledState.Parent = this.txt_customerPhone;
-            this.txt_customerPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerPhone.FocusedState.Parent = this.txt_customerPhone;
-            this.txt_customerPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerPhone.HoverState.Parent = this.txt_customerPhone;
-            this.txt_customerPhone.Location = new System.Drawing.Point(950, 84);
-            this.txt_customerPhone.Margin = new System.Windows.Forms.Padding(14, 72, 14, 72);
-            this.txt_customerPhone.Name = "txt_customerPhone";
-            this.txt_customerPhone.PasswordChar = '\0';
-            this.txt_customerPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_customerPhone.PlaceholderText = "";
-            this.txt_customerPhone.SelectedText = "";
-            this.txt_customerPhone.ShadowDecoration.Parent = this.txt_customerPhone;
-            this.txt_customerPhone.Size = new System.Drawing.Size(183, 36);
-            this.txt_customerPhone.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_customerPhone.TabIndex = 12;
+            this.txt_employeePhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_employeePhone.DefaultText = "";
+            this.txt_employeePhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_employeePhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_employeePhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeePhone.DisabledState.Parent = this.txt_employeePhone;
+            this.txt_employeePhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeePhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeePhone.FocusedState.Parent = this.txt_employeePhone;
+            this.txt_employeePhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeePhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeePhone.HoverState.Parent = this.txt_employeePhone;
+            this.txt_employeePhone.Location = new System.Drawing.Point(950, 84);
+            this.txt_employeePhone.Margin = new System.Windows.Forms.Padding(14, 72, 14, 72);
+            this.txt_employeePhone.Name = "txt_employeePhone";
+            this.txt_employeePhone.PasswordChar = '\0';
+            this.txt_employeePhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_employeePhone.PlaceholderText = "";
+            this.txt_employeePhone.SelectedText = "";
+            this.txt_employeePhone.ShadowDecoration.Parent = this.txt_employeePhone;
+            this.txt_employeePhone.Size = new System.Drawing.Size(183, 36);
+            this.txt_employeePhone.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_employeePhone.TabIndex = 12;
             // 
-            // txt_findCustomer
+            // txt_findEmployee
             // 
-            this.txt_findCustomer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_findCustomer.DefaultText = "";
-            this.txt_findCustomer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_findCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_findCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_findCustomer.DisabledState.Parent = this.txt_findCustomer;
-            this.txt_findCustomer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_findCustomer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_findCustomer.FocusedState.Parent = this.txt_findCustomer;
-            this.txt_findCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_findCustomer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_findCustomer.HoverState.Parent = this.txt_findCustomer;
-            this.txt_findCustomer.Location = new System.Drawing.Point(721, 370);
-            this.txt_findCustomer.Margin = new System.Windows.Forms.Padding(14, 72, 14, 72);
-            this.txt_findCustomer.Name = "txt_findCustomer";
-            this.txt_findCustomer.PasswordChar = '\0';
-            this.txt_findCustomer.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_findCustomer.PlaceholderText = "";
-            this.txt_findCustomer.SelectedText = "";
-            this.txt_findCustomer.ShadowDecoration.Parent = this.txt_findCustomer;
-            this.txt_findCustomer.Size = new System.Drawing.Size(258, 36);
-            this.txt_findCustomer.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_findCustomer.TabIndex = 12;
+            this.txt_findEmployee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_findEmployee.DefaultText = "";
+            this.txt_findEmployee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_findEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_findEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_findEmployee.DisabledState.Parent = this.txt_findEmployee;
+            this.txt_findEmployee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_findEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_findEmployee.FocusedState.Parent = this.txt_findEmployee;
+            this.txt_findEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_findEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_findEmployee.HoverState.Parent = this.txt_findEmployee;
+            this.txt_findEmployee.Location = new System.Drawing.Point(721, 370);
+            this.txt_findEmployee.Margin = new System.Windows.Forms.Padding(14, 72, 14, 72);
+            this.txt_findEmployee.Name = "txt_findEmployee";
+            this.txt_findEmployee.PasswordChar = '\0';
+            this.txt_findEmployee.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_findEmployee.PlaceholderText = "";
+            this.txt_findEmployee.SelectedText = "";
+            this.txt_findEmployee.ShadowDecoration.Parent = this.txt_findEmployee;
+            this.txt_findEmployee.Size = new System.Drawing.Size(258, 36);
+            this.txt_findEmployee.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_findEmployee.TabIndex = 12;
             // 
-            // txt_customerAddress
+            // txt_employeeAddress
             // 
-            this.txt_customerAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerAddress.DefaultText = "";
-            this.txt_customerAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_customerAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_customerAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerAddress.DisabledState.Parent = this.txt_customerAddress;
-            this.txt_customerAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerAddress.FocusedState.Parent = this.txt_customerAddress;
-            this.txt_customerAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerAddress.HoverState.Parent = this.txt_customerAddress;
-            this.txt_customerAddress.Location = new System.Drawing.Point(721, 83);
-            this.txt_customerAddress.Margin = new System.Windows.Forms.Padding(9, 37, 9, 37);
-            this.txt_customerAddress.Name = "txt_customerAddress";
-            this.txt_customerAddress.PasswordChar = '\0';
-            this.txt_customerAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_customerAddress.PlaceholderText = "";
-            this.txt_customerAddress.SelectedText = "";
-            this.txt_customerAddress.ShadowDecoration.Parent = this.txt_customerAddress;
-            this.txt_customerAddress.Size = new System.Drawing.Size(192, 36);
-            this.txt_customerAddress.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_customerAddress.TabIndex = 12;
+            this.txt_employeeAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_employeeAddress.DefaultText = "";
+            this.txt_employeeAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_employeeAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_employeeAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeAddress.DisabledState.Parent = this.txt_employeeAddress;
+            this.txt_employeeAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeAddress.FocusedState.Parent = this.txt_employeeAddress;
+            this.txt_employeeAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeAddress.HoverState.Parent = this.txt_employeeAddress;
+            this.txt_employeeAddress.Location = new System.Drawing.Point(721, 83);
+            this.txt_employeeAddress.Margin = new System.Windows.Forms.Padding(9, 37, 9, 37);
+            this.txt_employeeAddress.Name = "txt_employeeAddress";
+            this.txt_employeeAddress.PasswordChar = '\0';
+            this.txt_employeeAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_employeeAddress.PlaceholderText = "";
+            this.txt_employeeAddress.SelectedText = "";
+            this.txt_employeeAddress.ShadowDecoration.Parent = this.txt_employeeAddress;
+            this.txt_employeeAddress.Size = new System.Drawing.Size(192, 36);
+            this.txt_employeeAddress.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_employeeAddress.TabIndex = 12;
             // 
-            // lb_customerGender
+            // lb_employeeGender
             // 
-            this.lb_customerGender.AutoSize = false;
-            this.lb_customerGender.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerGender.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerGender.Location = new System.Drawing.Point(377, 55);
-            this.lb_customerGender.Name = "lb_customerGender";
-            this.lb_customerGender.Size = new System.Drawing.Size(147, 24);
-            this.lb_customerGender.TabIndex = 14;
-            this.lb_customerGender.Text = "Giới tính";
+            this.lb_employeeGender.AutoSize = false;
+            this.lb_employeeGender.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeGender.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeGender.Location = new System.Drawing.Point(377, 55);
+            this.lb_employeeGender.Name = "lb_employeeGender";
+            this.lb_employeeGender.Size = new System.Drawing.Size(147, 24);
+            this.lb_employeeGender.TabIndex = 14;
+            this.lb_employeeGender.Text = "Giới tính";
             // 
-            // txt_customerName
+            // txt_employeeName
             // 
-            this.txt_customerName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerName.DefaultText = "";
-            this.txt_customerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_customerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_customerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerName.DisabledState.Parent = this.txt_customerName;
-            this.txt_customerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerName.FocusedState.Parent = this.txt_customerName;
-            this.txt_customerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerName.HoverState.Parent = this.txt_customerName;
-            this.txt_customerName.Location = new System.Drawing.Point(154, 83);
-            this.txt_customerName.Margin = new System.Windows.Forms.Padding(6, 19, 6, 19);
-            this.txt_customerName.Name = "txt_customerName";
-            this.txt_customerName.PasswordChar = '\0';
-            this.txt_customerName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_customerName.PlaceholderText = "";
-            this.txt_customerName.SelectedText = "";
-            this.txt_customerName.ShadowDecoration.Parent = this.txt_customerName;
-            this.txt_customerName.Size = new System.Drawing.Size(206, 37);
-            this.txt_customerName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_customerName.TabIndex = 12;
+            this.txt_employeeName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_employeeName.DefaultText = "";
+            this.txt_employeeName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_employeeName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_employeeName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeName.DisabledState.Parent = this.txt_employeeName;
+            this.txt_employeeName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeName.FocusedState.Parent = this.txt_employeeName;
+            this.txt_employeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeName.HoverState.Parent = this.txt_employeeName;
+            this.txt_employeeName.Location = new System.Drawing.Point(154, 83);
+            this.txt_employeeName.Margin = new System.Windows.Forms.Padding(6, 19, 6, 19);
+            this.txt_employeeName.Name = "txt_employeeName";
+            this.txt_employeeName.PasswordChar = '\0';
+            this.txt_employeeName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_employeeName.PlaceholderText = "";
+            this.txt_employeeName.SelectedText = "";
+            this.txt_employeeName.ShadowDecoration.Parent = this.txt_employeeName;
+            this.txt_employeeName.Size = new System.Drawing.Size(206, 37);
+            this.txt_employeeName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_employeeName.TabIndex = 12;
             // 
-            // txt_customerID
+            // txt_employeeID
             // 
-            this.txt_customerID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerID.DefaultText = "";
-            this.txt_customerID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_customerID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_customerID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerID.DisabledState.Parent = this.txt_customerID;
-            this.txt_customerID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_customerID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerID.FocusedState.Parent = this.txt_customerID;
-            this.txt_customerID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_customerID.HoverState.Parent = this.txt_customerID;
-            this.txt_customerID.Location = new System.Drawing.Point(14, 84);
-            this.txt_customerID.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_customerID.Name = "txt_customerID";
-            this.txt_customerID.PasswordChar = '\0';
-            this.txt_customerID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_customerID.PlaceholderText = "";
-            this.txt_customerID.SelectedText = "";
-            this.txt_customerID.ShadowDecoration.Parent = this.txt_customerID;
-            this.txt_customerID.Size = new System.Drawing.Size(114, 37);
-            this.txt_customerID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_customerID.TabIndex = 13;
+            this.txt_employeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_employeeID.DefaultText = "";
+            this.txt_employeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_employeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_employeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeID.DisabledState.Parent = this.txt_employeeID;
+            this.txt_employeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_employeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeID.FocusedState.Parent = this.txt_employeeID;
+            this.txt_employeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_employeeID.HoverState.Parent = this.txt_employeeID;
+            this.txt_employeeID.Location = new System.Drawing.Point(14, 84);
+            this.txt_employeeID.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
+            this.txt_employeeID.Name = "txt_employeeID";
+            this.txt_employeeID.PasswordChar = '\0';
+            this.txt_employeeID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_employeeID.PlaceholderText = "";
+            this.txt_employeeID.SelectedText = "";
+            this.txt_employeeID.ShadowDecoration.Parent = this.txt_employeeID;
+            this.txt_employeeID.Size = new System.Drawing.Size(114, 37);
+            this.txt_employeeID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_employeeID.TabIndex = 13;
             // 
-            // lb_customerBirth
+            // lb_employeeBirth
             // 
-            this.lb_customerBirth.AutoSize = false;
-            this.lb_customerBirth.BackColor = System.Drawing.Color.Transparent;
-            this.lb_customerBirth.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_customerBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_customerBirth.Location = new System.Drawing.Point(523, 53);
-            this.lb_customerBirth.Name = "lb_customerBirth";
-            this.lb_customerBirth.Size = new System.Drawing.Size(128, 28);
-            this.lb_customerBirth.TabIndex = 9;
-            this.lb_customerBirth.Text = "Ngày sinh";
+            this.lb_employeeBirth.AutoSize = false;
+            this.lb_employeeBirth.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeBirth.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeBirth.Location = new System.Drawing.Point(523, 53);
+            this.lb_employeeBirth.Name = "lb_employeeBirth";
+            this.lb_employeeBirth.Size = new System.Drawing.Size(128, 28);
+            this.lb_employeeBirth.TabIndex = 9;
+            this.lb_employeeBirth.Text = "Ngày sinh";
             // 
             // lb_productID
             // 
@@ -480,40 +480,40 @@
             this.lb_productID.TabIndex = 9;
             this.lb_productID.Text = "Mã SP";
             // 
-            // dtp_customerBirthdate
+            // dtp_employeeBirthdate
             // 
-            this.dtp_customerBirthdate.CheckedState.Parent = this.dtp_customerBirthdate;
-            this.dtp_customerBirthdate.CustomFormat = "dd/MM/yyyy";
-            this.dtp_customerBirthdate.FillColor = System.Drawing.Color.White;
-            this.dtp_customerBirthdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_customerBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_customerBirthdate.HoverState.Parent = this.dtp_customerBirthdate;
-            this.dtp_customerBirthdate.Location = new System.Drawing.Point(523, 83);
-            this.dtp_customerBirthdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_customerBirthdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_customerBirthdate.Name = "dtp_customerBirthdate";
-            this.dtp_customerBirthdate.ShadowDecoration.Parent = this.dtp_customerBirthdate;
-            this.dtp_customerBirthdate.Size = new System.Drawing.Size(179, 36);
-            this.dtp_customerBirthdate.TabIndex = 7;
-            this.dtp_customerBirthdate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
+            this.dtp_employeeBirthdate.CheckedState.Parent = this.dtp_employeeBirthdate;
+            this.dtp_employeeBirthdate.CustomFormat = "dd/MM/yyyy";
+            this.dtp_employeeBirthdate.FillColor = System.Drawing.Color.White;
+            this.dtp_employeeBirthdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_employeeBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_employeeBirthdate.HoverState.Parent = this.dtp_employeeBirthdate;
+            this.dtp_employeeBirthdate.Location = new System.Drawing.Point(523, 83);
+            this.dtp_employeeBirthdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_employeeBirthdate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_employeeBirthdate.Name = "dtp_employeeBirthdate";
+            this.dtp_employeeBirthdate.ShadowDecoration.Parent = this.dtp_employeeBirthdate;
+            this.dtp_employeeBirthdate.Size = new System.Drawing.Size(179, 36);
+            this.dtp_employeeBirthdate.TabIndex = 7;
+            this.dtp_employeeBirthdate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
-            // btn_findCustomer
+            // btn_findEmployee
             // 
-            this.btn_findCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.btn_findCustomer.BorderRadius = 5;
-            this.btn_findCustomer.CheckedState.Parent = this.btn_findCustomer;
-            this.btn_findCustomer.CustomImages.Parent = this.btn_findCustomer;
-            this.btn_findCustomer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_findCustomer.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_findCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_findCustomer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_findCustomer.HoverState.Parent = this.btn_findCustomer;
-            this.btn_findCustomer.Location = new System.Drawing.Point(996, 368);
-            this.btn_findCustomer.Name = "btn_findCustomer";
-            this.btn_findCustomer.ShadowDecoration.Parent = this.btn_findCustomer;
-            this.btn_findCustomer.Size = new System.Drawing.Size(138, 41);
-            this.btn_findCustomer.TabIndex = 5;
-            this.btn_findCustomer.Text = "Tìm kiếm";
+            this.btn_findEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btn_findEmployee.BorderRadius = 5;
+            this.btn_findEmployee.CheckedState.Parent = this.btn_findEmployee;
+            this.btn_findEmployee.CustomImages.Parent = this.btn_findEmployee;
+            this.btn_findEmployee.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_findEmployee.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_findEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_findEmployee.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_findEmployee.HoverState.Parent = this.btn_findEmployee;
+            this.btn_findEmployee.Location = new System.Drawing.Point(996, 368);
+            this.btn_findEmployee.Name = "btn_findEmployee";
+            this.btn_findEmployee.ShadowDecoration.Parent = this.btn_findEmployee;
+            this.btn_findEmployee.Size = new System.Drawing.Size(138, 41);
+            this.btn_findEmployee.TabIndex = 5;
+            this.btn_findEmployee.Text = "Tìm kiếm";
             // 
             // dtgv_customerList
             // 
@@ -642,34 +642,34 @@
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
-            this.btn_customerInfo.Controls.Add(this.lb_customerID);
-            this.btn_customerInfo.Controls.Add(this.btn_customerDelete);
-            this.btn_customerInfo.Controls.Add(this.btn_customerSave);
-            this.btn_customerInfo.Controls.Add(this.btn_customerUpdate);
-            this.btn_customerInfo.Controls.Add(this.btn_customerAdd);
-            this.btn_customerInfo.Controls.Add(this.guna2ComboBox1);
-            this.btn_customerInfo.Controls.Add(this.guna2HtmlLabel1);
-            this.btn_customerInfo.Controls.Add(this.cb_customerStatus);
-            this.btn_customerInfo.Controls.Add(this.lb_customerStatus);
-            this.btn_customerInfo.Controls.Add(this.lb_customerPoint);
-            this.btn_customerInfo.Controls.Add(this.num_customerPoint);
-            this.btn_customerInfo.Controls.Add(this.lb_customerPhone);
-            this.btn_customerInfo.Controls.Add(this.lb_customerAddress);
-            this.btn_customerInfo.Controls.Add(this.lb_customerName);
-            this.btn_customerInfo.Controls.Add(this.rb_customerFemale);
-            this.btn_customerInfo.Controls.Add(this.rb_customerMale);
-            this.btn_customerInfo.Controls.Add(this.txt_customerPhone);
-            this.btn_customerInfo.Controls.Add(this.txt_findCustomer);
-            this.btn_customerInfo.Controls.Add(this.txt_customerAddress);
-            this.btn_customerInfo.Controls.Add(this.lb_customerGender);
-            this.btn_customerInfo.Controls.Add(this.txt_customerName);
-            this.btn_customerInfo.Controls.Add(this.txt_customerID);
-            this.btn_customerInfo.Controls.Add(this.guna2HtmlLabel2);
-            this.btn_customerInfo.Controls.Add(this.lb_customerBirth);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeID);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeDelete);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeSave);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeUpdate);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeAdd);
+            this.btn_customerInfo.Controls.Add(this.cb_employeeRole);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeRole);
+            this.btn_customerInfo.Controls.Add(this.cb_employeeStatus);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeStatus);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeSalary);
+            this.btn_customerInfo.Controls.Add(this.num_employeeSalary);
+            this.btn_customerInfo.Controls.Add(this.lb_employeePhone);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeAddress);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeName);
+            this.btn_customerInfo.Controls.Add(this.rb_employeeFemale);
+            this.btn_customerInfo.Controls.Add(this.rb_employeeMale);
+            this.btn_customerInfo.Controls.Add(this.txt_employeePhone);
+            this.btn_customerInfo.Controls.Add(this.txt_findEmployee);
+            this.btn_customerInfo.Controls.Add(this.txt_employeeAddress);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeGender);
+            this.btn_customerInfo.Controls.Add(this.txt_employeeName);
+            this.btn_customerInfo.Controls.Add(this.txt_employeeID);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeHireDate);
+            this.btn_customerInfo.Controls.Add(this.lb_employeeBirth);
             this.btn_customerInfo.Controls.Add(this.lb_productID);
-            this.btn_customerInfo.Controls.Add(this.guna2DateTimePicker1);
-            this.btn_customerInfo.Controls.Add(this.dtp_customerBirthdate);
-            this.btn_customerInfo.Controls.Add(this.btn_findCustomer);
+            this.btn_customerInfo.Controls.Add(this.dtp_employeeHireDate);
+            this.btn_customerInfo.Controls.Add(this.dtp_employeeBirthdate);
+            this.btn_customerInfo.Controls.Add(this.btn_findEmployee);
             this.btn_customerInfo.Controls.Add(this.dtgv_customerList);
             this.btn_customerInfo.Controls.Add(this.txt_productName);
             this.btn_customerInfo.Controls.Add(this.txt_productID);
@@ -685,68 +685,68 @@
             this.btn_customerInfo.TabIndex = 14;
             this.btn_customerInfo.Text = "Thông tin nhân viên";
             // 
-            // guna2HtmlLabel1
+            // lb_employeeRole
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(721, 148);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(93, 28);
-            this.guna2HtmlLabel1.TabIndex = 21;
-            this.guna2HtmlLabel1.Text = "Chức vụ";
+            this.lb_employeeRole.AutoSize = false;
+            this.lb_employeeRole.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeRole.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeRole.Location = new System.Drawing.Point(721, 148);
+            this.lb_employeeRole.Name = "lb_employeeRole";
+            this.lb_employeeRole.Size = new System.Drawing.Size(93, 28);
+            this.lb_employeeRole.TabIndex = 21;
+            this.lb_employeeRole.Text = "Chức vụ";
             // 
-            // guna2ComboBox1
+            // cb_employeeRole
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.cb_employeeRole.BackColor = System.Drawing.Color.Transparent;
+            this.cb_employeeRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_employeeRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_employeeRole.FocusedColor = System.Drawing.Color.Empty;
+            this.cb_employeeRole.FocusedState.Parent = this.cb_employeeRole;
+            this.cb_employeeRole.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_employeeRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.cb_employeeRole.FormattingEnabled = true;
+            this.cb_employeeRole.HoverState.Parent = this.cb_employeeRole;
+            this.cb_employeeRole.ItemHeight = 30;
+            this.cb_employeeRole.Items.AddRange(new object[] {
             "Manager",
             "Employee"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(721, 177);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(183, 36);
-            this.guna2ComboBox1.TabIndex = 22;
+            this.cb_employeeRole.ItemsAppearance.Parent = this.cb_employeeRole;
+            this.cb_employeeRole.Location = new System.Drawing.Point(721, 177);
+            this.cb_employeeRole.Name = "cb_employeeRole";
+            this.cb_employeeRole.ShadowDecoration.Parent = this.cb_employeeRole;
+            this.cb_employeeRole.Size = new System.Drawing.Size(183, 36);
+            this.cb_employeeRole.TabIndex = 22;
             // 
-            // guna2DateTimePicker1
+            // dtp_employeeHireDate
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(721, 271);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(179, 36);
-            this.guna2DateTimePicker1.TabIndex = 7;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
+            this.dtp_employeeHireDate.CheckedState.Parent = this.dtp_employeeHireDate;
+            this.dtp_employeeHireDate.CustomFormat = "dd/MM/yyyy";
+            this.dtp_employeeHireDate.FillColor = System.Drawing.Color.White;
+            this.dtp_employeeHireDate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_employeeHireDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_employeeHireDate.HoverState.Parent = this.dtp_employeeHireDate;
+            this.dtp_employeeHireDate.Location = new System.Drawing.Point(721, 271);
+            this.dtp_employeeHireDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_employeeHireDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_employeeHireDate.Name = "dtp_employeeHireDate";
+            this.dtp_employeeHireDate.ShadowDecoration.Parent = this.dtp_employeeHireDate;
+            this.dtp_employeeHireDate.Size = new System.Drawing.Size(179, 36);
+            this.dtp_employeeHireDate.TabIndex = 7;
+            this.dtp_employeeHireDate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
-            // guna2HtmlLabel2
+            // lb_employeeHireDate
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(721, 241);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(128, 28);
-            this.guna2HtmlLabel2.TabIndex = 9;
-            this.guna2HtmlLabel2.Text = "Ngày nhận việc";
+            this.lb_employeeHireDate.AutoSize = false;
+            this.lb_employeeHireDate.BackColor = System.Drawing.Color.Transparent;
+            this.lb_employeeHireDate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_employeeHireDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lb_employeeHireDate.Location = new System.Drawing.Point(721, 241);
+            this.lb_employeeHireDate.Name = "lb_employeeHireDate";
+            this.lb_employeeHireDate.Size = new System.Drawing.Size(128, 28);
+            this.lb_employeeHireDate.TabIndex = 9;
+            this.lb_employeeHireDate.Text = "Ngày nhận việc";
             // 
             // us_employeeUI
             // 
@@ -756,7 +756,7 @@
             this.Controls.Add(this.btn_customerInfo);
             this.Name = "us_employeeUI";
             this.Size = new System.Drawing.Size(1177, 531);
-            ((System.ComponentModel.ISupportInitialize)(this.num_customerPoint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_employeeSalary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).EndInit();
             this.btn_customerInfo.ResumeLayout(false);
             this.btn_customerInfo.PerformLayout();
@@ -766,37 +766,37 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerID;
-        private Guna.UI2.WinForms.Guna2Button btn_customerDelete;
-        private Guna.UI2.WinForms.Guna2Button btn_customerSave;
-        private Guna.UI2.WinForms.Guna2Button btn_customerUpdate;
-        private Guna.UI2.WinForms.Guna2Button btn_customerAdd;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_customerStatus;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerStatus;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerPoint;
-        private Guna.UI2.WinForms.Guna2NumericUpDown num_customerPoint;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerPhone;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerAddress;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerName;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_customerFemale;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_customerMale;
-        private Guna.UI2.WinForms.Guna2TextBox txt_customerPhone;
-        private Guna.UI2.WinForms.Guna2TextBox txt_findCustomer;
-        private Guna.UI2.WinForms.Guna2TextBox txt_customerAddress;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerGender;
-        private Guna.UI2.WinForms.Guna2TextBox txt_customerName;
-        private Guna.UI2.WinForms.Guna2TextBox txt_customerID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerBirth;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeID;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeDelete;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeSave;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeUpdate;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeAdd;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_employeeStatus;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeStatus;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeSalary;
+        private Guna.UI2.WinForms.Guna2NumericUpDown num_employeeSalary;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeePhone;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeAddress;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeName;
+        private Guna.UI2.WinForms.Guna2RadioButton rb_employeeFemale;
+        private Guna.UI2.WinForms.Guna2RadioButton rb_employeeMale;
+        private Guna.UI2.WinForms.Guna2TextBox txt_employeePhone;
+        private Guna.UI2.WinForms.Guna2TextBox txt_findEmployee;
+        private Guna.UI2.WinForms.Guna2TextBox txt_employeeAddress;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeGender;
+        private Guna.UI2.WinForms.Guna2TextBox txt_employeeName;
+        private Guna.UI2.WinForms.Guna2TextBox txt_employeeID;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeBirth;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_productID;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_customerBirthdate;
-        private Guna.UI2.WinForms.Guna2Button btn_findCustomer;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_employeeBirthdate;
+        private Guna.UI2.WinForms.Guna2Button btn_findEmployee;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_customerList;
         private Guna.UI2.WinForms.Guna2TextBox txt_productName;
         private Guna.UI2.WinForms.Guna2TextBox txt_productID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_employeeRole;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeRole;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeHireDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_employeeHireDate;
     }
 }
