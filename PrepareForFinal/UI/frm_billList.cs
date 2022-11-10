@@ -16,5 +16,19 @@ namespace PrepareForFinal.UI
         {
             InitializeComponent();
         }
+
+        private void frm_billList_Load(object sender, EventArgs e)
+        {
+            btn_billDelete.Enabled = false;
+            txt_billProductPrice.Enabled = false;
+            txt_billCName.Enabled = false;
+            txt_billEName.Enabled = false; 
+            txt_billID.Enabled = false;
+            txt_billProductName.Enabled = false;
+            txt_billProductPrice.Enabled=false;
+            txt_billQuantity.Enabled = false;
+            txt_billTotalPrice.Enabled = false;
+            dtp_billDate.Enabled = false;
+        }
     }
 }

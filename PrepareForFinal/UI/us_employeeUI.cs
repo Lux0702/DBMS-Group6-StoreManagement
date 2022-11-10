@@ -16,5 +16,47 @@ namespace PrepareForFinal.UI
         {
             InitializeComponent();
         }
+
+        private void us_employeeUI_Load(object sender, EventArgs e)
+        {
+            btn_employeeSave.Enabled = false;
+            btn_employeeCancel.Enabled = false;
+            btn_employeeDelete.Enabled = false;
+        }
+
+        private void btn_employeeAdd_Click(object sender, EventArgs e)
+        {
+            btn_employeeSave.Enabled = true;
+            btn_employeeCancel.Enabled = true;
+            btn_employeeAdd.Enabled = false;
+            btn_employeeUpdate.Enabled = false;
+        }
+
+        private void btn_employeeUpdate_Click(object sender, EventArgs e)
+        {
+            btn_employeeSave.Enabled = true;
+            btn_employeeCancel.Enabled = true;
+            btn_employeeAdd.Enabled = false;
+            btn_employeeUpdate.Enabled = false;
+            txt_employeeID.Enabled = false;
+        }
+
+        private void btn_employeeSave_Click(object sender, EventArgs e)
+        {
+            btn_employeeSave.Enabled = false;
+            btn_employeeCancel.Enabled = false;
+            btn_employeeAdd.Enabled = true;
+            btn_employeeUpdate.Enabled = true;
+            txt_employeeID.Enabled = true;
+        }
+
+        private void btn_employeeCancel_Click(object sender, EventArgs e)
+        {
+            btn_employeeSave.Enabled = false;
+            btn_employeeCancel.Enabled = false;
+            btn_employeeAdd.Enabled = true;
+            btn_employeeUpdate.Enabled = true;
+            txt_employeeID.Enabled = true;
+        }
     }
 }

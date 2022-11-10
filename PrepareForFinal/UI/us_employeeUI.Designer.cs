@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_employeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cb_employeeStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lb_employeeStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_employeeSalary = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.num_employeeSalary = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.lb_employeePhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -53,18 +51,16 @@
             this.dtp_employeeBirthdate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btn_findEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_customerList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_productName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_productID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btn_employeeCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_employeeAdd = new Guna.UI2.WinForms.Guna2Button();
             this.cb_employeeRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lb_employeeRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_employeeHireDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtp_employeeHireDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_productAdd = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_employeeSalary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
@@ -82,47 +78,13 @@
             this.lb_employeeID.TabIndex = 12;
             this.lb_employeeID.Text = "Mã nhân viên";
             // 
-            // cb_employeeStatus
-            // 
-            this.cb_employeeStatus.BackColor = System.Drawing.Color.Transparent;
-            this.cb_employeeStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_employeeStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_employeeStatus.FocusedColor = System.Drawing.Color.Empty;
-            this.cb_employeeStatus.FocusedState.Parent = this.cb_employeeStatus;
-            this.cb_employeeStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_employeeStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.cb_employeeStatus.FormattingEnabled = true;
-            this.cb_employeeStatus.HoverState.Parent = this.cb_employeeStatus;
-            this.cb_employeeStatus.ItemHeight = 30;
-            this.cb_employeeStatus.Items.AddRange(new object[] {
-            "Working",
-            "Retired"});
-            this.cb_employeeStatus.ItemsAppearance.Parent = this.cb_employeeStatus;
-            this.cb_employeeStatus.Location = new System.Drawing.Point(950, 177);
-            this.cb_employeeStatus.Name = "cb_employeeStatus";
-            this.cb_employeeStatus.ShadowDecoration.Parent = this.cb_employeeStatus;
-            this.cb_employeeStatus.Size = new System.Drawing.Size(183, 36);
-            this.cb_employeeStatus.TabIndex = 22;
-            // 
-            // lb_employeeStatus
-            // 
-            this.lb_employeeStatus.AutoSize = false;
-            this.lb_employeeStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lb_employeeStatus.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_employeeStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_employeeStatus.Location = new System.Drawing.Point(950, 148);
-            this.lb_employeeStatus.Name = "lb_employeeStatus";
-            this.lb_employeeStatus.Size = new System.Drawing.Size(93, 28);
-            this.lb_employeeStatus.TabIndex = 21;
-            this.lb_employeeStatus.Text = "Tình trạng";
-            // 
             // lb_employeeSalary
             // 
             this.lb_employeeSalary.AutoSize = false;
             this.lb_employeeSalary.BackColor = System.Drawing.Color.Transparent;
             this.lb_employeeSalary.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_employeeSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_employeeSalary.Location = new System.Drawing.Point(950, 241);
+            this.lb_employeeSalary.Location = new System.Drawing.Point(950, 148);
             this.lb_employeeSalary.Name = "lb_employeeSalary";
             this.lb_employeeSalary.Size = new System.Drawing.Size(93, 28);
             this.lb_employeeSalary.TabIndex = 21;
@@ -147,7 +109,7 @@
             0,
             0,
             0});
-            this.num_employeeSalary.Location = new System.Drawing.Point(950, 270);
+            this.num_employeeSalary.Location = new System.Drawing.Point(950, 177);
             this.num_employeeSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.num_employeeSalary.Maximum = new decimal(new int[] {
             20000000,
@@ -448,43 +410,43 @@
             // dtgv_customerList
             // 
             this.dtgv_customerList.AllowUserToAddRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dtgv_customerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_customerList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_customerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_customerList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_customerList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dtgv_customerList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle23;
             this.dtgv_customerList.EnableHeadersVisualStyles = false;
             this.dtgv_customerList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.Location = new System.Drawing.Point(13, 147);
             this.dtgv_customerList.Name = "dtgv_customerList";
             this.dtgv_customerList.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dtgv_customerList.RowHeadersVisible = false;
             this.dtgv_customerList.RowHeadersWidth = 51;
             this.dtgv_customerList.RowTemplate.Height = 24;
@@ -514,74 +476,20 @@
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // txt_productName
-            // 
-            this.txt_productName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_productName.DefaultText = "";
-            this.txt_productName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_productName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_productName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productName.DisabledState.Parent = this.txt_productName;
-            this.txt_productName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_productName.FocusedState.Parent = this.txt_productName;
-            this.txt_productName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productName.HoverState.Parent = this.txt_productName;
-            this.txt_productName.Location = new System.Drawing.Point(237, 161);
-            this.txt_productName.Margin = new System.Windows.Forms.Padding(6, 19, 6, 19);
-            this.txt_productName.Name = "txt_productName";
-            this.txt_productName.PasswordChar = '\0';
-            this.txt_productName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_productName.PlaceholderText = "";
-            this.txt_productName.SelectedText = "";
-            this.txt_productName.ShadowDecoration.Parent = this.txt_productName;
-            this.txt_productName.Size = new System.Drawing.Size(309, 70);
-            this.txt_productName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_productName.TabIndex = 1;
-            // 
-            // txt_productID
-            // 
-            this.txt_productID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_productID.DefaultText = "";
-            this.txt_productID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_productID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_productID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productID.DisabledState.Parent = this.txt_productID;
-            this.txt_productID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_productID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_productID.FocusedState.Parent = this.txt_productID;
-            this.txt_productID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_productID.HoverState.Parent = this.txt_productID;
-            this.txt_productID.Location = new System.Drawing.Point(20, 161);
-            this.txt_productID.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_productID.Name = "txt_productID";
-            this.txt_productID.PasswordChar = '\0';
-            this.txt_productID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_productID.PlaceholderText = "";
-            this.txt_productID.SelectedText = "";
-            this.txt_productID.ShadowDecoration.Parent = this.txt_productID;
-            this.txt_productID.Size = new System.Drawing.Size(178, 70);
-            this.txt_productID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_productID.TabIndex = 1;
-            // 
             // btn_customerInfo
             // 
             this.btn_customerInfo.BackColor = System.Drawing.Color.Transparent;
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
-            this.btn_customerInfo.Controls.Add(this.guna2Button2);
-            this.btn_customerInfo.Controls.Add(this.btn_productDelete);
-            this.btn_customerInfo.Controls.Add(this.btn_productSave);
-            this.btn_customerInfo.Controls.Add(this.btn_productUpdate);
-            this.btn_customerInfo.Controls.Add(this.btn_productAdd);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeCancel);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeDelete);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeSave);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeUpdate);
+            this.btn_customerInfo.Controls.Add(this.btn_employeeAdd);
             this.btn_customerInfo.Controls.Add(this.lb_employeeID);
             this.btn_customerInfo.Controls.Add(this.cb_employeeRole);
             this.btn_customerInfo.Controls.Add(this.lb_employeeRole);
-            this.btn_customerInfo.Controls.Add(this.cb_employeeStatus);
-            this.btn_customerInfo.Controls.Add(this.lb_employeeStatus);
             this.btn_customerInfo.Controls.Add(this.lb_employeeSalary);
             this.btn_customerInfo.Controls.Add(this.num_employeeSalary);
             this.btn_customerInfo.Controls.Add(this.lb_employeePhone);
@@ -602,8 +510,6 @@
             this.btn_customerInfo.Controls.Add(this.dtp_employeeBirthdate);
             this.btn_customerInfo.Controls.Add(this.btn_findEmployee);
             this.btn_customerInfo.Controls.Add(this.dtgv_customerList);
-            this.btn_customerInfo.Controls.Add(this.txt_productName);
-            this.btn_customerInfo.Controls.Add(this.txt_productID);
             this.btn_customerInfo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_customerInfo.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.btn_customerInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
@@ -615,6 +521,100 @@
             this.btn_customerInfo.Size = new System.Drawing.Size(1171, 525);
             this.btn_customerInfo.TabIndex = 14;
             this.btn_customerInfo.Text = "Thông tin nhân viên";
+            // 
+            // btn_employeeCancel
+            // 
+            this.btn_employeeCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeCancel.BorderRadius = 5;
+            this.btn_employeeCancel.CheckedState.Parent = this.btn_employeeCancel;
+            this.btn_employeeCancel.CustomImages.Parent = this.btn_employeeCancel;
+            this.btn_employeeCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeCancel.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeCancel.HoverState.Parent = this.btn_employeeCancel;
+            this.btn_employeeCancel.Location = new System.Drawing.Point(974, 436);
+            this.btn_employeeCancel.Name = "btn_employeeCancel";
+            this.btn_employeeCancel.ShadowDecoration.Parent = this.btn_employeeCancel;
+            this.btn_employeeCancel.Size = new System.Drawing.Size(75, 49);
+            this.btn_employeeCancel.TabIndex = 39;
+            this.btn_employeeCancel.Text = "Hủy";
+            this.btn_employeeCancel.Click += new System.EventHandler(this.btn_employeeCancel_Click);
+            // 
+            // btn_employeeDelete
+            // 
+            this.btn_employeeDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeDelete.BorderRadius = 5;
+            this.btn_employeeDelete.CheckedState.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.CustomImages.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
+            this.btn_employeeDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeDelete.HoverState.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.Location = new System.Drawing.Point(1060, 436);
+            this.btn_employeeDelete.Name = "btn_employeeDelete";
+            this.btn_employeeDelete.ShadowDecoration.Parent = this.btn_employeeDelete;
+            this.btn_employeeDelete.Size = new System.Drawing.Size(72, 49);
+            this.btn_employeeDelete.TabIndex = 35;
+            this.btn_employeeDelete.Text = "Xóa";
+            // 
+            // btn_employeeSave
+            // 
+            this.btn_employeeSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeSave.BorderRadius = 5;
+            this.btn_employeeSave.CheckedState.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.CustomImages.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeSave.HoverState.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.Location = new System.Drawing.Point(888, 436);
+            this.btn_employeeSave.Name = "btn_employeeSave";
+            this.btn_employeeSave.ShadowDecoration.Parent = this.btn_employeeSave;
+            this.btn_employeeSave.Size = new System.Drawing.Size(75, 49);
+            this.btn_employeeSave.TabIndex = 36;
+            this.btn_employeeSave.Text = "Lưu";
+            this.btn_employeeSave.Click += new System.EventHandler(this.btn_employeeSave_Click);
+            // 
+            // btn_employeeUpdate
+            // 
+            this.btn_employeeUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeUpdate.BorderRadius = 5;
+            this.btn_employeeUpdate.CheckedState.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.CustomImages.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeUpdate.HoverState.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.Location = new System.Drawing.Point(802, 436);
+            this.btn_employeeUpdate.Name = "btn_employeeUpdate";
+            this.btn_employeeUpdate.ShadowDecoration.Parent = this.btn_employeeUpdate;
+            this.btn_employeeUpdate.Size = new System.Drawing.Size(75, 49);
+            this.btn_employeeUpdate.TabIndex = 37;
+            this.btn_employeeUpdate.Text = "Sửa";
+            this.btn_employeeUpdate.Click += new System.EventHandler(this.btn_employeeUpdate_Click);
+            // 
+            // btn_employeeAdd
+            // 
+            this.btn_employeeAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_employeeAdd.BorderRadius = 5;
+            this.btn_employeeAdd.CheckedState.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.CustomImages.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_employeeAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_employeeAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_employeeAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_employeeAdd.HoverState.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.Location = new System.Drawing.Point(716, 436);
+            this.btn_employeeAdd.Name = "btn_employeeAdd";
+            this.btn_employeeAdd.ShadowDecoration.Parent = this.btn_employeeAdd;
+            this.btn_employeeAdd.Size = new System.Drawing.Size(75, 49);
+            this.btn_employeeAdd.TabIndex = 38;
+            this.btn_employeeAdd.Text = "Thêm";
+            this.btn_employeeAdd.Click += new System.EventHandler(this.btn_employeeAdd_Click);
             // 
             // cb_employeeRole
             // 
@@ -679,96 +679,6 @@
             this.dtp_employeeHireDate.TabIndex = 7;
             this.dtp_employeeHireDate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2Button2.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(974, 436);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(75, 49);
-            this.guna2Button2.TabIndex = 39;
-            this.guna2Button2.Text = "Hủy";
-            // 
-            // btn_productDelete
-            // 
-            this.btn_productDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productDelete.BorderRadius = 5;
-            this.btn_productDelete.CheckedState.Parent = this.btn_productDelete;
-            this.btn_productDelete.CustomImages.Parent = this.btn_productDelete;
-            this.btn_productDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
-            this.btn_productDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productDelete.HoverState.Parent = this.btn_productDelete;
-            this.btn_productDelete.Location = new System.Drawing.Point(1060, 436);
-            this.btn_productDelete.Name = "btn_productDelete";
-            this.btn_productDelete.ShadowDecoration.Parent = this.btn_productDelete;
-            this.btn_productDelete.Size = new System.Drawing.Size(72, 49);
-            this.btn_productDelete.TabIndex = 35;
-            this.btn_productDelete.Text = "Xóa";
-            // 
-            // btn_productSave
-            // 
-            this.btn_productSave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productSave.BorderRadius = 5;
-            this.btn_productSave.CheckedState.Parent = this.btn_productSave;
-            this.btn_productSave.CustomImages.Parent = this.btn_productSave;
-            this.btn_productSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_productSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productSave.HoverState.Parent = this.btn_productSave;
-            this.btn_productSave.Location = new System.Drawing.Point(888, 436);
-            this.btn_productSave.Name = "btn_productSave";
-            this.btn_productSave.ShadowDecoration.Parent = this.btn_productSave;
-            this.btn_productSave.Size = new System.Drawing.Size(75, 49);
-            this.btn_productSave.TabIndex = 36;
-            this.btn_productSave.Text = "Lưu";
-            // 
-            // btn_productUpdate
-            // 
-            this.btn_productUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productUpdate.BorderRadius = 5;
-            this.btn_productUpdate.CheckedState.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.CustomImages.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_productUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productUpdate.HoverState.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.Location = new System.Drawing.Point(802, 436);
-            this.btn_productUpdate.Name = "btn_productUpdate";
-            this.btn_productUpdate.ShadowDecoration.Parent = this.btn_productUpdate;
-            this.btn_productUpdate.Size = new System.Drawing.Size(75, 49);
-            this.btn_productUpdate.TabIndex = 37;
-            this.btn_productUpdate.Text = "Sửa";
-            // 
-            // btn_productAdd
-            // 
-            this.btn_productAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_productAdd.BorderRadius = 5;
-            this.btn_productAdd.CheckedState.Parent = this.btn_productAdd;
-            this.btn_productAdd.CustomImages.Parent = this.btn_productAdd;
-            this.btn_productAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_productAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_productAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_productAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_productAdd.HoverState.Parent = this.btn_productAdd;
-            this.btn_productAdd.Location = new System.Drawing.Point(716, 436);
-            this.btn_productAdd.Name = "btn_productAdd";
-            this.btn_productAdd.ShadowDecoration.Parent = this.btn_productAdd;
-            this.btn_productAdd.Size = new System.Drawing.Size(75, 49);
-            this.btn_productAdd.TabIndex = 38;
-            this.btn_productAdd.Text = "Thêm";
-            // 
             // us_employeeUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -777,6 +687,7 @@
             this.Controls.Add(this.btn_customerInfo);
             this.Name = "us_employeeUI";
             this.Size = new System.Drawing.Size(1177, 531);
+            this.Load += new System.EventHandler(this.us_employeeUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.num_employeeSalary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).EndInit();
             this.btn_customerInfo.ResumeLayout(false);
@@ -788,8 +699,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeID;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_employeeStatus;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeStatus;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeSalary;
         private Guna.UI2.WinForms.Guna2NumericUpDown num_employeeSalary;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeePhone;
@@ -808,17 +717,15 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_employeeBirthdate;
         private Guna.UI2.WinForms.Guna2Button btn_findEmployee;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_customerList;
-        private Guna.UI2.WinForms.Guna2TextBox txt_productName;
-        private Guna.UI2.WinForms.Guna2TextBox txt_productID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2ComboBox cb_employeeRole;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeRole;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_employeeHireDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_employeeHireDate;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button btn_productDelete;
-        private Guna.UI2.WinForms.Guna2Button btn_productSave;
-        private Guna.UI2.WinForms.Guna2Button btn_productUpdate;
-        private Guna.UI2.WinForms.Guna2Button btn_productAdd;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeCancel;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeDelete;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeSave;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeUpdate;
+        private Guna.UI2.WinForms.Guna2Button btn_employeeAdd;
     }
 }

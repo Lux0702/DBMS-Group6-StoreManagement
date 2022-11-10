@@ -24,5 +24,35 @@ namespace PrepareForFinal.UI
             this.billListForm.Show();
             this.billListForm.BringToFront();
         }
+
+        private void us_paymentUI_Load(object sender, EventArgs e)
+        {
+            btn_billSave.Enabled = false;
+            btn_billCancel.Enabled = false;
+            btn_billDeleteDetail.Enabled = false;
+            txt_billProductPrice.Enabled = false;
+            txt_billTotalPrice.Enabled = false;
+        }
+
+        private void btn_billSave_Click(object sender, EventArgs e)
+        {
+            btn_billAdd.Enabled = true;
+            btn_billSave.Enabled = false;
+            btn_billCancel.Enabled = false;
+        }
+
+        private void btn_billCancel_Click(object sender, EventArgs e)
+        {
+            btn_billAdd.Enabled = true;
+            btn_billSave.Enabled = false;
+            btn_billCancel.Enabled = false;
+        }
+
+        private void btn_billAdd_Click(object sender, EventArgs e)
+        {
+            btn_billAdd.Enabled = false;
+            btn_billSave.Enabled = true;
+            btn_billCancel.Enabled = true;
+        }
     }
 }

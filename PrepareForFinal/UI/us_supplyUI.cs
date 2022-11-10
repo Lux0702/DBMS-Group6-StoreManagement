@@ -16,5 +16,47 @@ namespace PrepareForFinal.UI
         {
             InitializeComponent();
         }
+
+        private void us_supplyUI_Load(object sender, EventArgs e)
+        {
+            btn_supplySave.Enabled = false;
+            btn_supplyCancel.Enabled = false;
+            btn_supplyDelete.Enabled = false;
+        }
+
+        private void btn_supplyAdd_Click(object sender, EventArgs e)
+        {
+            btn_supplySave.Enabled = true;
+            btn_supplyCancel.Enabled = true;
+            btn_supplyAdd.Enabled = false;
+            btn_supplyUpdate.Enabled = false;
+        }
+
+        private void btn_supplyUpdate_Click(object sender, EventArgs e)
+        {
+            btn_supplySave.Enabled = true;
+            btn_supplyCancel.Enabled = true;
+            btn_supplyAdd.Enabled = false;
+            btn_supplyUpdate.Enabled = false;
+            txt_supplyID.Enabled = false;
+        }
+
+        private void btn_supplySave_Click(object sender, EventArgs e)
+        {
+            btn_supplySave.Enabled = false;
+            btn_supplyCancel.Enabled = false;
+            btn_supplyAdd.Enabled = true;
+            btn_supplyUpdate.Enabled = true;
+            txt_supplyID.Enabled = true;
+        }
+
+        private void btn_supplyCancel_Click(object sender, EventArgs e)
+        {
+            btn_supplySave.Enabled = false;
+            btn_supplyCancel.Enabled = false;
+            btn_supplyAdd.Enabled = true;
+            btn_supplyUpdate.Enabled = true;
+            txt_supplyID.Enabled = true;
+        }
     }
 }
