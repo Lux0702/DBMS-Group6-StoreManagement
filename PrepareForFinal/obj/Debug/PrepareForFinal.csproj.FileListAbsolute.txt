@@ -100,3 +100,5 @@ E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\Prepa
 E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.pdb
 E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.us_supplyUI.resources
 E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.us_PaymentUI.resources
+E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.frm_billList.resources
+E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.frm_typeList.resources

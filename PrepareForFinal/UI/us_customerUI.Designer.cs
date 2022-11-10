@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_customerStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_customerPoint = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.num_customerPoint = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -56,10 +56,11 @@
             this.lb_customerID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
             this.cb_customerStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btn_customerDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_customerAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_productAdd = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.num_customerPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
@@ -403,43 +404,43 @@
             // dtgv_customerList
             // 
             this.dtgv_customerList.AllowUserToAddRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgv_customerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_customerList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_customerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_customerList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_customerList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgv_customerList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtgv_customerList.EnableHeadersVisualStyles = false;
             this.dtgv_customerList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.Location = new System.Drawing.Point(13, 147);
             this.dtgv_customerList.Name = "dtgv_customerList";
             this.dtgv_customerList.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgv_customerList.RowHeadersVisible = false;
             this.dtgv_customerList.RowHeadersWidth = 51;
             this.dtgv_customerList.RowTemplate.Height = 24;
@@ -524,7 +525,7 @@
             // lb_customerID
             // 
             this.lb_customerID.AutoSize = false;
-            this.lb_customerID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.lb_customerID.BackColor = System.Drawing.Color.Transparent;
             this.lb_customerID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_customerID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.lb_customerID.Location = new System.Drawing.Point(14, 53);
@@ -539,11 +540,12 @@
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
+            this.btn_customerInfo.Controls.Add(this.guna2Button2);
+            this.btn_customerInfo.Controls.Add(this.btn_productDelete);
+            this.btn_customerInfo.Controls.Add(this.btn_productSave);
+            this.btn_customerInfo.Controls.Add(this.btn_productUpdate);
+            this.btn_customerInfo.Controls.Add(this.btn_productAdd);
             this.btn_customerInfo.Controls.Add(this.lb_customerID);
-            this.btn_customerInfo.Controls.Add(this.btn_customerDelete);
-            this.btn_customerInfo.Controls.Add(this.btn_customerSave);
-            this.btn_customerInfo.Controls.Add(this.btn_customerUpdate);
-            this.btn_customerInfo.Controls.Add(this.btn_customerAdd);
             this.btn_customerInfo.Controls.Add(this.cb_customerStatus);
             this.btn_customerInfo.Controls.Add(this.lb_customerStatus);
             this.btn_customerInfo.Controls.Add(this.lb_customerPoint);
@@ -568,7 +570,7 @@
             this.btn_customerInfo.Controls.Add(this.txt_productID);
             this.btn_customerInfo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_customerInfo.CustomBorderThickness = new System.Windows.Forms.Padding(0);
-            this.btn_customerInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.btn_customerInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_customerInfo.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_customerInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.Location = new System.Drawing.Point(0, 0);
@@ -600,77 +602,95 @@
             this.cb_customerStatus.Size = new System.Drawing.Size(183, 36);
             this.cb_customerStatus.TabIndex = 22;
             // 
-            // btn_customerDelete
+            // guna2Button2
             // 
-            this.btn_customerDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerDelete.BorderRadius = 5;
-            this.btn_customerDelete.CheckedState.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.CustomImages.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
-            this.btn_customerDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerDelete.HoverState.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.Location = new System.Drawing.Point(1037, 436);
-            this.btn_customerDelete.Name = "btn_customerDelete";
-            this.btn_customerDelete.ShadowDecoration.Parent = this.btn_customerDelete;
-            this.btn_customerDelete.Size = new System.Drawing.Size(94, 49);
-            this.btn_customerDelete.TabIndex = 23;
-            this.btn_customerDelete.Text = "Xóa";
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 5;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2Button2.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(976, 436);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(75, 49);
+            this.guna2Button2.TabIndex = 39;
+            this.guna2Button2.Text = "Hủy";
             // 
-            // btn_customerSave
+            // btn_productDelete
             // 
-            this.btn_customerSave.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerSave.BorderRadius = 5;
-            this.btn_customerSave.CheckedState.Parent = this.btn_customerSave;
-            this.btn_customerSave.CustomImages.Parent = this.btn_customerSave;
-            this.btn_customerSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerSave.HoverState.Parent = this.btn_customerSave;
-            this.btn_customerSave.Location = new System.Drawing.Point(943, 436);
-            this.btn_customerSave.Name = "btn_customerSave";
-            this.btn_customerSave.ShadowDecoration.Parent = this.btn_customerSave;
-            this.btn_customerSave.Size = new System.Drawing.Size(88, 49);
-            this.btn_customerSave.TabIndex = 24;
-            this.btn_customerSave.Text = "Lưu";
+            this.btn_productDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productDelete.BorderRadius = 5;
+            this.btn_productDelete.CheckedState.Parent = this.btn_productDelete;
+            this.btn_productDelete.CustomImages.Parent = this.btn_productDelete;
+            this.btn_productDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(65)))));
+            this.btn_productDelete.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productDelete.HoverState.Parent = this.btn_productDelete;
+            this.btn_productDelete.Location = new System.Drawing.Point(1061, 436);
+            this.btn_productDelete.Name = "btn_productDelete";
+            this.btn_productDelete.ShadowDecoration.Parent = this.btn_productDelete;
+            this.btn_productDelete.Size = new System.Drawing.Size(72, 49);
+            this.btn_productDelete.TabIndex = 35;
+            this.btn_productDelete.Text = "Xóa";
             // 
-            // btn_customerUpdate
+            // btn_productSave
             // 
-            this.btn_customerUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerUpdate.BorderRadius = 5;
-            this.btn_customerUpdate.CheckedState.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.CustomImages.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerUpdate.HoverState.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.Location = new System.Drawing.Point(832, 436);
-            this.btn_customerUpdate.Name = "btn_customerUpdate";
-            this.btn_customerUpdate.ShadowDecoration.Parent = this.btn_customerUpdate;
-            this.btn_customerUpdate.Size = new System.Drawing.Size(105, 49);
-            this.btn_customerUpdate.TabIndex = 25;
-            this.btn_customerUpdate.Text = "Sửa";
+            this.btn_productSave.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productSave.BorderRadius = 5;
+            this.btn_productSave.CheckedState.Parent = this.btn_productSave;
+            this.btn_productSave.CustomImages.Parent = this.btn_productSave;
+            this.btn_productSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productSave.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productSave.HoverState.Parent = this.btn_productSave;
+            this.btn_productSave.Location = new System.Drawing.Point(891, 436);
+            this.btn_productSave.Name = "btn_productSave";
+            this.btn_productSave.ShadowDecoration.Parent = this.btn_productSave;
+            this.btn_productSave.Size = new System.Drawing.Size(75, 49);
+            this.btn_productSave.TabIndex = 36;
+            this.btn_productSave.Text = "Lưu";
             // 
-            // btn_customerAdd
+            // btn_productUpdate
             // 
-            this.btn_customerAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btn_customerAdd.BorderRadius = 5;
-            this.btn_customerAdd.CheckedState.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.CustomImages.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.btn_customerAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customerAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.btn_customerAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.btn_customerAdd.HoverState.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.Location = new System.Drawing.Point(721, 436);
-            this.btn_customerAdd.Name = "btn_customerAdd";
-            this.btn_customerAdd.ShadowDecoration.Parent = this.btn_customerAdd;
-            this.btn_customerAdd.Size = new System.Drawing.Size(105, 49);
-            this.btn_customerAdd.TabIndex = 26;
-            this.btn_customerAdd.Text = "Thêm";
+            this.btn_productUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productUpdate.BorderRadius = 5;
+            this.btn_productUpdate.CheckedState.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.CustomImages.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productUpdate.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productUpdate.HoverState.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.Location = new System.Drawing.Point(806, 436);
+            this.btn_productUpdate.Name = "btn_productUpdate";
+            this.btn_productUpdate.ShadowDecoration.Parent = this.btn_productUpdate;
+            this.btn_productUpdate.Size = new System.Drawing.Size(75, 49);
+            this.btn_productUpdate.TabIndex = 37;
+            this.btn_productUpdate.Text = "Sửa";
+            // 
+            // btn_productAdd
+            // 
+            this.btn_productAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btn_productAdd.BorderRadius = 5;
+            this.btn_productAdd.CheckedState.Parent = this.btn_productAdd;
+            this.btn_productAdd.CustomImages.Parent = this.btn_productAdd;
+            this.btn_productAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.btn_productAdd.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_productAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.btn_productAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.btn_productAdd.HoverState.Parent = this.btn_productAdd;
+            this.btn_productAdd.Location = new System.Drawing.Point(721, 436);
+            this.btn_productAdd.Name = "btn_productAdd";
+            this.btn_productAdd.ShadowDecoration.Parent = this.btn_productAdd;
+            this.btn_productAdd.Size = new System.Drawing.Size(75, 49);
+            this.btn_productAdd.TabIndex = 38;
+            this.btn_productAdd.Text = "Thêm";
             // 
             // us_customerUI
             // 
@@ -714,9 +734,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2ComboBox cb_customerStatus;
-        private Guna.UI2.WinForms.Guna2Button btn_customerDelete;
-        private Guna.UI2.WinForms.Guna2Button btn_customerSave;
-        private Guna.UI2.WinForms.Guna2Button btn_customerUpdate;
-        private Guna.UI2.WinForms.Guna2Button btn_customerAdd;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_productDelete;
+        private Guna.UI2.WinForms.Guna2Button btn_productSave;
+        private Guna.UI2.WinForms.Guna2Button btn_productUpdate;
+        private Guna.UI2.WinForms.Guna2Button btn_productAdd;
     }
 }

@@ -44,11 +44,12 @@
             this.lb_header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_notify = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pn_notify = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.us_paymentUI = new PrepareForFinal.UI.us_paymentUI();
+            this.us_supplyUI = new PrepareForFinal.UI.us_supplyUI();
             this.us_productUI = new PrepareForFinal.UI.us_productUI();
             this.us_customerUI = new PrepareForFinal.UI.us_customerUI();
             this.us_accountUI = new PrepareForFinal.UI.us_accountUI();
             this.us_employeeUI = new PrepareForFinal.UI.us_employeeUI();
-            this.us_supplyUI = new PrepareForFinal.UI.us_supplyUI();
             this.pn_navigation.SuspendLayout();
             this.pn_groupButton.SuspendLayout();
             this.SuspendLayout();
@@ -319,6 +320,22 @@
             this.pn_notify.Text = "WELCOME";
             this.pn_notify.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // us_paymentUI
+            // 
+            this.us_paymentUI.BackColor = System.Drawing.Color.Transparent;
+            this.us_paymentUI.Location = new System.Drawing.Point(0, 139);
+            this.us_paymentUI.Name = "us_paymentUI";
+            this.us_paymentUI.Size = new System.Drawing.Size(1177, 531);
+            this.us_paymentUI.TabIndex = 24;
+            // 
+            // us_supplyUI
+            // 
+            this.us_supplyUI.BackColor = System.Drawing.Color.Transparent;
+            this.us_supplyUI.Location = new System.Drawing.Point(1, 137);
+            this.us_supplyUI.Name = "us_supplyUI";
+            this.us_supplyUI.Size = new System.Drawing.Size(1177, 531);
+            this.us_supplyUI.TabIndex = 23;
+            // 
             // us_productUI
             // 
             this.us_productUI.BackColor = System.Drawing.Color.Transparent;
@@ -326,7 +343,6 @@
             this.us_productUI.Name = "us_productUI";
             this.us_productUI.Size = new System.Drawing.Size(1177, 531);
             this.us_productUI.TabIndex = 1;
-            this.us_productUI.Load += new System.EventHandler(this.us_productUI1_Load);
             // 
             // us_customerUI
             // 
@@ -338,6 +354,7 @@
             // 
             // us_accountUI
             // 
+            this.us_accountUI.BackColor = System.Drawing.Color.Transparent;
             this.us_accountUI.Location = new System.Drawing.Point(3, 140);
             this.us_accountUI.Name = "us_accountUI";
             this.us_accountUI.Size = new System.Drawing.Size(1171, 525);
@@ -351,23 +368,17 @@
             this.us_employeeUI.Size = new System.Drawing.Size(1177, 531);
             this.us_employeeUI.TabIndex = 21;
             // 
-            // us_supplyUI
-            // 
-            this.us_supplyUI.Location = new System.Drawing.Point(1, 137);
-            this.us_supplyUI.Name = "us_supplyUI";
-            this.us_supplyUI.Size = new System.Drawing.Size(1177, 531);
-            this.us_supplyUI.TabIndex = 23;
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
             this.ClientSize = new System.Drawing.Size(1177, 668);
-            this.Controls.Add(this.us_supplyUI);
             this.Controls.Add(this.pn_navigation);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.lb_header);
+            this.Controls.Add(this.us_paymentUI);
+            this.Controls.Add(this.us_supplyUI);
             this.Controls.Add(this.us_productUI);
             this.Controls.Add(this.us_customerUI);
             this.Controls.Add(this.us_accountUI);
@@ -406,5 +417,6 @@
         private us_customerUI us_customerUI;
         private us_accountUI us_accountUI;
         private us_supplyUI us_supplyUI;
+        private us_paymentUI us_paymentUI;
     }
 }

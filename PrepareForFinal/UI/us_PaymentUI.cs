@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace PrepareForFinal.UI
 {
-    public partial class us_PaymentUI : UserControl
+    public partial class us_paymentUI : UserControl
     {
-        public us_PaymentUI()
+        public frm_billList billListForm;
+        public us_paymentUI()
         {
             InitializeComponent();
+        }
+
+        private void btn_billShowList_Click(object sender, EventArgs e)
+        {
+            this.billListForm=new frm_billList();
+            this.billListForm.Show();
+            this.billListForm.BringToFront();
         }
     }
 }
