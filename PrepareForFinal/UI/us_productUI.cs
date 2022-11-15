@@ -133,7 +133,6 @@ namespace PrepareForFinal.UI
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-
                 }
             }
             else

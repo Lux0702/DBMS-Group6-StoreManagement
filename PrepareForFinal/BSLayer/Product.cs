@@ -59,7 +59,7 @@ namespace PrepareForFinal.BSLayer
             cmd.Parameters.AddWithValue("@tid", tid);
 
             db.openConnectionManager();
-            if ((cmd.ExecuteNonQuery() == 1))
+            if (cmd.ExecuteNonQuery() == 1)
             {
                 db.closeConnectionManager();
                 return true;
