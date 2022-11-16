@@ -133,7 +133,6 @@ namespace PrepareForFinal.UI
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-
                 }
             }
             else
@@ -279,6 +278,11 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show("Không xóa được. Lỗi rồi!");
             }
+        }
+
+        private void btn_productGroupButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,12 +18,10 @@ namespace PrepareForFinal.BSLayer
         public Product()
         {
             db = new MyData();
-
         }
 
         public DataSet GetProduct()
         {
-
             return db.ExecuteQueryDataSet("Select * from Product where p_status = 0", CommandType.Text);
         }
 
@@ -33,7 +31,6 @@ namespace PrepareForFinal.BSLayer
             DataSet ds = new DataSet();
             try
             {
-
                 cmd = new SqlCommand("usp_FindProduct", db.getSqlConn);
                 cmd.Parameters.AddWithValue("@sql_findName", pname);
 
@@ -62,7 +59,7 @@ namespace PrepareForFinal.BSLayer
             cmd.Parameters.AddWithValue("@tid", tid);
 
             db.openConnectionManager();
-            if ((cmd.ExecuteNonQuery() == 1))
+            if (cmd.ExecuteNonQuery() == 1)
             {
                 db.closeConnectionManager();
                 return true;
