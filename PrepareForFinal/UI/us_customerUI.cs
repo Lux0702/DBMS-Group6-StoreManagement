@@ -45,7 +45,20 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show("Không load được dữ liệu", MessageBoxIcon.Error.ToString());
             }
+
+            //Cho về trạng thái ban đầu,un-Enabled và Clear dữ liệu trên các Textbox
+            initial_Status();
+        }
+
+        void initial_Status()
+        {
+            not_fillingStatus();
+            clearTextbox();
+
+            btn_customerAdd.Enabled = true;
+            btn_customerUpdate.Enabled = true;
             btn_customerDelete.Enabled = false;
+            btn_customerSave.Enabled = false;
         }
         
         void setDataGridView()
@@ -83,11 +96,43 @@ namespace PrepareForFinal.UI
             }
         }
 
+        void not_fillingStatus()
+        {
+            txt_customerID.Enabled = false;
+            txt_customerName.Enabled = false;
+            rb_customerMale.Enabled = false;
+            rb_customerFemale.Enabled = false;
+            dtp_customerBirthdate.Enabled = false;
+            txt_customerAddress.Enabled = false;
+            txt_customerPhone.Enabled = false;
+            txt_customerPoint.Enabled = false;
+        }
+        
+        void fillingStatus()
+        {
+            txt_customerID.Enabled = true;
+            txt_customerName.Enabled = true;
+            rb_customerMale.Enabled = true;
+            rb_customerFemale.Enabled = true;
+            dtp_customerBirthdate.Enabled = true;
+            txt_customerAddress.Enabled = true;
+            txt_customerPhone.Enabled = true;
+            txt_customerPoint.Enabled = true;
+        }
+
+        void clearTextbox()
+        {
+            txt_customerID.Text = null;
+            txt_customerName.Text = null;
+            txt_customerAddress.Text = null;
+            txt_customerPhone.Text = null;
+            txt_customerPoint.Text = null;
+            txt_findCustomer.Text = null;
+        }
+
         private void us_customerUI_Load(object sender, EventArgs e)
         {
-            txt_customerPoint.Enabled = false;
-            btn_customerSave.Enabled = false;
-            btn_customerCancel.Enabled = false;
+
         }
 
         private void btn_customerAdd_Click(object sender, EventArgs e)
@@ -97,6 +142,9 @@ namespace PrepareForFinal.UI
             btn_customerSave.Enabled = true;
             btn_customerCancel.Enabled = true;
             btn_customerUpdate.Enabled =false;
+
+            //Mở các ô cho phép điền thông tin\
+            fillingStatus();
         }
 
         private void btn_customerUpdate_Click(object sender, EventArgs e)
@@ -115,6 +163,9 @@ namespace PrepareForFinal.UI
             btn_customerSave.Enabled = true;
             btn_customerCancel.Enabled = true;
             btn_customerUpdate.Enabled = false;
+
+            //Mở các ô cho phép điền thông tin\
+            fillingStatus();
             txt_customerID.Enabled = false;
         }
 
@@ -171,21 +222,12 @@ namespace PrepareForFinal.UI
                     MessageBox.Show(ex.Message);
                 }
             }
-
-            btn_customerAdd.Enabled = true;
-            btn_customerSave.Enabled = false;
-            btn_customerCancel.Enabled = false;
-            btn_customerUpdate.Enabled=true;
-            txt_customerID.Enabled = true;
+            initial_Status();
         }
 
         private void btn_customerCancel_Click(object sender, EventArgs e)
         {
-            btn_customerAdd.Enabled = true;
-            btn_customerSave.Enabled = false;
-            btn_customerCancel.Enabled = false;
-            btn_customerUpdate.Enabled = true;
-            txt_customerID.Enabled = true;
+            initial_Status();
         }
 
         private void dtgv_customerList_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -259,6 +301,7 @@ namespace PrepareForFinal.UI
                 }
                 else
                 {
+                    initial_Status();
                     return;
                 }
             }

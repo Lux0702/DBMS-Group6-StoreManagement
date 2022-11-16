@@ -46,8 +46,43 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show(ex.Message);  
             }
-            btn_typeDelete.Enabled = false;
+
+            //Đưa về trạng thái ban đầu, un-enabled và clear các TextBox
+            initial_Status();
         }
+
+        void initial_Status()
+        {
+            not_fillingStatus();
+            clearTextBox();
+
+            btn_typeAdd.Enabled = true;
+            btn_typeUpdate.Enabled = true;
+            btn_typeCancel.Enabled = false;
+            btn_typeSave.Enabled = false;
+            btn_typeDelete.Enabled = false;
+
+        }
+
+        void clearTextBox()
+        {
+            txt_typeID.Text = null;
+            txt_typeName.Text = null;
+            txt_findType.Text = null;
+        }
+
+        void not_fillingStatus()
+        {
+            txt_typeID.Enabled = false;
+            txt_typeName.Enabled = false;
+        }
+
+        void fillingStatus()
+        {
+            txt_typeID.Enabled = true;
+            txt_typeName.Enabled = true;
+        }
+
         private void btn_typeAdd_Click(object sender, EventArgs e)
         {
             addFlag = true;
@@ -56,6 +91,8 @@ namespace PrepareForFinal.UI
             btn_typeSave.Enabled = true;
             btn_typeUpdate.Enabled = false;
             btn_typeAdd.Enabled = false;
+
+            fillingStatus();
         }
 
         private void btn_typeUpdate_Click(object sender, EventArgs e)
@@ -66,15 +103,13 @@ namespace PrepareForFinal.UI
             btn_typeAdd.Enabled = false;
             btn_typeUpdate.Enabled = false;
             txt_typeID.Enabled = false;
+
+            fillingStatus();
         }
 
         private void btn_typeCancel_Click(object sender, EventArgs e)
         {
-            btn_typeCancel.Enabled = false;
-            btn_typeSave.Enabled = false;
-            btn_typeUpdate.Enabled = true;
-            btn_typeAdd.Enabled = true;
-            txt_typeID.Enabled = true;
+            initial_Status();
         }
 
         private void btn_typeSave_Click(object sender, EventArgs e)
@@ -84,14 +119,7 @@ namespace PrepareForFinal.UI
             {
                 try
                 {
-                    if(dbType.addType(txt_typeID.Text.Trim(), txt_typeName.Text.Trim()))
-                    {
-                        MessageBox.Show("Thêm Loại sản phẩm thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm Loại sản phẩm thất bại");
-                    }
+                    dbType.addType(txt_typeID.Text.Trim(), txt_typeName.Text.Trim());
                     addFlag = false;
                     loadData();
                 }
@@ -115,11 +143,7 @@ namespace PrepareForFinal.UI
                 }
             }
 
-            btn_typeCancel.Enabled = false;
-            btn_typeSave.Enabled = false;
-            btn_typeUpdate.Enabled = true;
-            btn_typeAdd.Enabled = true;
-            txt_typeID.Enabled = true;
+            initial_Status();
         }
 
         private void btn_findType_Click(object sender, EventArgs e)
@@ -174,9 +198,11 @@ namespace PrepareForFinal.UI
                 }
                 else
                 {
+                    initial_Status();
                     return;
                 }
             }
+            initial_Status();
         }
 
         private void dtgv_typeList_CellClick(object sender, DataGridViewCellEventArgs e)
