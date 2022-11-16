@@ -64,6 +64,7 @@ namespace PrepareForFinal.UI
             this.btn_showProductUI.BackColor = background2;
             us_productUI.Visible = true;
             us_productUI.BringToFront();
+            us_productUI.LoadData();
         }
 
         private void us_productUI1_Load(object sender, EventArgs e)

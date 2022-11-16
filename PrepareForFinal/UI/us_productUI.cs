@@ -35,7 +35,7 @@ namespace PrepareForFinal.UI
             this.typeListForm.Show();
         }
 
-        void LoadData()
+        public void LoadData()
         {
             try
             {

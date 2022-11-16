@@ -151,7 +151,16 @@ namespace PrepareForFinal.UI
 
             btn_billDeleteDetail.Enabled = true;
 
+            cb_billProductName.Text = dtgv_billDetialList.Rows[row].Cells[0].Value.ToString();
+            num_billProductQuantity.Value = Convert.ToInt32(dtgv_billDetialList.Rows[row].Cells[1].Value);
+            if (cb_billProductName.Text != "")
+            {
+                myDetail = new Detail();
+                double price = Convert.ToDouble(myDetail.getProductPrice(cb_billProductName.Text)) * 1.15;
+                txt_billProductPrice.Text = price.ToString();
 
+                txt_billTotalPrice.Text = (price * (double)num_billProductQuantity.Value).ToString();
+            }
             CustomeDetailDataGridView();
         }
 
@@ -211,8 +220,9 @@ namespace PrepareForFinal.UI
                 }
                 LoadData();
                 CustomeDetailDataGridView();
+                txt_billTotalPay.Text = myBill.getBillTotal(txt_billID.Text);
             }
-            
+
         }
 
         private void cb_billProductName_SelectedIndexChanged(object sender, EventArgs e)
@@ -268,6 +278,31 @@ namespace PrepareForFinal.UI
             dtgv_billDetialList.Columns[3].HeaderText = "Thành tiền";
             dtgv_billDetialList.Columns[4].Visible = false;
             dtgv_billDetialList.Columns[5].Visible = false;
+        }
+
+        private void btn_billDeleteDetail_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (myDetail.deleteDetail(this.txt_billID.Text.Trim(), myDetail.getProductID(cb_billProductName.Text)) == true)
+                {
+                    // Thông báo 
+                    MessageBox.Show("Đã xóa hàng khỏi bill!");
+                    // Cập nhật lại DataGridView 
+                    LoadData();
+                }
+                else
+                {
+                    MessageBox.Show("Xóa hàng khỏi bill không thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không xóa được. Lỗi:" + ex.Message);
+            }
+            LoadData();
+            CustomeDetailDataGridView();
+            txt_billTotalPay.Text = myBill.getBillTotal(txt_billID.Text);
         }
     }
 }
