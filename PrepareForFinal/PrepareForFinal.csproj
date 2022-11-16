@@ -216,8 +216,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BSLayer\Bill.cs" />
+    <Compile Include="BSLayer\Customer.cs" />
     <Compile Include="BSLayer\Detail.cs" />
     <Compile Include="BSLayer\Product.cs" />
+    <Compile Include="BSLayer\TypeProduct.cs" />
     <Compile Include="DBLayer\MyData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
