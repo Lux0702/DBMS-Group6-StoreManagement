@@ -581,7 +581,7 @@
             // txt_customerPoint
             // 
             this.txt_customerPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerPoint.DefaultText = "";
+            this.txt_customerPoint.DefaultText = "0";
             this.txt_customerPoint.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_customerPoint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_customerPoint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -599,6 +599,7 @@
             this.txt_customerPoint.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
             this.txt_customerPoint.PlaceholderText = "";
             this.txt_customerPoint.SelectedText = "";
+            this.txt_customerPoint.SelectionStart = 1;
             this.txt_customerPoint.ShadowDecoration.Parent = this.txt_customerPoint;
             this.txt_customerPoint.Size = new System.Drawing.Size(192, 36);
             this.txt_customerPoint.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
