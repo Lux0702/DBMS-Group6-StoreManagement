@@ -49,6 +49,7 @@ namespace PrepareForFinal.BSLayer
 
         public bool addSupply(string s_id, string name, string address, string phone, string p_id)
         {
+            Console.WriteLine("begin\n" + s_id + name + address + phone + p_id + "end");
             cmd = new SqlCommand("EXEC usp_AddSupply @s_id, @name, @address, @phone, @p_id", db.getSqlConn);
             cmd.Parameters.AddWithValue("@s_id", s_id);
             cmd.Parameters.AddWithValue("@name", name);
@@ -125,17 +126,18 @@ namespace PrepareForFinal.BSLayer
             
         }
 
-        public string getProductID(ComboBox cb_product)
+        public String getProductID(ComboBox cb_product)
         {
             MyData db = new MyData();
             db.openConnectionManager();
             string nameProduct = cb_product.Text;
             cmd = new SqlCommand("Select p_id from Product where p_name = @nameProduct", db.getSqlConn);
             cmd.Parameters.AddWithValue("@nameProduct", nameProduct);
+            cmd.CommandType = CommandType.Text;
             SqlDataReader DR = cmd.ExecuteReader();
             DR.Read();
             db.closeConnectionManager();
-            return DR.ToString();
+            return DR[0].ToString();
         }
 
         public void getListProduct(ComboBox cb_product)

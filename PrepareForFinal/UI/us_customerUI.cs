@@ -73,6 +73,7 @@ namespace PrepareForFinal.UI
             btn_customerUpdate.Enabled = true;
             btn_customerDelete.Enabled = false;
             btn_customerSave.Enabled = false;
+            btn_customerCancel.Enabled = false;
         }
         
         void setDataGridView()
@@ -159,6 +160,11 @@ namespace PrepareForFinal.UI
 
             //Mở các ô cho phép điền thông tin\
             fillingStatus();
+            clearTextbox();
+            txt_customerID.Text = dbCustomer.autoGenerateID();
+            txt_customerID.Enabled = false;
+            txt_customerPoint.Text = "0";
+            txt_customerPoint.Enabled = false;
         }
 
         private void btn_customerUpdate_Click(object sender, EventArgs e)
@@ -177,6 +183,7 @@ namespace PrepareForFinal.UI
             btn_customerSave.Enabled = true;
             btn_customerCancel.Enabled = true;
             btn_customerUpdate.Enabled = false;
+            btn_customerDelete.Enabled = false;
 
             //Mở các ô cho phép điền thông tin\
             fillingStatus();
@@ -185,6 +192,14 @@ namespace PrepareForFinal.UI
 
         private void btn_customerSave_Click(object sender, EventArgs e)
         {
+            if(txt_customerID.Text == "" || txt_customerName.Text == "" || txt_customerAddress.Text == ""
+                || txt_customerPhone.Text == "" || dtp_customerBirthdate.Value.ToString() == "" ||
+                (rb_customerMale.Checked == false && rb_customerFemale.Checked == false))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if(addFlag == true) //Trường hợp thêm Khách hàng
             {
                 try
@@ -200,7 +215,7 @@ namespace PrepareForFinal.UI
                         txt_customerAddress.Text.Trim(),
                         txt_customerPhone.Text.Trim(),
                         //Lấy giá trị điểm trong Textbox, nếu textbox không có dữ liệu thì cho nó bằng 0
-                        txt_customerPoint.Text.Trim() != null ? (int)Convert.ToInt32(txt_customerPoint.Text.Trim()) : 0);
+                        0);
 
                     MessageBox.Show("Thêm khách hàng thành công");
                     addFlag = false;
