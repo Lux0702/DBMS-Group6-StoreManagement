@@ -30,8 +30,8 @@
         {
             this.pn_navigation = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_logout = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblRoleName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblRoleID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pn_groupButton = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_showAccountUI = new Guna.UI2.WinForms.Guna2Button();
             this.btn_showSupplyUI = new Guna.UI2.WinForms.Guna2Button();
@@ -50,6 +50,7 @@
             this.us_customerUI = new PrepareForFinal.UI.us_customerUI();
             this.us_accountUI = new PrepareForFinal.UI.us_accountUI();
             this.us_employeeUI = new PrepareForFinal.UI.us_employeeUI();
+            this.us_staticUI = new PrepareForFinal.UI.us_staticUI();
             this.pn_navigation.SuspendLayout();
             this.pn_groupButton.SuspendLayout();
             this.SuspendLayout();
@@ -58,8 +59,8 @@
             // 
             this.pn_navigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.pn_navigation.Controls.Add(this.btn_logout);
-            this.pn_navigation.Controls.Add(this.guna2HtmlLabel1);
-            this.pn_navigation.Controls.Add(this.guna2HtmlLabel2);
+            this.pn_navigation.Controls.Add(this.lblRoleName);
+            this.pn_navigation.Controls.Add(this.lblRoleID);
             this.pn_navigation.Controls.Add(this.pn_groupButton);
             this.pn_navigation.Location = new System.Drawing.Point(-2, 54);
             this.pn_navigation.Name = "pn_navigation";
@@ -86,29 +87,29 @@
             this.btn_logout.Text = "Thoát";
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
-            // guna2HtmlLabel1
+            // lblRoleName
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1006, 37);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(97, 29);
-            this.guna2HtmlLabel1.TabIndex = 8;
-            this.guna2HtmlLabel1.Text = "Quản lý";
+            this.lblRoleName.AutoSize = false;
+            this.lblRoleName.BackColor = System.Drawing.Color.Transparent;
+            this.lblRoleName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lblRoleName.Location = new System.Drawing.Point(1001, 39);
+            this.lblRoleName.Name = "lblRoleName";
+            this.lblRoleName.Size = new System.Drawing.Size(97, 29);
+            this.lblRoleName.TabIndex = 8;
+            this.lblRoleName.Text = "Nhân viên";
             // 
-            // guna2HtmlLabel2
+            // lblRoleID
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(1006, 19);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(97, 29);
-            this.guna2HtmlLabel2.TabIndex = 8;
-            this.guna2HtmlLabel2.Text = "Admin1";
+            this.lblRoleID.AutoSize = false;
+            this.lblRoleID.BackColor = System.Drawing.Color.Transparent;
+            this.lblRoleID.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoleID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.lblRoleID.Location = new System.Drawing.Point(1006, 19);
+            this.lblRoleID.Name = "lblRoleID";
+            this.lblRoleID.Size = new System.Drawing.Size(97, 29);
+            this.lblRoleID.TabIndex = 8;
+            this.lblRoleID.Text = "Admin1";
             // 
             // pn_groupButton
             // 
@@ -185,6 +186,7 @@
             this.btn_showStatistic.Size = new System.Drawing.Size(138, 38);
             this.btn_showStatistic.TabIndex = 0;
             this.btn_showStatistic.Text = "Thống kê";
+            this.btn_showStatistic.Click += new System.EventHandler(this.btn_showStatistic_Click);
             // 
             // btn_showEmployeeUI
             // 
@@ -327,6 +329,7 @@
             this.us_paymentUI.Name = "us_paymentUI";
             this.us_paymentUI.Size = new System.Drawing.Size(1177, 531);
             this.us_paymentUI.TabIndex = 24;
+            this.us_paymentUI.Load += new System.EventHandler(this.us_paymentUI_Load);
             // 
             // us_supplyUI
             // 
@@ -368,6 +371,13 @@
             this.us_employeeUI.Size = new System.Drawing.Size(1177, 531);
             this.us_employeeUI.TabIndex = 21;
             // 
+            // us_staticUI
+            // 
+            this.us_staticUI.Location = new System.Drawing.Point(1, 139);
+            this.us_staticUI.Name = "us_staticUI";
+            this.us_staticUI.Size = new System.Drawing.Size(1177, 531);
+            this.us_staticUI.TabIndex = 25;
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -384,6 +394,7 @@
             this.Controls.Add(this.us_accountUI);
             this.Controls.Add(this.us_employeeUI);
             this.Controls.Add(this.pn_notify);
+            this.Controls.Add(this.us_staticUI);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -411,12 +422,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_notify;
         private Guna.UI2.WinForms.Guna2HtmlLabel pn_notify;
         private Guna.UI2.WinForms.Guna2Button btn_showAccountUI;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRoleName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRoleID;
         private us_employeeUI us_employeeUI;
         private us_customerUI us_customerUI;
         private us_accountUI us_accountUI;
         private us_supplyUI us_supplyUI;
         private us_paymentUI us_paymentUI;
+        private us_staticUI us_staticUI;
     }
 }

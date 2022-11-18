@@ -62,60 +62,6 @@ namespace PrepareForFinal.BSLayer
             return db.ExecuteQueryDataSet("Select * from dbo.uf_PermissionRole('"+username+"', '"+password+"')", CommandType.Text);
         }
 
-        public bool getRole(string username, string password)
-        {
-            db.openConnectionManager();
-            return true;
-        }
 
-        public DataSet GetData()
-        {
-            db=new MyData();
-            DataSet ds = new DataSet();
-            ds = db.ExecuteQueryDataSet("select * from V_AccountInfo where status = 0", CommandType.Text);
-            return ds;
-        }
-
-        public DataSet findAccount(string aInfo)
-        {
-            db= new MyData();
-            db.openConnectionManager();
-            DataSet ds = new DataSet();
-            try
-            {
-                cmd = new SqlCommand("usp_FindAccount", db.getSqlConn);
-                cmd.Parameters.AddWithValue("@sql_findName", aInfo);
-
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataAdapter da = new SqlDataAdapter(); //Tạo một cầu nối giữa SQl command và Database
-                da.SelectCommand = cmd;
-                da.Fill(ds); //Đưa dữ liệu vừa gọi được vào DataSet
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            return ds;
-        }
-
-        public bool addAccount(string username, string password, string eid)
-        {
-            db = new MyData();
-            cmd = new SqlCommand("EXEC usp_AddAccount @username, @password, @eid", db.getSqlConn);
-            cmd.Parameters.AddWithValue("@username", username);
-            cmd.Parameters.AddWithValue("@password", password);
-            cmd.Parameters.AddWithValue("@eid", eid);
-            db.openConnectionManager();
-            if ((cmd.ExecuteNonQuery() >= 1))
-            {
-                db.closeConnectionManager();
-                return true;
-            }
-            else
-            {
-                db.closeConnectionManager();
-                return false;
-            }
-        }
     }
 }

@@ -287,6 +287,12 @@
     <Compile Include="UI\us_productUI.Designer.cs">
       <DependentUpon>us_productUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\us_staticUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\us_staticUI.Designer.cs">
+      <DependentUpon>us_staticUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\us_supplyUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\us_productUI.resx">
       <DependentUpon>us_productUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\us_staticUI.resx">
+      <DependentUpon>us_staticUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\us_supplyUI.resx">
       <DependentUpon>us_supplyUI.cs</DependentUpon>
