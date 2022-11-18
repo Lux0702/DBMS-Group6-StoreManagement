@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrepareForFinal.BSLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace PrepareForFinal.UI
 {
     public partial class us_supplyUI : UserControl
     {
+
         public us_supplyUI()
         {
             InitializeComponent();
@@ -57,6 +59,11 @@ namespace PrepareForFinal.UI
             btn_supplyAdd.Enabled = true;
             btn_supplyUpdate.Enabled = true;
             txt_supplyID.Enabled = true;
+        }
+
+        private void btn_findSupply_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

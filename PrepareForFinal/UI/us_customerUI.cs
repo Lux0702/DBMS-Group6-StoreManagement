@@ -14,16 +14,30 @@ namespace PrepareForFinal.UI
 {
     public partial class us_customerUI : UserControl
     {
+        public Account tk;
+        public bool isRole;
+
         public us_customerUI()
         {
             InitializeComponent();
-            loadData();
         }
 
         DataTable dtCustomer = new DataTable();
         Customer dbCustomer = new Customer();
 
         bool addFlag;
+
+        public void setRole()
+        {
+            if (isRole == true)
+            {
+                btn_customerDelete.Enabled = true;
+            }
+            if (isRole == false)
+            {
+                btn_customerDelete.Enabled = false;
+            }
+        }
 
         void loadData()
         {
@@ -130,9 +144,9 @@ namespace PrepareForFinal.UI
             txt_findCustomer.Text = null;
         }
 
-        private void us_customerUI_Load(object sender, EventArgs e)
+        public void us_customerUI_Load(object sender, EventArgs e)
         {
-
+            loadData();
         }
 
         private void btn_customerAdd_Click(object sender, EventArgs e)
