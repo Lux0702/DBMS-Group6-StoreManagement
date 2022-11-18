@@ -16,9 +16,16 @@ namespace PrepareForFinal.UI
         public frm_billList billListForm;
         public Bill myBill;
         public Detail myDetail;
-        public DataTable myDataTable;
+        public Product myProduct;
+        public DataTable myDataTable = new DataTable();
         public DataSet myDataSet;
         public List<Control> InputcontrolList = new List<Control>();
+        public List<TemDetail> temDetail = new List<TemDetail>();
+        float sum = 0;
+        Product productList;
+        DataSet prdataset;
+        DataTable prDataTable;
+
         public us_paymentUI()
         {
             InitializeComponent();
@@ -30,7 +37,7 @@ namespace PrepareForFinal.UI
             InputcontrolList.Add(dtp_billDate);
             InputcontrolList.Add(cb_billEmployeeName);
             InputcontrolList.Add(cb_billCustomerName);
-            InputcontrolList.Add(cb_billProductName);
+            InputcontrolList.Add(cb_billTypeName);
             InputcontrolList.Add(num_billProductQuantity);
         }
         private void EnabledInputControl()
@@ -52,11 +59,13 @@ namespace PrepareForFinal.UI
         {
             cb_billCustomerName.Items.Clear();
             cb_billEmployeeName.Items.Clear();
-            cb_billProductName.Items.Clear();
+            cb_billTypeName.Items.Clear();
             txt_billID.Clear();
             txt_billProductPrice.Clear();
-            txt_billTotalPay.Clear();
+            txt_billFinalPay.Clear();
             txt_billTotalPrice.Clear();
+            txt_billInitalPay.Clear();
+            txt_customerPoint.Clear();
             num_billProductQuantity.Value = 1;
         }
         private void btn_billShowList_Click(object sender, EventArgs e)
@@ -72,7 +81,7 @@ namespace PrepareForFinal.UI
             btn_billCancel.Enabled = false;
             btn_billDeleteDetail.Enabled = false;
             txt_billProductPrice.Enabled = false;
-            txt_billTotalPay.Enabled = false;
+            txt_billFinalPay.Enabled = false;
             txt_billTotalPrice.Enabled = false;
             btn_billImportDetail.Enabled = false;
             dtp_billDate.Value = DateTime.Today;
@@ -82,37 +91,65 @@ namespace PrepareForFinal.UI
 
         private void btn_billSave_Click(object sender, EventArgs e)
         {
-            btn_billAdd.Enabled = true;
-            btn_billSave.Enabled = false;
-            btn_billCancel.Enabled = false;
             try
             {
                 String eid = myBill.getEmployeeID(cb_billEmployeeName.Text.ToString());
                 String cid = myBill.getCustomerID(cb_billCustomerName.Text.ToString());
-                if (txt_billID.Enabled == true)
+
+                if (txt_billID.Text == "")
                 {
-                    if (myBill.addBill(txt_billID.Text.Trim(), Convert.ToDateTime(dtp_billDate.Value), (float)0, eid, cid) == true)
-                    {
-                        MessageBox.Show("Thêm hóa đơn thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm hóa đơn không thành công");
-                    }
+                    MessageBox.Show("Vui lòng nhập mã hõa đơn");
                 }
                 else
                 {
-                    MessageBox.Show("Thêm hóa đơn thành công");
+                    if (cb_billEmployeeName.Text == "")
+                    {
+                        MessageBox.Show("Vui lòng chọn nhân viên");
+                    }
+                    else
+                    {
+                        if (cb_billCustomerName.Text == "")
+                        {
+                            MessageBox.Show("Vui lòng chọn khách hàng");
+                        }
+                        else
+                        {
+                            if (myBill.addBill(txt_billID.Text.Trim(), Convert.ToDateTime(dtp_billDate.Value), (float)0, eid, cid) == true)
+                            {
+                                foreach (TemDetail detail in temDetail)
+                                {
+                                    if (myDetail.addDetail(detail.amount, txt_billID.Text, myDetail.getProductID(detail.pname)) == false)
+                                    {
+                                        MessageBox.Show("Thêm hóa đơn không thành công");
+                                        return;
+                                    }
+                                }
+                                MessageBox.Show("Thêm hóa đơn thành công");
+                                btn_billAdd.Enabled = true;
+                                btn_billSave.Enabled = false;
+                                btn_billCancel.Enabled = false;
+                                ClearItems();
+                                UnenabledInputControl();
+                                prDataTable.Clear();
+                                temDetail.Clear();
+                                dtgv_billDetialList.DataSource = ToDataTable(temDetail);
+                                btn_billDeleteDetail.Enabled = false;
+                                btn_billImportDetail.Enabled = false;
+                                sum = 0;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Thêm hóa đơn không thành công");
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Không thể lưu, lỗi: " + ex.Message);
             }
-            ClearItems();
-            UnenabledInputControl();
-            LoadData();
-            btn_billDeleteDetail.Enabled = false;
+
         }
 
         private void btn_billCancel_Click(object sender, EventArgs e)
@@ -120,9 +157,15 @@ namespace PrepareForFinal.UI
             btn_billAdd.Enabled = true;
             btn_billSave.Enabled = false;
             btn_billCancel.Enabled = false;
-            txt_billTotalPay.Enabled = false;
+            txt_billFinalPay.Enabled = false;
             ClearItems();
             UnenabledInputControl();
+            prDataTable.Clear();
+            temDetail.Clear();
+            dtgv_billDetialList.DataSource = ToDataTable(temDetail);
+            btn_billDeleteDetail.Enabled = false;
+            btn_billImportDetail.Enabled = false;
+            sum = 0;
         }
 
         private void btn_billAdd_Click(object sender, EventArgs e)
@@ -131,12 +174,15 @@ namespace PrepareForFinal.UI
             btn_billSave.Enabled = true;
             btn_billCancel.Enabled = true;
             btn_billImportDetail.Enabled = true;
+            btn_findProduct.Enabled = true;
             myBill = new Bill();
             myBill.getEmployeeName(cb_billEmployeeName);
             myBill.getCustomerName(cb_billCustomerName);
-            myBill.getProductName(cb_billProductName);
-            txt_billTotalPay.Text = "0";
+            myBill.getTypeProduct(cb_billTypeName);
+            txt_billFinalPay.Text = sum.ToString();
+            txt_billInitalPay.Text = Math.Round(sum / 10000).ToString();
             EnabledInputControl();
+            LoadProductList();
         }
 
         private void dtgv_billDetialList_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -148,11 +194,84 @@ namespace PrepareForFinal.UI
                 return;
             }
             int row = dtgv_billDetialList.CurrentCell.RowIndex;
-
             btn_billDeleteDetail.Enabled = true;
+        }
 
+        public bool IsList(List<String> list, string variable)
+        {
+            bool result = false;
+            foreach (string item in list)
+            {
+                if (item.Contains(variable) == true)
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
 
-            CustomeDetailDataGridView();
+        public DataTable ToDataTable(List<TemDetail> data)
+        {
+            List<String> productName = new List<String>();
+            DataTable table = new DataTable();
+            for (int i = 0; i < 4; i++)
+            {
+                table.Columns.Add();
+            }
+            foreach (TemDetail item in data)
+            {
+                productName.Add(item.pname);
+            }
+            foreach (TemDetail item in data)
+            {
+                table.Rows.Add(item.ToString());
+            }
+            return table;
+        }
+
+        private void AddToTemDetailList(List<TemDetail> data, TemDetail temDetail)
+        {
+            List<String> productName = new List<String>();
+            foreach (TemDetail item in data)
+            {
+                productName.Add(item.pname);
+            }
+            if (IsList(productName, temDetail.pname) == false)
+            {
+                data.Add(temDetail);
+                sum += temDetail.total;
+            }
+            else
+            {
+                foreach (TemDetail item in data)
+                {
+                    if (item.pname == temDetail.pname)
+                    {
+                        item.amount += temDetail.amount;
+                        sum += temDetail.total;
+                        item.total = item.amount * item.price;
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void DeleteFromDetailList(List<TemDetail> data, string temDetail)
+        {
+            List<String> productName = new List<String>();
+            foreach (TemDetail item in data)
+            {
+                productName.Add(item.pname);
+            }
+            foreach (TemDetail item in data)
+            {
+                if (item.pname == temDetail)
+                {
+                    data.Remove(item);
+                    sum -= item.total;
+                    break;
+                }
+            }
         }
 
         private void btn_billImportDetail_Click(object sender, EventArgs e)
@@ -160,7 +279,31 @@ namespace PrepareForFinal.UI
             String eid = myBill.getEmployeeID(cb_billEmployeeName.Text.ToString());
             String cid = myBill.getCustomerID(cb_billCustomerName.Text.ToString());
 
-            if (cb_billProductName.Text == "" || num_billProductQuantity.Value.ToString() == "" || txt_billProductPrice.Text == "")
+            if (txt_billProductPrice.Text != "" && txt_productName.Text != "" && txt_billTotalPrice.Text != "")
+            {
+                AddToTemDetailList(temDetail, new TemDetail((float)num_billProductQuantity.Value, float.Parse(txt_billProductPrice.Text), txt_productName.Text, float.Parse(txt_billTotalPrice.Text)));
+            }
+            
+            var bindingList = new BindingList<TemDetail>(temDetail);
+            var source = new BindingSource(bindingList, null);
+
+            dtgv_billDetialList.DataSource = ToDataTable(temDetail);
+
+            dtgv_billDetialList.Columns[0].HeaderText = "Sản phẩm";
+            dtgv_billDetialList.Columns[1].HeaderText = "Số lượng";
+            dtgv_billDetialList.Columns[2].HeaderText = "Đơn giá";
+            dtgv_billDetialList.Columns[3].HeaderText = "Thành tiền";
+
+
+            cb_billTypeName.ResetText();
+            num_billProductQuantity.Value = 1;
+            txt_billProductPrice.ResetText();
+            txt_billTotalPrice.ResetText();
+            txt_billFinalPay.Text = sum.ToString();
+            txt_billInitalPay.Text = Math.Round(sum / 10000).ToString();
+            CustomeDetailDataGridView();
+
+            /*if (cb_billProductName.Text == "" || num_billProductQuantity.Value.ToString() == "" || txt_billProductPrice.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin");
             }
@@ -181,7 +324,7 @@ namespace PrepareForFinal.UI
                         num_billProductQuantity.Value = 1;
                         txt_billProductPrice.ResetText();
                         txt_billTotalPrice.ResetText();
-                        txt_billTotalPay.Text = myBill.getBillTotal(txt_billID.Text);
+                        txt_billFinalPay.Text = myBill.getBillTotal(txt_billID.Text);
                     }
                     else
                     {
@@ -202,7 +345,7 @@ namespace PrepareForFinal.UI
                         num_billProductQuantity.Value = 1;
                         txt_billProductPrice.ResetText();
                         txt_billTotalPrice.ResetText();
-                        txt_billTotalPay.Text = myBill.getBillTotal(txt_billID.Text);
+                        txt_billFinalPay.Text = myBill.getBillTotal(txt_billID.Text);
                     }
                     else
                     {
@@ -211,28 +354,43 @@ namespace PrepareForFinal.UI
                 }
                 LoadData();
                 CustomeDetailDataGridView();
-            }
-            
+                txt_billFinalPay.Text = myBill.getBillTotal(txt_billID.Text);
+                txt_billInitalPay.Text = myBill.getBillTotal(txt_billID.Text);
+            }*/
         }
 
         private void cb_billProductName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_billProductName.Text != "")
-            {
-                myDetail = new Detail();
-                double price = Convert.ToDouble(myDetail.getProductPrice(cb_billProductName.Text)) * 1.15;
-                txt_billProductPrice.Text = price.ToString();
+            productList = new Product();
+            prdataset = new DataSet();
+            prDataTable = new DataTable();
+            myProduct = new Product();
+            prdataset = myProduct.findProduct(myProduct.getTypeID(cb_billTypeName.Text));
+            prDataTable = prdataset.Tables[0];
+            dtgv_productList.DataSource = prDataTable;
 
-                txt_billTotalPrice.Text = (price * (double)num_billProductQuantity.Value).ToString();
+            dtgv_productList.AllowUserToAddRows = false;
+            dtgv_productList.AllowUserToResizeColumns = false;
+
+            for (int i = 0; i < 8; i++)
+            {
+                if (i == 6 || i == 3 || i == 5)
+                    continue;
+                dtgv_productList.Columns[i].Visible = false;
             }
+
+            dtgv_productList.Columns[3].HeaderText = "Tên sản phẩm";
+            dtgv_productList.Columns[5].HeaderText = "Giá Nhập";
+            dtgv_productList.Columns[6].HeaderText = "Số lượng";
         }
 
         private void num_billProductQuantity_ValueChanged(object sender, EventArgs e)
         {
+
             myDetail = new Detail();
-            if (cb_billProductName.Text != "")
+            if (txt_productName.Text != "")
             {
-                double price = Convert.ToDouble(myDetail.getProductPrice(cb_billProductName.Text)) * 1.15;
+                double price = Convert.ToDouble(myDetail.getProductPrice(txt_productName.Text)) * 1.15;
                 txt_billTotalPrice.Text = (price * (double)num_billProductQuantity.Value).ToString();
             }
         }
@@ -256,7 +414,6 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show("Lỗi", "Không hiển thị được thông tin, Lỗi: " + ex.Message);
             }
-
         }
 
         private void CustomeDetailDataGridView()
@@ -266,8 +423,124 @@ namespace PrepareForFinal.UI
             dtgv_billDetialList.Columns[1].HeaderText = "Số lượng";
             dtgv_billDetialList.Columns[2].HeaderText = "Đơn giá";
             dtgv_billDetialList.Columns[3].HeaderText = "Thành tiền";
-            dtgv_billDetialList.Columns[4].Visible = false;
-            dtgv_billDetialList.Columns[5].Visible = false;
+        }
+
+        private void btn_billDeleteDetail_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dtgv_billDetialList.Rows.Count < 1)
+                {
+                    return;
+                }
+                int row = dtgv_billDetialList.CurrentCell.RowIndex;
+                myDetail = new Detail();
+
+                string pName = dtgv_billDetialList.Rows[row].Cells[0].Value.ToString();
+                DeleteFromDetailList(temDetail, pName);
+                dtgv_billDetialList.DataSource = ToDataTable(temDetail);
+                txt_billFinalPay.Text = sum.ToString();
+                txt_billInitalPay.Text = Math.Round(sum / 10000).ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không xóa được. Lỗi:" + ex.Message);
+            }
+        }
+
+        private void LoadProductList()
+        {
+            productList = new Product();
+            prdataset = new DataSet();
+            prDataTable = new DataTable();
+            prdataset = productList.GetProduct();
+            prDataTable = prdataset.Tables[0];
+            dtgv_productList.DataSource = prDataTable;
+
+
+            dtgv_productList.AllowUserToAddRows = false;
+            dtgv_productList.AllowUserToResizeColumns = false;
+
+            for (int i = 0; i < 9; i++)
+            {
+                if (i == 6 || i == 3 || i == 5)
+                    continue;
+                dtgv_productList.Columns[i].Visible = false;
+            }
+
+            dtgv_productList.Columns[3].HeaderText = "Tên sản phẩm";
+            dtgv_productList.Columns[5].HeaderText = "Giá";
+            dtgv_productList.Columns[6].HeaderText = "Số lượng";
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_billProductPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgv_productList_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Lấy dòng đang được ấy
+            if (dtgv_productList.Rows.Count < 1)
+            {
+                return;
+            }
+            int row = dtgv_productList.CurrentCell.RowIndex;
+            myDetail = new Detail();
+
+            cb_billTypeName.Text = dtgv_productList.Rows[row].Cells[7].Value.ToString();
+            txt_productName.Text = dtgv_productList.Rows[row].Cells[3].Value.ToString();
+            double price = Convert.ToDouble(myDetail.getProductPrice(txt_productName.Text)) * 1.15;
+            txt_billProductPrice.Text = price.ToString();
+            txt_billTotalPrice.Text = (price * (double)num_billProductQuantity.Value).ToString();
+        }
+
+        private void btn_findProduct_Click(object sender, EventArgs e)
+        {
+            productList = new Product();
+            prdataset = new DataSet();
+            prDataTable = new DataTable();
+            myProduct = new Product();
+            prdataset = myProduct.findProduct(txt_productFindString.Text);
+            prDataTable = prdataset.Tables[0];
+            dtgv_productList.DataSource = prDataTable;
+
+            dtgv_productList.AllowUserToAddRows = false;
+            dtgv_productList.AllowUserToResizeColumns = false;
+
+            for (int i = 0; i < 8; i++)
+            {
+                if (i == 6 || i == 3 || i == 5)
+                    continue;
+                dtgv_productList.Columns[i].Visible = false;
+            }
+
+            dtgv_productList.Columns[3].HeaderText = "Tên sản phẩm";
+            dtgv_productList.Columns[5].HeaderText = "Giá Nhập";
+            dtgv_productList.Columns[6].HeaderText = "Số lượng";
+        }
+
+        private void cb_billCustomerName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_billCustomerName.Text != "")
+            {
+                myBill = new Bill();
+                txt_customerPoint.Text = myBill.getCustomerPoint(cb_billCustomerName.Text);
+            }
+        }
+
+        private void cb_billCustomerName_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (cb_billCustomerName.Text != "")
+            {
+                myBill = new Bill();
+                txt_customerPoint.Text = myBill.getCustomerPoint(cb_billCustomerName.Text);
+            }
         }
     }
 }

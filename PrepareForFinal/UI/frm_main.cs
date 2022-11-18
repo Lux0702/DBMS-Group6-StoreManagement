@@ -13,7 +13,7 @@ namespace PrepareForFinal.UI
 {
     public partial class frm_main : Form
     {
-        Color background1 = Color.FromArgb(242, 222, 186); // Màu da đậm
+        Color background1 = Color.FromArgb(242, 222, 186); // Màu da đậm 
         Color background2 = Color.FromArgb(255, 239, 214); // Màu da nhạt
 
         public Account tk;
@@ -29,6 +29,7 @@ namespace PrepareForFinal.UI
         {
             hideUIItem();
             setRole();
+
         }
 
         public void setRole()
@@ -39,12 +40,17 @@ namespace PrepareForFinal.UI
                 btn_showEmployeeUI.Enabled = false;
                 btn_showAccountUI.Enabled = false;
                 btn_showStatistic.Enabled = false;
+                lblRoleID.Text = tk.eid;
+                lblRoleName.Text = "NV";
+
             }
             if(isRole == true)
             {
                 btn_showEmployeeUI.Enabled = true;
                 btn_showAccountUI.Enabled = true;
                 btn_showStatistic.Enabled = true;
+                lblRoleID.Text = tk.eid;
+                lblRoleName.Text = "Quản lý";
             }
         }
 
@@ -56,6 +62,7 @@ namespace PrepareForFinal.UI
             this.us_accountUI.Visible = false;
             this.us_supplyUI.Visible = false;
             this.us_paymentUI.Visible = false;
+            this.us_staticUI.Visible = false;
         }
 
         private void makeDefaulColor()
@@ -69,6 +76,7 @@ namespace PrepareForFinal.UI
             this.btn_showSupplyUI.BackColor = background1;
             this.btn_showAccountUI.BackColor = background1;
             this.pn_navigation.BackColor= background1;
+            this.btn_showStatistic.BackColor = background1;
         }
        
 
@@ -93,7 +101,6 @@ namespace PrepareForFinal.UI
             us_productUI.Visible = true;
             us_productUI.us_productUI_Load(sender, e);
             us_productUI.BringToFront();
-            MessageBox.Show(us_productUI.isRole.ToString());
         }
 
         private void us_productUI1_Load(object sender, EventArgs e)
@@ -104,6 +111,7 @@ namespace PrepareForFinal.UI
         private void btn_logout_Click(object sender, EventArgs e)
         {
             this.Close();
+
         }
 
         private void btn_showEmployeeUI_Click(object sender, EventArgs e)
@@ -150,6 +158,21 @@ namespace PrepareForFinal.UI
             this.btn_showSupplyUI.BackColor = background2;
             us_supplyUI.Visible = true;
             us_supplyUI.BringToFront();
+        }
+
+        private void us_paymentUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_showStatistic_Click(object sender, EventArgs e)
+        {
+            pn_notify.Text = "Đây là trang thống kê";
+            makeDefaulColor();
+            hideUIItem();
+            this.btn_showStatistic.BackColor = background2;
+            us_staticUI.Visible = true;
+            us_staticUI.BringToFront();
         }
     }
 }

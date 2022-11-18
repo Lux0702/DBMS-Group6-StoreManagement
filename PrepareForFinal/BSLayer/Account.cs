@@ -62,13 +62,6 @@ namespace PrepareForFinal.BSLayer
             return db.ExecuteQueryDataSet("Select * from dbo.uf_PermissionRole('"+username+"', '"+password+"')", CommandType.Text);
         }
 
-        public bool getRole(string username, string password)
-        {
-            db.openConnectionManager();
-
-            
-            return true;
-        }
 
     }
 }

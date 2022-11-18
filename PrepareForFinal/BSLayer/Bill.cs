@@ -126,6 +126,22 @@ namespace PrepareForFinal.BSLayer
             db.closeConnectionManager();
         }
 
+        public String getCustomerPoint(string cName)
+        {
+            db = new MyData();
+            db.openConnectionManager();
+            cm = new SqlCommand("Select c_point from Customer where c_name=@cName and c_status=0", db.getSqlConn);
+            cm.Parameters.AddWithValue("@cName", cName);
+            SqlDataReader DR = cm.ExecuteReader();
+            String cpoint = "";
+            while (DR.Read())
+            {
+                cpoint = DR[0].ToString();
+            }
+            db.closeConnectionManager();
+            return cpoint;
+        }
+
         public void getProductName(ComboBox cb_product)
         {
             //Dùng để lấy loại sản phẩm để load lên combobox
@@ -184,7 +200,7 @@ namespace PrepareForFinal.BSLayer
             cm.Parameters.AddWithValue("@eid", eid);
             cm.Parameters.AddWithValue("@cid", cid);
             db.openConnectionManager();
-            if ((cm.ExecuteNonQuery() == 1))
+            if ((cm.ExecuteNonQuery() >= 1))
             {
                 db.closeConnectionManager();
                 return true;
@@ -202,7 +218,7 @@ namespace PrepareForFinal.BSLayer
             cm = new SqlCommand("Exec usp_DeleteBill @bid", db.getSqlConn);
             cm.Parameters.AddWithValue("@bid", bid);
             db.openConnectionManager();
-            if ((cm.ExecuteNonQuery() == 1))
+            if ((cm.ExecuteNonQuery() >= 1))
             {
                 db.closeConnectionManager();
                 return true;
@@ -229,6 +245,23 @@ namespace PrepareForFinal.BSLayer
             db.closeConnectionManager();
             return btotalPay;
         }
+
+        public void getTypeProduct(ComboBox cb_product)
+        { //Dùng để lấy loại sản phẩm để load lên combobox
+            MyData db = new MyData();
+            string Sql = "Select * from Type_Product where t_status = 0";
+            db.openConnectionManager();
+            SqlCommand cmd = new SqlCommand(Sql, db.getSqlConn);
+            SqlDataReader DR = cmd.ExecuteReader();
+
+            while (DR.Read())
+            {
+                cb_product.Items.Add(DR[1]);
+            }
+            db.closeConnectionManager();
+        }
+
+        
     }
 
 }

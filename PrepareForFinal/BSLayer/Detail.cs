@@ -37,7 +37,7 @@ namespace PrepareForFinal.BSLayer
             cm.Parameters.AddWithValue("@bid", bid);
             cm.Parameters.AddWithValue("@pid", pid);
             db.openConnectionManager();
-            if (cm.ExecuteNonQuery()==2)
+            if (cm.ExecuteNonQuery()>=2)
             {
                 db.closeConnectionManager();
                 return true;
@@ -79,6 +79,25 @@ namespace PrepareForFinal.BSLayer
             }
             db.closeConnectionManager();
             return pPrice;
+        }
+
+        public bool deleteDetail(string bid, string pid)
+        {
+            db = new MyData();
+            cm = new SqlCommand("Exec usp_DeleteDetail @bid, @pid", db.getSqlConn);
+            cm.Parameters.AddWithValue("@bid", bid);
+            cm.Parameters.AddWithValue("@pid", pid);
+            db.openConnectionManager();
+            if ((cm.ExecuteNonQuery() >= 1))
+            {
+                db.closeConnectionManager();
+                return true;
+            }
+            else
+            {
+                db.closeConnectionManager();
+                return false;
+            }
         }
 
     }

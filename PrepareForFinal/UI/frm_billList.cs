@@ -26,7 +26,7 @@ namespace PrepareForFinal.UI
         private void UnenableInputControl()
         {
             btn_billDelete.Enabled = false;
-            txt_billProductPrice.Enabled = false;
+            txt_billProductPrice.Enabled = false; 
             txt_billCName.Enabled = false;
             txt_billEName.Enabled = false;
             txt_billID.Enabled = false;

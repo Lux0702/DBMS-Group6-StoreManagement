@@ -19,7 +19,7 @@ namespace PrepareForFinal.UI
         Account account = new Account();
 
         public frm_login()
-        {
+        { 
             InitializeComponent();
         }
 
