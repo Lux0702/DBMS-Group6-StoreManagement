@@ -35,9 +35,6 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.lb_header = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_role = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rb_manger = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rb_employee = new Guna.UI2.WinForms.Guna2RadioButton();
             this.SuspendLayout();
             // 
             // lb_username
@@ -141,7 +138,7 @@
             this.btn_login.ForeColor = System.Drawing.Color.White;
             this.btn_login.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.btn_login.HoverState.Parent = this.btn_login;
-            this.btn_login.Location = new System.Drawing.Point(67, 367);
+            this.btn_login.Location = new System.Drawing.Point(67, 341);
             this.btn_login.Name = "btn_login";
             this.btn_login.ShadowDecoration.Parent = this.btn_login;
             this.btn_login.Size = new System.Drawing.Size(267, 45);
@@ -163,78 +160,15 @@
             this.lb_header.Text = "Đăng nhập vào hệ thống";
             this.lb_header.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lb_role
-            // 
-            this.lb_role.AutoSize = false;
-            this.lb_role.BackColor = System.Drawing.Color.Transparent;
-            this.lb_role.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.lb_role.Location = new System.Drawing.Point(67, 273);
-            this.lb_role.Name = "lb_role";
-            this.lb_role.Size = new System.Drawing.Size(147, 24);
-            this.lb_role.TabIndex = 0;
-            this.lb_role.Text = "Vai trò";
-            // 
-            // rb_manger
-            // 
-            this.rb_manger.AutoSize = true;
-            this.rb_manger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rb_manger.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_manger.CheckedState.BorderThickness = 0;
-            this.rb_manger.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.rb_manger.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_manger.CheckedState.InnerOffset = -4;
-            this.rb_manger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rb_manger.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_manger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_manger.Location = new System.Drawing.Point(96, 303);
-            this.rb_manger.Name = "rb_manger";
-            this.rb_manger.Size = new System.Drawing.Size(78, 27);
-            this.rb_manger.TabIndex = 6;
-            this.rb_manger.TabStop = true;
-            this.rb_manger.Text = "Quản lý";
-            this.rb_manger.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_manger.UncheckedState.BorderThickness = 2;
-            this.rb_manger.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_manger.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_manger.UseVisualStyleBackColor = true;
-            // 
-            // rb_employee
-            // 
-            this.rb_employee.AutoSize = true;
-            this.rb_employee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rb_employee.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_employee.CheckedState.BorderThickness = 0;
-            this.rb_employee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.rb_employee.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rb_employee.CheckedState.InnerOffset = -4;
-            this.rb_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rb_employee.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_employee.Location = new System.Drawing.Point(216, 303);
-            this.rb_employee.Name = "rb_employee";
-            this.rb_employee.Size = new System.Drawing.Size(93, 27);
-            this.rb_employee.TabIndex = 6;
-            this.rb_employee.TabStop = true;
-            this.rb_employee.Text = "Nhân viên";
-            this.rb_employee.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.rb_employee.UncheckedState.BorderThickness = 2;
-            this.rb_employee.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rb_employee.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rb_employee.UseVisualStyleBackColor = true;
-            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(401, 454);
-            this.Controls.Add(this.rb_employee);
-            this.Controls.Add(this.rb_manger);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.lb_role);
             this.Controls.Add(this.lb_password);
             this.Controls.Add(this.txt_username);
             this.Controls.Add(this.lb_username);
@@ -245,7 +179,6 @@
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.frm_login_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -258,8 +191,5 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button btn_login;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_header;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_role;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_manger;
-        private Guna.UI2.WinForms.Guna2RadioButton rb_employee;
     }
 }

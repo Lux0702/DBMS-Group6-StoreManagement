@@ -210,3 +210,4 @@ D:\HK5\Database Management System\Project\Demo\DBMS-Group6-StoreManagement\Prepa
 D:\HK5\Database Management System\Project\Demo\DBMS-Group6-StoreManagement\PrepareForFinal\bin\Debug\System.Threading.AccessControl.xml
 D:\HK5\Database Management System\Project\Demo\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.csproj.Fody.CopyLocal.cache
 D:\HK5\Database Management System\Project\Demo\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.csproj.CopyComplete
+E:\Workspace\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.us_staticUI.resources
