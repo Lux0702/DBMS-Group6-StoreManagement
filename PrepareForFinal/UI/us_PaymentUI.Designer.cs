@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_BillInfo = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.cb_billCustomerName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cb_billEmployeeName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtp_billDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txt_employeeID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_billID = new Guna.UI2.WinForms.Guna2TextBox();
             this.lb_billCustomerName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_billEmployeeName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_billDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,6 +46,9 @@
             this.btn_billSave = new Guna.UI2.WinForms.Guna2Button();
             this.btn_billAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txt_billTotalPay = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_billProductPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_billTotalPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.num_billProductQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cb_billProductName = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -56,7 +59,6 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_billProductPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_BillInfo.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
@@ -97,7 +99,7 @@
             this.guna2GroupBox1.Controls.Add(this.cb_billCustomerName);
             this.guna2GroupBox1.Controls.Add(this.cb_billEmployeeName);
             this.guna2GroupBox1.Controls.Add(this.dtp_billDate);
-            this.guna2GroupBox1.Controls.Add(this.txt_employeeID);
+            this.guna2GroupBox1.Controls.Add(this.txt_billID);
             this.guna2GroupBox1.Controls.Add(this.lb_billCustomerName);
             this.guna2GroupBox1.Controls.Add(this.lb_billEmployeeName);
             this.guna2GroupBox1.Controls.Add(this.lb_billDate);
@@ -127,9 +129,6 @@
             this.cb_billCustomerName.FormattingEnabled = true;
             this.cb_billCustomerName.HoverState.Parent = this.cb_billCustomerName;
             this.cb_billCustomerName.ItemHeight = 30;
-            this.cb_billCustomerName.Items.AddRange(new object[] {
-            "Using",
-            "Deleted"});
             this.cb_billCustomerName.ItemsAppearance.Parent = this.cb_billCustomerName;
             this.cb_billCustomerName.Location = new System.Drawing.Point(651, 66);
             this.cb_billCustomerName.Name = "cb_billCustomerName";
@@ -150,9 +149,6 @@
             this.cb_billEmployeeName.FormattingEnabled = true;
             this.cb_billEmployeeName.HoverState.Parent = this.cb_billEmployeeName;
             this.cb_billEmployeeName.ItemHeight = 30;
-            this.cb_billEmployeeName.Items.AddRange(new object[] {
-            "Using",
-            "Deleted"});
             this.cb_billEmployeeName.ItemsAppearance.Parent = this.cb_billEmployeeName;
             this.cb_billEmployeeName.Location = new System.Drawing.Point(430, 67);
             this.cb_billEmployeeName.Name = "cb_billEmployeeName";
@@ -178,32 +174,32 @@
             this.dtp_billDate.TabIndex = 16;
             this.dtp_billDate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
-            // txt_employeeID
+            // txt_billID
             // 
-            this.txt_employeeID.BackColor = System.Drawing.Color.Transparent;
-            this.txt_employeeID.BorderRadius = 5;
-            this.txt_employeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_employeeID.DefaultText = "";
-            this.txt_employeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_employeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_employeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_employeeID.DisabledState.Parent = this.txt_employeeID;
-            this.txt_employeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_employeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_employeeID.FocusedState.Parent = this.txt_employeeID;
-            this.txt_employeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_employeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_employeeID.HoverState.Parent = this.txt_employeeID;
-            this.txt_employeeID.Location = new System.Drawing.Point(15, 66);
-            this.txt_employeeID.Margin = new System.Windows.Forms.Padding(8, 23, 8, 23);
-            this.txt_employeeID.Name = "txt_employeeID";
-            this.txt_employeeID.PasswordChar = '\0';
-            this.txt_employeeID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_employeeID.PlaceholderText = "";
-            this.txt_employeeID.SelectedText = "";
-            this.txt_employeeID.ShadowDecoration.Parent = this.txt_employeeID;
-            this.txt_employeeID.Size = new System.Drawing.Size(192, 37);
-            this.txt_employeeID.TabIndex = 15;
+            this.txt_billID.BackColor = System.Drawing.Color.Transparent;
+            this.txt_billID.BorderRadius = 5;
+            this.txt_billID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_billID.DefaultText = "";
+            this.txt_billID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_billID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_billID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billID.DisabledState.Parent = this.txt_billID;
+            this.txt_billID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billID.FocusedState.Parent = this.txt_billID;
+            this.txt_billID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billID.HoverState.Parent = this.txt_billID;
+            this.txt_billID.Location = new System.Drawing.Point(15, 66);
+            this.txt_billID.Margin = new System.Windows.Forms.Padding(8, 23, 8, 23);
+            this.txt_billID.Name = "txt_billID";
+            this.txt_billID.PasswordChar = '\0';
+            this.txt_billID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_billID.PlaceholderText = "";
+            this.txt_billID.SelectedText = "";
+            this.txt_billID.ShadowDecoration.Parent = this.txt_billID;
+            this.txt_billID.Size = new System.Drawing.Size(192, 37);
+            this.txt_billID.TabIndex = 15;
             // 
             // lb_billCustomerName
             // 
@@ -338,6 +334,8 @@
             this.guna2GroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.guna2GroupBox2.BorderRadius = 5;
             this.guna2GroupBox2.BorderThickness = 2;
+            this.guna2GroupBox2.Controls.Add(this.txt_billTotalPay);
+            this.guna2GroupBox2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GroupBox2.Controls.Add(this.txt_billProductPrice);
             this.guna2GroupBox2.Controls.Add(this.txt_billTotalPrice);
             this.guna2GroupBox2.Controls.Add(this.num_billProductQuantity);
@@ -360,6 +358,72 @@
             this.guna2GroupBox2.Size = new System.Drawing.Size(1127, 325);
             this.guna2GroupBox2.TabIndex = 27;
             this.guna2GroupBox2.Text = "Thông tin chi tiết";
+            // 
+            // txt_billTotalPay
+            // 
+            this.txt_billTotalPay.BackColor = System.Drawing.Color.Transparent;
+            this.txt_billTotalPay.BorderRadius = 5;
+            this.txt_billTotalPay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_billTotalPay.DefaultText = "";
+            this.txt_billTotalPay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_billTotalPay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_billTotalPay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billTotalPay.DisabledState.Parent = this.txt_billTotalPay;
+            this.txt_billTotalPay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billTotalPay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billTotalPay.FocusedState.Parent = this.txt_billTotalPay;
+            this.txt_billTotalPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billTotalPay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billTotalPay.HoverState.Parent = this.txt_billTotalPay;
+            this.txt_billTotalPay.Location = new System.Drawing.Point(911, 270);
+            this.txt_billTotalPay.Margin = new System.Windows.Forms.Padding(21, 169, 21, 169);
+            this.txt_billTotalPay.Name = "txt_billTotalPay";
+            this.txt_billTotalPay.PasswordChar = '\0';
+            this.txt_billTotalPay.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_billTotalPay.PlaceholderText = "";
+            this.txt_billTotalPay.SelectedText = "";
+            this.txt_billTotalPay.ShadowDecoration.Parent = this.txt_billTotalPay;
+            this.txt_billTotalPay.Size = new System.Drawing.Size(195, 42);
+            this.txt_billTotalPay.TabIndex = 28;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(815, 277);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(177, 40);
+            this.guna2HtmlLabel1.TabIndex = 27;
+            this.guna2HtmlLabel1.Text = "Thành tiền";
+            // 
+            // txt_billProductPrice
+            // 
+            this.txt_billProductPrice.BackColor = System.Drawing.Color.Transparent;
+            this.txt_billProductPrice.BorderRadius = 5;
+            this.txt_billProductPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_billProductPrice.DefaultText = "";
+            this.txt_billProductPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_billProductPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_billProductPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billProductPrice.DisabledState.Parent = this.txt_billProductPrice;
+            this.txt_billProductPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_billProductPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billProductPrice.FocusedState.Parent = this.txt_billProductPrice;
+            this.txt_billProductPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billProductPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_billProductPrice.HoverState.Parent = this.txt_billProductPrice;
+            this.txt_billProductPrice.Location = new System.Drawing.Point(541, 69);
+            this.txt_billProductPrice.Margin = new System.Windows.Forms.Padding(21, 169, 21, 169);
+            this.txt_billProductPrice.Name = "txt_billProductPrice";
+            this.txt_billProductPrice.PasswordChar = '\0';
+            this.txt_billProductPrice.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_billProductPrice.PlaceholderText = "";
+            this.txt_billProductPrice.SelectedText = "";
+            this.txt_billProductPrice.ShadowDecoration.Parent = this.txt_billProductPrice;
+            this.txt_billProductPrice.Size = new System.Drawing.Size(139, 36);
+            this.txt_billProductPrice.TabIndex = 15;
             // 
             // txt_billTotalPrice
             // 
@@ -409,11 +473,22 @@
             0,
             0,
             0});
+            this.num_billProductQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.num_billProductQuantity.Name = "num_billProductQuantity";
             this.num_billProductQuantity.ShadowDecoration.Parent = this.num_billProductQuantity;
             this.num_billProductQuantity.Size = new System.Drawing.Size(106, 36);
             this.num_billProductQuantity.TabIndex = 25;
             this.num_billProductQuantity.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.num_billProductQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.num_billProductQuantity.ValueChanged += new System.EventHandler(this.num_billProductQuantity_ValueChanged);
             // 
             // cb_billProductName
             // 
@@ -428,43 +503,41 @@
             this.cb_billProductName.FormattingEnabled = true;
             this.cb_billProductName.HoverState.Parent = this.cb_billProductName;
             this.cb_billProductName.ItemHeight = 30;
-            this.cb_billProductName.Items.AddRange(new object[] {
-            "Using",
-            "Deleted"});
             this.cb_billProductName.ItemsAppearance.Parent = this.cb_billProductName;
             this.cb_billProductName.Location = new System.Drawing.Point(15, 69);
             this.cb_billProductName.Name = "cb_billProductName";
             this.cb_billProductName.ShadowDecoration.Parent = this.cb_billProductName;
             this.cb_billProductName.Size = new System.Drawing.Size(381, 36);
             this.cb_billProductName.TabIndex = 24;
+            this.cb_billProductName.SelectedIndexChanged += new System.EventHandler(this.cb_billProductName_SelectedIndexChanged);
             // 
             // dtgv_billDetialList
             // 
             this.dtgv_billDetialList.AllowUserToAddRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dtgv_billDetialList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dtgv_billDetialList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dtgv_billDetialList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_billDetialList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_billDetialList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_billDetialList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_billDetialList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_billDetialList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_billDetialList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dtgv_billDetialList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_billDetialList.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_billDetialList.DefaultCellStyle = dataGridViewCellStyle18;
             this.dtgv_billDetialList.EnableHeadersVisualStyles = false;
             this.dtgv_billDetialList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_billDetialList.Location = new System.Drawing.Point(15, 121);
@@ -474,7 +547,7 @@
             this.dtgv_billDetialList.RowHeadersWidth = 51;
             this.dtgv_billDetialList.RowTemplate.Height = 24;
             this.dtgv_billDetialList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_billDetialList.Size = new System.Drawing.Size(1091, 186);
+            this.dtgv_billDetialList.Size = new System.Drawing.Size(1091, 136);
             this.dtgv_billDetialList.TabIndex = 26;
             this.dtgv_billDetialList.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dtgv_billDetialList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -498,6 +571,7 @@
             this.dtgv_billDetialList.ThemeStyle.RowsStyle.Height = 24;
             this.dtgv_billDetialList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_billDetialList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgv_billDetialList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_billDetialList_CellClick);
             // 
             // btn_billImportDetail
             // 
@@ -516,6 +590,7 @@
             this.btn_billImportDetail.Size = new System.Drawing.Size(108, 36);
             this.btn_billImportDetail.TabIndex = 24;
             this.btn_billImportDetail.Text = "Nhập";
+            this.btn_billImportDetail.Click += new System.EventHandler(this.btn_billImportDetail_Click);
             // 
             // btn_billDeleteDetail
             // 
@@ -586,33 +661,6 @@
             this.guna2HtmlLabel6.TabIndex = 14;
             this.guna2HtmlLabel6.Text = "Sản phẩm";
             // 
-            // txt_billProductPrice
-            // 
-            this.txt_billProductPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txt_billProductPrice.BorderRadius = 5;
-            this.txt_billProductPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_billProductPrice.DefaultText = "";
-            this.txt_billProductPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_billProductPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_billProductPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_billProductPrice.DisabledState.Parent = this.txt_billProductPrice;
-            this.txt_billProductPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_billProductPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_billProductPrice.FocusedState.Parent = this.txt_billProductPrice;
-            this.txt_billProductPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_billProductPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_billProductPrice.HoverState.Parent = this.txt_billProductPrice;
-            this.txt_billProductPrice.Location = new System.Drawing.Point(541, 69);
-            this.txt_billProductPrice.Margin = new System.Windows.Forms.Padding(21, 169, 21, 169);
-            this.txt_billProductPrice.Name = "txt_billProductPrice";
-            this.txt_billProductPrice.PasswordChar = '\0';
-            this.txt_billProductPrice.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_billProductPrice.PlaceholderText = "";
-            this.txt_billProductPrice.SelectedText = "";
-            this.txt_billProductPrice.ShadowDecoration.Parent = this.txt_billProductPrice;
-            this.txt_billProductPrice.Size = new System.Drawing.Size(139, 36);
-            this.txt_billProductPrice.TabIndex = 15;
-            // 
             // us_paymentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -638,7 +686,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_billSave;
         private Guna.UI2.WinForms.Guna2Button btn_billAdd;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountUsername;
-        private Guna.UI2.WinForms.Guna2TextBox txt_employeeID;
+        private Guna.UI2.WinForms.Guna2TextBox txt_billID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_billDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtp_billDate;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_billCustomerName;
@@ -659,5 +707,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_billImportDetail;
         private Guna.UI2.WinForms.Guna2Button btn_billDeleteDetail;
         private Guna.UI2.WinForms.Guna2TextBox txt_billProductPrice;
+        private Guna.UI2.WinForms.Guna2TextBox txt_billTotalPay;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
