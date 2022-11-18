@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace PrepareForFinal.UI
 {
     public partial class us_customerUI : UserControl
-    {
+    { 
         public us_customerUI()
         {
             InitializeComponent();

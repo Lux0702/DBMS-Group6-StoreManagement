@@ -14,7 +14,7 @@ namespace PrepareForFinal.UI
     {
         public frm_main mainForm = null;
         public frm_login()
-        {
+        { 
             InitializeComponent();
         }
 

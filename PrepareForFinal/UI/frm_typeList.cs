@@ -14,7 +14,7 @@ namespace PrepareForFinal.UI
     {
         public frm_typeList()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void frm_typeList_Load(object sender, EventArgs e)

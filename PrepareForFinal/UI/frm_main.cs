@@ -12,7 +12,7 @@ namespace PrepareForFinal.UI
 {
     public partial class frm_main : Form
     {
-        Color background1 = Color.FromArgb(242, 222, 186); // Màu da đậm
+        Color background1 = Color.FromArgb(242, 222, 186); // Màu da đậm 
         Color background2 = Color.FromArgb(255, 239, 214); // Màu da nhạt
         public frm_main()
         {

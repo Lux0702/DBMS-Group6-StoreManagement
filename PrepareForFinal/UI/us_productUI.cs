@@ -16,7 +16,7 @@ namespace PrepareForFinal.UI
     public partial class us_productUI : UserControl
     {
         frm_typeList typeListForm;
-        public us_productUI()
+        public us_productUI() 
         {
             InitializeComponent();
             LoadData();
@@ -279,6 +279,21 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show("Không xóa được. Lỗi rồi!");
             }
+        }
+
+        private void cb_product_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_prodcutImage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_productGroupButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -20,7 +20,7 @@ namespace PrepareForFinal.UI
         private void frm_billList_Load(object sender, EventArgs e)
         {
             btn_billDelete.Enabled = false;
-            txt_billProductPrice.Enabled = false;
+            txt_billProductPrice.Enabled = false; 
             txt_billCName.Enabled = false;
             txt_billEName.Enabled = false; 
             txt_billID.Enabled = false;

@@ -13,7 +13,7 @@ namespace PrepareForFinal.UI
     public partial class us_paymentUI : UserControl
     {
         public frm_billList billListForm;
-        public us_paymentUI()
+        public us_paymentUI() 
         {
             InitializeComponent();
         }
