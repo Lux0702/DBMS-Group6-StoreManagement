@@ -65,9 +65,37 @@ namespace PrepareForFinal.BSLayer
         public bool getRole(string username, string password)
         {
             db.openConnectionManager();
-
-            
             return true;
+        }
+
+        public DataSet GetData()
+        {
+            db=new MyData();
+            DataSet ds = new DataSet();
+            ds = db.ExecuteQueryDataSet("select * from V_AccountInfo where status = 0", CommandType.Text);
+            return ds;
+        }
+
+        public DataSet findAccount(string aInfo)
+        {
+            db= new MyData();
+            db.openConnectionManager();
+            DataSet ds = new DataSet();
+            try
+            {
+                cmd = new SqlCommand("usp_FindAccount", db.getSqlConn);
+                cmd.Parameters.AddWithValue("@sql_findName", aInfo);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(); //Tạo một cầu nối giữa SQl command và Database
+                da.SelectCommand = cmd;
+                da.Fill(ds); //Đưa dữ liệu vừa gọi được vào DataSet
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return ds;
         }
 
     }
