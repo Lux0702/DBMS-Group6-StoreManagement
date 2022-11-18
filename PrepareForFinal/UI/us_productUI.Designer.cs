@@ -616,7 +616,7 @@
             this.btn_pupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_pupdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.btn_pupdate.HoverState.Parent = this.btn_pupdate;
-            this.btn_pupdate.Location = new System.Drawing.Point(817, 452);
+            this.btn_pupdate.Location = new System.Drawing.Point(818, 452);
             this.btn_pupdate.Name = "btn_pupdate";
             this.btn_pupdate.ShadowDecoration.Parent = this.btn_pupdate;
             this.btn_pupdate.Size = new System.Drawing.Size(75, 49);
