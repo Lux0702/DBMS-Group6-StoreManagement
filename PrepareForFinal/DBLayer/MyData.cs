@@ -10,7 +10,9 @@ namespace PrepareForFinal.DBLayer
 {
     public class MyData
     {
-        string strConnectionString = "Data Source=(local);Initial Catalog=QLCUAHANG;Integrated Security=True";
+        string strConnectionString = "Data Source=OPTI\\KHIEMSQL;" +
+            "Initial Catalog=QLCUAHANG;" +
+            "Integrated Security=True";
 
         SqlConnection conn = null; //Đối tượng kết nối 
         SqlCommand comm = null; //Đối tượng truy vấn và cập nhật vào SQL Server
