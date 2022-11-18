@@ -18,22 +18,20 @@ namespace PrepareForFinal.BSLayer
         public Product()
         {
             db = new MyData();
-
         }
 
         public DataSet GetProduct()
         {
-
             return db.ExecuteQueryDataSet("Select * from Product where p_status = 0", CommandType.Text);
         }
 
         public DataSet findProduct(string pname)
         {
+            db = new MyData();
             db.openConnectionManager();
             DataSet ds = new DataSet();
             try
             {
-
                 cmd = new SqlCommand("usp_FindProduct", db.getSqlConn);
                 cmd.Parameters.AddWithValue("@sql_findName", pname);
 
@@ -62,7 +60,7 @@ namespace PrepareForFinal.BSLayer
             cmd.Parameters.AddWithValue("@tid", tid);
 
             db.openConnectionManager();
-            if ((cmd.ExecuteNonQuery() == 1))
+            if (cmd.ExecuteNonQuery() == 1)
             {
                 db.closeConnectionManager();
                 return true;
@@ -161,6 +159,22 @@ namespace PrepareForFinal.BSLayer
             DR.Read();
             cb_product.Text = DR[0].ToString();
             db.closeConnectionManager();
+        }
+
+        public String getTypeID(string tName)
+        {
+            db = new MyData();
+            db.openConnectionManager();
+            cmd = new SqlCommand("Select t_id from Type_Product where t_name=@tName and t_status=0", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@tName", tName);
+            SqlDataReader DR = cmd.ExecuteReader();
+            String tid = "";
+            while (DR.Read())
+            {
+                tid = DR[0].ToString();
+            }
+            db.closeConnectionManager();
+            return tid;
         }
     }
 }

@@ -16,10 +16,14 @@ namespace PrepareForFinal.UI
     public partial class us_productUI : UserControl
     {
         frm_typeList typeListForm;
+
+        public Account tk;
+        public bool isRole;
+
         public us_productUI()
         {
             InitializeComponent();
-            LoadData();
+
         }
 
         DataTable dtProduct = null;
@@ -33,6 +37,22 @@ namespace PrepareForFinal.UI
         {
             this.typeListForm=new frm_typeList();
             this.typeListForm.Show();
+        }
+
+        public void setRole()
+        {
+            if (isRole == true)
+            {
+                btn_pdelete.Enabled = true;
+                btn_pupdate.Enabled = true;
+                btn_padd.Enabled = true;
+            }
+            if (isRole == false)
+            {
+                btn_pdelete.Enabled = false;
+                btn_pupdate.Enabled = false;
+                btn_padd.Enabled = false;
+            }
         }
 
         void LoadData()
@@ -72,26 +92,33 @@ namespace PrepareForFinal.UI
                 MessageBox.Show("Không lấy được sản phẩm");
             }
 
+            setRole();
+            
             this.txt_pid.ResetText();
             this.txt_pname.ResetText();
             this.num_pprice.ResetText();
             this.num_pquantity.ResetText();
 
             this.txt_pfind.ResetText();
-
-
-
-            btn_pdelete.Enabled = true;
-            btn_pupdate.Enabled = true;
+            
+            txt_pid.Enabled = false;
+            txt_pname.Enabled = false;
+            txt_productImport.Enabled = false;
+            num_pprice.Enabled = false;
+            num_pquantity.Enabled = false;
+            dtp_pidate.Enabled = false;
+            dtp_pvdate.Enabled = false;
+            cb_product.Enabled = false;
             btn_pfind.Enabled = true;
-            btn_padd.Enabled = true;
-
             btn_cancel.Enabled = false;
             btn_save.Enabled = false;
         }
 
-        private void us_productUI_Load(object sender, EventArgs e)
+        
+
+        public void us_productUI_Load(object sender, EventArgs e)
         {
+            LoadData();
             
         }
 
@@ -103,6 +130,16 @@ namespace PrepareForFinal.UI
             btn_padd.Enabled = false;
             btn_pupdate.Enabled = false;
             btn_pdelete.Enabled = false;
+
+            txt_pid.Enabled = true;
+            txt_pname.Enabled = true;
+            txt_productImport.Enabled = true;
+            num_pprice.Enabled = true;
+            num_pquantity.Enabled = true;
+            btn_pupload.Enabled = true;
+            dtp_pidate.Enabled = true;
+            dtp_pvdate.Enabled = true;
+            cb_product.Enabled = true;
         }
 
         private void btn_productUpdate_Click(object sender, EventArgs e)
@@ -114,6 +151,15 @@ namespace PrepareForFinal.UI
             btn_pupdate.Enabled = false;
             txt_pid.Enabled = false;
             btn_pdelete.Enabled = false;
+
+            txt_pname.Enabled = true;
+            txt_productImport.Enabled = true;
+            num_pprice.Enabled = true;
+            num_pquantity.Enabled = true;
+            btn_pupload.Enabled = true;
+            dtp_pidate.Enabled = true;
+            dtp_pvdate.Enabled = true;
+            cb_product.Enabled = true;
         }
 
         private void btn_productSave_Click(object sender, EventArgs e)
@@ -133,7 +179,6 @@ namespace PrepareForFinal.UI
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-
                 }
             }
             else
@@ -166,9 +211,17 @@ namespace PrepareForFinal.UI
             btn_cancel.Enabled = false;
             btn_padd.Enabled = true;
             btn_pupdate.Enabled = true;
-            txt_pid.Enabled = true;
+            txt_pid.Enabled = false;
             btn_pdelete.Enabled = true;
             btn_cancel.Enabled = false;
+
+            txt_pname.Enabled = false;
+            txt_productImport.Enabled = false;
+            num_pprice.Enabled = false;
+            num_pquantity.Enabled = false;
+            dtp_pidate.Enabled = false;
+            dtp_pvdate.Enabled = false;
+            cb_product.Enabled = false;
         }
 
         private void dgv_product_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -279,6 +332,11 @@ namespace PrepareForFinal.UI
             {
                 MessageBox.Show("Không xóa được. Lỗi rồi!");
             }
+        }
+
+        private void btn_productGroupButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,7 +14,7 @@ namespace PrepareForFinal.UI
     {
         public us_accountUI()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void us_accountUI_Load(object sender, EventArgs e)
