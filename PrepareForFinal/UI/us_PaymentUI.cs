@@ -248,7 +248,7 @@ namespace PrepareForFinal.UI
                     if (item.pname == temDetail.pname)
                     {
                         item.amount += temDetail.amount;
-                        sum += item.total;
+                        sum += temDetail.total;
                         item.total = item.amount * item.price;
                         break;
                     }
@@ -279,8 +279,11 @@ namespace PrepareForFinal.UI
             String eid = myBill.getEmployeeID(cb_billEmployeeName.Text.ToString());
             String cid = myBill.getCustomerID(cb_billCustomerName.Text.ToString());
 
-            AddToTemDetailList(temDetail, new TemDetail((float)num_billProductQuantity.Value, float.Parse(txt_billProductPrice.Text), txt_productName.Text, float.Parse(txt_billTotalPrice.Text)));
-
+            if (txt_billProductPrice.Text != "" && txt_productName.Text != "" && txt_billTotalPrice.Text != "")
+            {
+                AddToTemDetailList(temDetail, new TemDetail((float)num_billProductQuantity.Value, float.Parse(txt_billProductPrice.Text), txt_productName.Text, float.Parse(txt_billTotalPrice.Text)));
+            }
+            
             var bindingList = new BindingList<TemDetail>(temDetail);
             var source = new BindingSource(bindingList, null);
 
