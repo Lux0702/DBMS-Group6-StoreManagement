@@ -37,7 +37,7 @@ namespace PrepareForFinal.BSLayer
             cm.Parameters.AddWithValue("@bid", bid);
             cm.Parameters.AddWithValue("@pid", pid);
             db.openConnectionManager();
-            if (cm.ExecuteNonQuery()==2)
+            if (cm.ExecuteNonQuery()>=2)
             {
                 db.closeConnectionManager();
                 return true;

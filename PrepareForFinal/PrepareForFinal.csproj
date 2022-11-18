@@ -219,6 +219,7 @@
     <Compile Include="BSLayer\Customer.cs" />
     <Compile Include="BSLayer\Detail.cs" />
     <Compile Include="BSLayer\Product.cs" />
+    <Compile Include="BSLayer\TemDetail.cs" />
     <Compile Include="BSLayer\TypeProduct.cs" />
     <Compile Include="DBLayer\MyData.cs" />
     <Compile Include="Program.cs" />
