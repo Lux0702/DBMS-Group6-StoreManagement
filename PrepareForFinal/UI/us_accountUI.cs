@@ -15,6 +15,7 @@ namespace PrepareForFinal.UI
     {
         DataTable myDataTable;
         DataSet myAccountDataSet;
+        bool isAdd = false;
 
         public us_accountUI()
         {
@@ -54,6 +55,9 @@ namespace PrepareForFinal.UI
             txt_accountPassword.Enabled = true;
             txt_accountEName.Enabled = true;
             txt_accountEID.Enabled = true;
+            isAdd = true;
+            Bill myBill = new Bill();
+            myBill.getEmployeeName(cb_accountEName);
             ResetContent();
         }
 
@@ -68,7 +72,31 @@ namespace PrepareForFinal.UI
             txt_accountPassword.Enabled = false;
             txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
+
+            Account account = new Account();
+            if (isAdd = true)
+            {
+                try
+                {
+                    Employee employee = new Employee();
+                    if (account.addAccount(txt_accountUsername.Text.Trim(), txt_accountPassword.Text.Trim(), employee.getEmployeeID(cb_accountEName.Text)) == true)
+                    {
+                        MessageBox.Show("Thêm tài khoản thành công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm tài khoản KHÔNG thành công");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Thêm không được, lỗi: " + ex.Message);
+                }
+            }
+
+            isAdd = false;
             ResetContent();
+            LoadData();
         }
 
         private void btn_accountCancel_Click(object sender, EventArgs e)
@@ -82,6 +110,7 @@ namespace PrepareForFinal.UI
             txt_accountPassword.Enabled = false;
             txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
+            isAdd = false;
             ResetContent();
         }
 
@@ -95,6 +124,7 @@ namespace PrepareForFinal.UI
             txt_accountPassword.Enabled = true;
             txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
+            isAdd = false;
         }
         private void CustomeAccountDataGridView()
         {
@@ -144,7 +174,7 @@ namespace PrepareForFinal.UI
             // Lấy thông tin từ list đưa lên textbox
             txt_accountUsername.Text = dtgv_accountList.Rows[row].Cells[0].Value.ToString();
             txt_accountPassword.Text = dtgv_accountList.Rows[row].Cells[1].Value.ToString();
-            txt_accountEName.Text = dtgv_accountList.Rows[row].Cells[2].Value.ToString();
+            cb_accountEName.Text = dtgv_accountList.Rows[row].Cells[2].Value.ToString();
             txt_accountEID.Text = dtgv_accountList.Rows[row].Cells[5].Value.ToString();
             if ((bool)dtgv_accountList.Rows[row].Cells[3].Value == true)
             {
@@ -158,7 +188,7 @@ namespace PrepareForFinal.UI
 
         private void btn_findAccount_Click(object sender, EventArgs e)
         {
-            if (txt_findAccount.Text=="")
+            if (txt_findAccount.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập thông tin tài khoản");
             }
@@ -184,5 +214,11 @@ namespace PrepareForFinal.UI
                 }
             }
         }
+
+        private void cb_accountEName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

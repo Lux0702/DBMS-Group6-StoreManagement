@@ -98,5 +98,24 @@ namespace PrepareForFinal.BSLayer
             return ds;
         }
 
+        public bool addAccount(string username, string password, string eid)
+        {
+            db = new MyData();
+            cmd = new SqlCommand("EXEC usp_AddAccount @username, @password, @eid", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
+            cmd.Parameters.AddWithValue("@eid", eid);
+            db.openConnectionManager();
+            if ((cmd.ExecuteNonQuery() >= 1))
+            {
+                db.closeConnectionManager();
+                return true;
+            }
+            else
+            {
+                db.closeConnectionManager();
+                return false;
+            }
+        }
     }
 }
