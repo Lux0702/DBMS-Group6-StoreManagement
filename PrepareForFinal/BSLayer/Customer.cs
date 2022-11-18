@@ -125,8 +125,8 @@ namespace PrepareForFinal.BSLayer
         {
             string result = "";
             db.openConnectionManager();
-            cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateCustomerID](@prefix)", db.getSqlConn);
-            cmd.Parameters.AddWithValue("@prefix", "kh");
+            cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateID](@name)", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@name", "Customer");
             cmd.CommandType = CommandType.Text;
             SqlDataReader dr = cmd.ExecuteReader();
             dr.Read();

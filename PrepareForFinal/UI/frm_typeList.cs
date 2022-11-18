@@ -19,7 +19,7 @@ namespace PrepareForFinal.UI
         bool addFlag;
         public frm_typeList()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
         private void frm_typeList_Load(object sender, EventArgs e)
         {
