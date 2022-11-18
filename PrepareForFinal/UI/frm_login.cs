@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PrepareForFinal.BSLayer;
+using PrepareForFinal.DBLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,9 @@ namespace PrepareForFinal.UI
     public partial class frm_login : Form
     {
         public frm_main mainForm = null;
+
+        Account account = new Account();
+
         public frm_login()
         { 
             InitializeComponent();
@@ -30,10 +35,23 @@ namespace PrepareForFinal.UI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if (true) // sau này sửa lại điều kiện đăng nhập
+            bool check = account.testLogin(txt_username.Text.Trim(), txt_password.Text.Trim());
+            if (check)
             {
+                DataSet ds =  account.GetAccount(txt_username.Text.Trim(), txt_password.Text.Trim());
+                DataTable dt = new DataTable();
+                dt= ds.Tables[0];
+                account = new Account(dt.Rows[0][0].ToString(), dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString(), (bool)dt.Rows[0][4]);
                 mainForm = new frm_main();
+                mainForm.tk = account;
+                mainForm.isRole = account.isRole;
                 mainForm.Show();
+                MessageBox.Show("Đăng nhập thành công");
+                
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại");
             }
         }
     }

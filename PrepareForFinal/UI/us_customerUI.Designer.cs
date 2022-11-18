@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_customerPoint = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_customerPhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_customerAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -123,7 +123,7 @@
             this.rb_customerFemale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.rb_customerFemale.Location = new System.Drawing.Point(453, 88);
             this.rb_customerFemale.Name = "rb_customerFemale";
-            this.rb_customerFemale.Size = new System.Drawing.Size(46, 21);
+            this.rb_customerFemale.Size = new System.Drawing.Size(44, 20);
             this.rb_customerFemale.TabIndex = 16;
             this.rb_customerFemale.TabStop = true;
             this.rb_customerFemale.Text = "Nữ";
@@ -147,7 +147,7 @@
             this.rb_customerMale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
             this.rb_customerMale.Location = new System.Drawing.Point(377, 88);
             this.rb_customerMale.Name = "rb_customerMale";
-            this.rb_customerMale.Size = new System.Drawing.Size(57, 21);
+            this.rb_customerMale.Size = new System.Drawing.Size(56, 20);
             this.rb_customerMale.TabIndex = 15;
             this.rb_customerMale.TabStop = true;
             this.rb_customerMale.Text = "Nam";
@@ -328,7 +328,7 @@
             this.dtp_customerBirthdate.CustomFormat = "dd/MM/yyyy";
             this.dtp_customerBirthdate.FillColor = System.Drawing.Color.White;
             this.dtp_customerBirthdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_customerBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_customerBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_customerBirthdate.HoverState.Parent = this.dtp_customerBirthdate;
             this.dtp_customerBirthdate.Location = new System.Drawing.Point(523, 83);
             this.dtp_customerBirthdate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -337,8 +337,6 @@
             this.dtp_customerBirthdate.ShadowDecoration.Parent = this.dtp_customerBirthdate;
             this.dtp_customerBirthdate.Size = new System.Drawing.Size(179, 36);
             this.dtp_customerBirthdate.TabIndex = 7;
-            this.dtp_customerBirthdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.dtp_customerBirthdate.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.dtp_customerBirthdate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
             // btn_findCustomer
@@ -358,47 +356,49 @@
             this.btn_findCustomer.Size = new System.Drawing.Size(138, 41);
             this.btn_findCustomer.TabIndex = 5;
             this.btn_findCustomer.Text = "Tìm kiếm";
+            this.btn_findCustomer.Click += new System.EventHandler(this.btn_findCustomer_Click);
             // 
             // dtgv_customerList
             // 
             this.dtgv_customerList.AllowUserToAddRows = false;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgv_customerList.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dtgv_customerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_customerList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_customerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_customerList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_customerList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv_customerList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_customerList.EnableHeadersVisualStyles = false;
             this.dtgv_customerList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.Location = new System.Drawing.Point(13, 147);
             this.dtgv_customerList.Name = "dtgv_customerList";
             this.dtgv_customerList.ReadOnly = true;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgv_customerList.RowHeadersVisible = false;
             this.dtgv_customerList.RowHeadersWidth = 51;
             this.dtgv_customerList.RowTemplate.Height = 24;
@@ -413,20 +413,21 @@
             this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dtgv_customerList.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.dtgv_customerList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.dtgv_customerList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgv_customerList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.dtgv_customerList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dtgv_customerList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dtgv_customerList.ThemeStyle.HeaderStyle.Height = 28;
             this.dtgv_customerList.ThemeStyle.ReadOnly = true;
             this.dtgv_customerList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dtgv_customerList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_customerList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgv_customerList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.dtgv_customerList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv_customerList.ThemeStyle.RowsStyle.Height = 24;
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgv_customerList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_customerList_CellClick);
             // 
             // lb_customerID
             // 
@@ -518,6 +519,7 @@
             this.btn_customerDelete.Size = new System.Drawing.Size(72, 49);
             this.btn_customerDelete.TabIndex = 35;
             this.btn_customerDelete.Text = "Xóa";
+            this.btn_customerDelete.Click += new System.EventHandler(this.btn_customerDelete_Click);
             // 
             // btn_customerSave
             // 
@@ -579,7 +581,7 @@
             // txt_customerPoint
             // 
             this.txt_customerPoint.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_customerPoint.DefaultText = "";
+            this.txt_customerPoint.DefaultText = "0";
             this.txt_customerPoint.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_customerPoint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_customerPoint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -597,6 +599,7 @@
             this.txt_customerPoint.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
             this.txt_customerPoint.PlaceholderText = "";
             this.txt_customerPoint.SelectedText = "";
+            this.txt_customerPoint.SelectionStart = 1;
             this.txt_customerPoint.ShadowDecoration.Parent = this.txt_customerPoint;
             this.txt_customerPoint.Size = new System.Drawing.Size(192, 36);
             this.txt_customerPoint.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -633,6 +636,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_customerID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerBirth;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_productID;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_customerBirthdate;
         private Guna.UI2.WinForms.Guna2Button btn_findCustomer;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_customerList;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_customerID;
@@ -643,6 +647,5 @@
         private Guna.UI2.WinForms.Guna2Button btn_customerUpdate;
         private Guna.UI2.WinForms.Guna2Button btn_customerAdd;
         private Guna.UI2.WinForms.Guna2TextBox txt_customerPoint;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_customerBirthdate;
     }
 }
