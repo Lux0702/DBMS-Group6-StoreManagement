@@ -123,15 +123,17 @@ namespace PrepareForFinal.BSLayer
         }
         public String autoGenerateID()
         {
-
+            string result = "";
             db.openConnectionManager();
             cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateCustomerID](@prefix)", db.getSqlConn);
             cmd.Parameters.AddWithValue("@prefix", "kh");
             cmd.CommandType = CommandType.Text;
             SqlDataReader dr = cmd.ExecuteReader();
             dr.Read();
+            result = dr[0].ToString();
+            dr.Close();
             db.closeConnectionManager();
-            return dr[0].ToString();
+            return result;
         }
     }
 }
