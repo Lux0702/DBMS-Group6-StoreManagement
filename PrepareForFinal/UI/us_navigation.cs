@@ -14,7 +14,7 @@ namespace PrepareForFinal.UI
     {
         public us_navigation()
         {
-            InitializeComponent();
+            InitializeComponent(); 
 
         }
 

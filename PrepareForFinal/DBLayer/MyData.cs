@@ -11,7 +11,7 @@ namespace PrepareForFinal.DBLayer
     public class MyData
     {
         string strConnectionString = @"Data Source=DESKTOP-2UP4IF9\SQLEXPRESS;Initial Catalog=QLCUAHANG;Integrated Security=True";
-            
+
 
         SqlConnection conn = null; //Đối tượng kết nối 
         SqlCommand comm = null; //Đối tượng truy vấn và cập nhật vào SQL Server
