@@ -145,7 +145,7 @@ namespace PrepareForFinal.UI
                 myDataTable = new DataTable();
                 myAccountDataSet = new DataSet();
                 // Lấy data đưa vào dataset
-                //myAccountDataSet = account.GetData();
+                myAccountDataSet = account.GetData();
                 // Đưa dữ liệu từ dataset vào table
                 myDataTable = myAccountDataSet.Tables[0];
                 // Đổ data vào datagridview
@@ -216,6 +216,11 @@ namespace PrepareForFinal.UI
         }
 
         private void cb_accountEName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_customerInfo_Click(object sender, EventArgs e)
         {
 
         }
