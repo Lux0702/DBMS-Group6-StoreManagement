@@ -33,11 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_findAccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_accountEName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_findAccount = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_accountList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lb_accountEmployeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.cb_accountEName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.rb_employee = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rb_manger = new Guna.UI2.WinForms.Guna2RadioButton();
             this.lb_role = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -52,7 +51,6 @@
             this.txt_accountPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_accountUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_accountEID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cb_accountEName = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_accountList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
             this.SuspendLayout();
@@ -82,32 +80,6 @@
             this.txt_findAccount.Size = new System.Drawing.Size(267, 37);
             this.txt_findAccount.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_findAccount.TabIndex = 12;
-            // 
-            // txt_accountEName
-            // 
-            this.txt_accountEName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_accountEName.DefaultText = "";
-            this.txt_accountEName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_accountEName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_accountEName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEName.DisabledState.Parent = this.txt_accountEName;
-            this.txt_accountEName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.FocusedState.Parent = this.txt_accountEName;
-            this.txt_accountEName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.HoverState.Parent = this.txt_accountEName;
-            this.txt_accountEName.Location = new System.Drawing.Point(969, 279);
-            this.txt_accountEName.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_accountEName.Name = "txt_accountEName";
-            this.txt_accountEName.PasswordChar = '\0';
-            this.txt_accountEName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_accountEName.PlaceholderText = "";
-            this.txt_accountEName.SelectedText = "";
-            this.txt_accountEName.ShadowDecoration.Parent = this.txt_accountEName;
-            this.txt_accountEName.Size = new System.Drawing.Size(218, 37);
-            this.txt_accountEName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_accountEName.TabIndex = 13;
             // 
             // btn_findAccount
             // 
@@ -198,25 +170,12 @@
             this.dtgv_accountList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv_accountList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_accountList_CellClick);
             // 
-            // lb_accountEmployeeID
-            // 
-            this.lb_accountEmployeeID.AutoSize = false;
-            this.lb_accountEmployeeID.BackColor = System.Drawing.Color.Transparent;
-            this.lb_accountEmployeeID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_accountEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_accountEmployeeID.Location = new System.Drawing.Point(970, 252);
-            this.lb_accountEmployeeID.Name = "lb_accountEmployeeID";
-            this.lb_accountEmployeeID.Size = new System.Drawing.Size(185, 25);
-            this.lb_accountEmployeeID.TabIndex = 14;
-            this.lb_accountEmployeeID.Text = "Nhân viên";
-            // 
             // btn_customerInfo
             // 
             this.btn_customerInfo.BackColor = System.Drawing.Color.Transparent;
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
-            this.btn_customerInfo.Controls.Add(this.txt_accountEName);
             this.btn_customerInfo.Controls.Add(this.cb_accountEName);
             this.btn_customerInfo.Controls.Add(this.rb_employee);
             this.btn_customerInfo.Controls.Add(this.rb_manger);
@@ -229,7 +188,6 @@
             this.btn_customerInfo.Controls.Add(this.lb_accountPassword);
             this.btn_customerInfo.Controls.Add(this.lb_accountUsername);
             this.btn_customerInfo.Controls.Add(this.guna2HtmlLabel1);
-            this.btn_customerInfo.Controls.Add(this.lb_accountEmployeeID);
             this.btn_customerInfo.Controls.Add(this.txt_findAccount);
             this.btn_customerInfo.Controls.Add(this.txt_accountPassword);
             this.btn_customerInfo.Controls.Add(this.txt_accountUsername);
@@ -247,6 +205,28 @@
             this.btn_customerInfo.Size = new System.Drawing.Size(1171, 525);
             this.btn_customerInfo.TabIndex = 15;
             this.btn_customerInfo.Text = "Thông tin tài khoản";
+            // 
+            // cb_accountEName
+            // 
+            this.cb_accountEName.BackColor = System.Drawing.Color.Transparent;
+            this.cb_accountEName.BorderRadius = 5;
+            this.cb_accountEName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_accountEName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_accountEName.FocusedColor = System.Drawing.Color.Empty;
+            this.cb_accountEName.FocusedState.Parent = this.cb_accountEName;
+            this.cb_accountEName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_accountEName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.cb_accountEName.FormattingEnabled = true;
+            this.cb_accountEName.HoverState.Parent = this.cb_accountEName;
+            this.cb_accountEName.ItemHeight = 30;
+            this.cb_accountEName.ItemsAppearance.Parent = this.cb_accountEName;
+            this.cb_accountEName.Location = new System.Drawing.Point(730, 213);
+            this.cb_accountEName.Name = "cb_accountEName";
+            this.cb_accountEName.ShadowDecoration.Parent = this.cb_accountEName;
+            this.cb_accountEName.Size = new System.Drawing.Size(218, 36);
+            this.cb_accountEName.TabIndex = 43;
+            this.cb_accountEName.SelectedIndexChanged += new System.EventHandler(this.cb_accountEName_SelectedIndexChanged);
+            this.cb_accountEName.SelectedValueChanged += new System.EventHandler(this.cb_accountEName_SelectedValueChanged);
             // 
             // rb_employee
             // 
@@ -516,27 +496,6 @@
             this.txt_accountEID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_accountEID.TabIndex = 13;
             // 
-            // cb_accountEName
-            // 
-            this.cb_accountEName.BackColor = System.Drawing.Color.Transparent;
-            this.cb_accountEName.BorderRadius = 5;
-            this.cb_accountEName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_accountEName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_accountEName.FocusedColor = System.Drawing.Color.Empty;
-            this.cb_accountEName.FocusedState.Parent = this.cb_accountEName;
-            this.cb_accountEName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_accountEName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.cb_accountEName.FormattingEnabled = true;
-            this.cb_accountEName.HoverState.Parent = this.cb_accountEName;
-            this.cb_accountEName.ItemHeight = 30;
-            this.cb_accountEName.ItemsAppearance.Parent = this.cb_accountEName;
-            this.cb_accountEName.Location = new System.Drawing.Point(730, 213);
-            this.cb_accountEName.Name = "cb_accountEName";
-            this.cb_accountEName.ShadowDecoration.Parent = this.cb_accountEName;
-            this.cb_accountEName.Size = new System.Drawing.Size(218, 36);
-            this.cb_accountEName.TabIndex = 43;
-            this.cb_accountEName.SelectedIndexChanged += new System.EventHandler(this.cb_accountEName_SelectedIndexChanged);
-            // 
             // us_accountUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -555,10 +514,8 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox txt_findAccount;
-        private Guna.UI2.WinForms.Guna2TextBox txt_accountEName;
         private Guna.UI2.WinForms.Guna2Button btn_findAccount;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_accountList;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountEmployeeID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountPassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountUsername;
