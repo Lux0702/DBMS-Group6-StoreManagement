@@ -98,6 +98,8 @@ namespace PrepareForFinal.UI
 
             fillingStatus();
             clearTextBox();
+            txt_typeID.Text = dbType.autoGenerateID();
+            txt_typeID.Enabled = false;
         }
 
         private void btn_typeUpdate_Click(object sender, EventArgs e)

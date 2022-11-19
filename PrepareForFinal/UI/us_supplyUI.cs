@@ -104,6 +104,9 @@ namespace PrepareForFinal.UI
             this.txt_supplyName.Enabled = true;
             this.txt_supplyPhone.Enabled = true;
             this.cb_nameProduct.Enabled = true;
+
+            txt_supplyID.Text = dbSupply.autoGenerateID();
+            txt_supplyID.Enabled = false;
         }
 
         private void btn_supplyUpdate_Click(object sender, EventArgs e)

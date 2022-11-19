@@ -70,16 +70,16 @@ namespace PrepareForFinal.BSLayer
                 return cid;
             }
         }
-        
+
         // Tìm sản phẩm
         public DataSet findBill(string findString)
         {
-            db=new MyData();
+            db = new MyData();
             db.openConnectionManager();
             DataSet ds = new DataSet();
             try
             {
-                cm= new SqlCommand("usp_FindBill", db.getSqlConn);
+                cm = new SqlCommand("usp_FindBill", db.getSqlConn);
                 cm.Parameters.AddWithValue("@sql_findBill", findString);
 
                 cm.CommandType = CommandType.StoredProcedure;
@@ -95,7 +95,7 @@ namespace PrepareForFinal.BSLayer
         }
 
         public void getEmployeeName(ComboBox cb_product)
-        { 
+        {
             //Dùng để lấy loại sản phẩm để load lên combobox
             db = new MyData();
             string Sql = "Select e_name from Employee where e_status = 0";
@@ -165,8 +165,8 @@ namespace PrepareForFinal.BSLayer
             cm = new SqlCommand("Select c_id from Customer where c_name=@cName and c_status=0", db.getSqlConn);
             cm.Parameters.AddWithValue("@cName", cName);
             SqlDataReader DR = cm.ExecuteReader();
-            String cid="";
-            while(DR.Read())
+            String cid = "";
+            while (DR.Read())
             {
                 cid = DR[0].ToString();
             }
@@ -260,8 +260,19 @@ namespace PrepareForFinal.BSLayer
             }
             db.closeConnectionManager();
         }
-
-        
+        public String autoGenerateID()
+        {
+            string result = "";
+            db.openConnectionManager();
+            SqlCommand cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateID](@name)", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@name", "Bill");
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            result = dr[0].ToString();
+            dr.Close();
+            db.closeConnectionManager();
+            return result;
+        }
     }
-
 }
