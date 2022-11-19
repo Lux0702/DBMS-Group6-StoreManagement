@@ -266,3 +266,4 @@ E:\Workspace\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\bin\Debug\System.T
 E:\Workspace\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\bin\Debug\System.Threading.AccessControl.xml
 E:\Workspace\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.csproj.Fody.CopyLocal.cache
 E:\Workspace\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.csproj.CopyComplete
+E:\HVTG\Code\C#\DBMS\DBMS-Group6-StoreManagement\PrepareForFinal\obj\Debug\PrepareForFinal.UI.us_staticUI.resources
