@@ -79,14 +79,14 @@ namespace PrepareForFinal.UI
                 try
                 {
                     Employee employee = new Employee();
-                    if (account.addAccount(txt_accountUsername.Text.Trim(), txt_accountPassword.Text.Trim(), employee.getEmployeeID(cb_accountEName.Text)) == true)
-                    {
-                        MessageBox.Show("Thêm tài khoản thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm tài khoản KHÔNG thành công");
-                    }
+                    //if (account.addAccount(txt_accountUsername.Text.Trim(), txt_accountPassword.Text.Trim(), employee.getEmployeeID(cb_accountEName.Text)) == true)
+                    //{
+                    //    MessageBox.Show("Thêm tài khoản thành công");
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("Thêm tài khoản KHÔNG thành công");
+                    //}
                 }
                 catch (Exception ex)
                 {
@@ -145,7 +145,7 @@ namespace PrepareForFinal.UI
                 myDataTable = new DataTable();
                 myAccountDataSet = new DataSet();
                 // Lấy data đưa vào dataset
-                myAccountDataSet = account.GetData();
+                //myAccountDataSet = account.GetData();
                 // Đưa dữ liệu từ dataset vào table
                 myDataTable = myAccountDataSet.Tables[0];
                 // Đổ data vào datagridview
@@ -200,7 +200,7 @@ namespace PrepareForFinal.UI
                     myDataTable = new DataTable();
                     myAccountDataSet = new DataSet();
                     // Lấy data đưa vào dataset
-                    myAccountDataSet = account.findAccount(txt_findAccount.Text.Trim());
+                    //myAccountDataSet = account.findAccount(txt_findAccount.Text.Trim());
                     // Đưa dữ liệu từ dataset vào table
                     myDataTable = myAccountDataSet.Tables[0];
                     // Đổ data vào datagridview
