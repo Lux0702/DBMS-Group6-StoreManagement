@@ -159,6 +159,19 @@ namespace PrepareForFinal.BSLayer
             db.closeConnectionManager();
             return eid;
         }
+        public String autoGenerateID()
+        {
+            string result = "";
+            db.openConnectionManager();
+            SqlCommand cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateID](@name)", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@name", "Employee");
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            result = dr[0].ToString();
+            dr.Close();
+            db.closeConnectionManager();
+            return result;
+        }
     }
-    
 }
