@@ -29,10 +29,10 @@ namespace PrepareForFinal.UI
             btn_accountSave.Enabled = false;
             txt_accountUsername.Enabled = false;
             txt_accountPassword.Enabled = false;
-            txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
             rb_employee.Enabled = false;
             rb_manger.Enabled = false;
+            cb_accountEName.Enabled = false;
             LoadData();
         }
 
@@ -40,7 +40,6 @@ namespace PrepareForFinal.UI
         {
             txt_accountUsername.ResetText();
             txt_accountPassword.ResetText();
-            txt_accountEName.ResetText();
             txt_accountEID.ResetText();
             rb_manger.Checked = false;
             rb_employee.Checked = false;
@@ -53,8 +52,8 @@ namespace PrepareForFinal.UI
             btn_accountCancel.Enabled = true;
             txt_accountUsername.Enabled = true;
             txt_accountPassword.Enabled = true;
-            txt_accountEName.Enabled = true;
             txt_accountEID.Enabled = true;
+            cb_accountEName.Enabled = true;
             isAdd = true;
             Bill myBill = new Bill();
             /*myBill.getEmployeeName(cb_accountEName);*/
@@ -63,30 +62,30 @@ namespace PrepareForFinal.UI
 
         private void btn_accountSave_Click(object sender, EventArgs e)
         {
-            btn_accountAdd.Enabled = true;
-            btn_accountUpdate.Enabled = true;
-            btn_accountSave.Enabled = false;
-            btn_accountCancel.Enabled = false;
-            txt_accountUsername.Enabled = true;
-            txt_accountUsername.Enabled = false;
-            txt_accountPassword.Enabled = false;
-            txt_accountEName.Enabled = false;
-            txt_accountEID.Enabled = false;
-
             Account account = new Account();
             if (isAdd = true)
             {
                 try
                 {
                     Employee employee = new Employee();
-                    //if (account.addAccount(txt_accountUsername.Text.Trim(), txt_accountPassword.Text.Trim(), employee.getEmployeeID(cb_accountEName.Text)) == true)
-                    //{
-                    //    MessageBox.Show("Thêm tài khoản thành công");
-                    //}
-                    //else
-                    //{
-                    //    MessageBox.Show("Thêm tài khoản KHÔNG thành công");
-                    //}
+                    if (account.addAccount(txt_accountUsername.Text.Trim(), txt_accountPassword.Text.Trim(), employee.getEmployeeID(cb_accountEName.Text)) == true)
+                    {
+                        MessageBox.Show("Thêm tài khoản thành công");
+                        btn_accountAdd.Enabled = true;
+                        btn_accountUpdate.Enabled = true;
+                        btn_accountSave.Enabled = false;
+                        btn_accountCancel.Enabled = false;
+                        txt_accountUsername.Enabled = true;
+                        txt_accountUsername.Enabled = false;
+                        txt_accountPassword.Enabled = false;
+                        txt_accountEID.Enabled = false;
+                        cb_accountEName.Enabled = false;
+                        cb_accountEName.Items.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm tài khoản KHÔNG thành công");
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -108,8 +107,9 @@ namespace PrepareForFinal.UI
             txt_accountUsername.Enabled = true;
             txt_accountUsername.Enabled = false;
             txt_accountPassword.Enabled = false;
-            txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
+            cb_accountEName.Enabled = false;
+            cb_accountEName.Items.Clear();
             isAdd = false;
             ResetContent();
         }
@@ -122,8 +122,10 @@ namespace PrepareForFinal.UI
             btn_accountCancel.Enabled = true;
             txt_accountUsername.Enabled = false;
             txt_accountPassword.Enabled = true;
-            txt_accountEName.Enabled = false;
             txt_accountEID.Enabled = false;
+            cb_accountEName.Enabled = true;
+            Bill myBill = new Bill();
+            myBill.getEmployeeName(cb_accountEName);
             isAdd = false;
         }
         private void CustomeAccountDataGridView()
@@ -217,7 +219,38 @@ namespace PrepareForFinal.UI
 
         private void cb_accountEName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Bill bill=new Bill();
+            Employee employee = new Employee();
+            if (cb_accountEName.Text != "")
+            {
+                txt_accountEID.Text = bill.getEmployeeID(cb_accountEName.Text.Trim());
+                if (employee.getEmployeeRole(cb_accountEName.Text) == "True")
+                {
+                    rb_manger.Checked = true;
+                }
+                else
+                {
+                    rb_employee.Checked = true;
+                }
+            }
+        }
 
+        private void cb_accountEName_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Bill bill = new Bill();
+            Employee employee = new Employee();
+            if (cb_accountEName.Text != "")
+            {
+                txt_accountEID.Text = bill.getEmployeeID(cb_accountEName.Text.Trim());
+                if (employee.getEmployeeRole(cb_accountEName.Text) == "1")
+                {
+                    rb_manger.Checked = true;
+                }
+                else
+                {
+                    rb_employee.Checked = true;
+                }
+            }
         }
 
         private void btn_customerInfo_Click(object sender, EventArgs e)

@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_findAccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_accountEName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_findAccount = new Guna.UI2.WinForms.Guna2Button();
             this.dtgv_accountList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lb_accountEmployeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
             this.cb_accountEName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.rb_employee = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -83,32 +81,6 @@
             this.txt_findAccount.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_findAccount.TabIndex = 12;
             // 
-            // txt_accountEName
-            // 
-            this.txt_accountEName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_accountEName.DefaultText = "";
-            this.txt_accountEName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_accountEName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_accountEName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEName.DisabledState.Parent = this.txt_accountEName;
-            this.txt_accountEName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.FocusedState.Parent = this.txt_accountEName;
-            this.txt_accountEName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEName.HoverState.Parent = this.txt_accountEName;
-            this.txt_accountEName.Location = new System.Drawing.Point(969, 279);
-            this.txt_accountEName.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_accountEName.Name = "txt_accountEName";
-            this.txt_accountEName.PasswordChar = '\0';
-            this.txt_accountEName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_accountEName.PlaceholderText = "";
-            this.txt_accountEName.SelectedText = "";
-            this.txt_accountEName.ShadowDecoration.Parent = this.txt_accountEName;
-            this.txt_accountEName.Size = new System.Drawing.Size(196, 37);
-            this.txt_accountEName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_accountEName.TabIndex = 13;
-            // 
             // btn_findAccount
             // 
             this.btn_findAccount.BackColor = System.Drawing.Color.Transparent;
@@ -131,43 +103,43 @@
             // dtgv_accountList
             // 
             this.dtgv_accountList.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgv_accountList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dtgv_accountList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgv_accountList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_accountList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_accountList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_accountList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_accountList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_accountList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_accountList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgv_accountList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_accountList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_accountList.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtgv_accountList.EnableHeadersVisualStyles = false;
             this.dtgv_accountList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_accountList.Location = new System.Drawing.Point(20, 66);
             this.dtgv_accountList.Name = "dtgv_accountList";
             this.dtgv_accountList.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_accountList.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_accountList.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgv_accountList.RowHeadersVisible = false;
             this.dtgv_accountList.RowHeadersWidth = 51;
             this.dtgv_accountList.RowTemplate.Height = 24;
@@ -198,25 +170,12 @@
             this.dtgv_accountList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgv_accountList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_accountList_CellClick);
             // 
-            // lb_accountEmployeeID
-            // 
-            this.lb_accountEmployeeID.AutoSize = false;
-            this.lb_accountEmployeeID.BackColor = System.Drawing.Color.Transparent;
-            this.lb_accountEmployeeID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_accountEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_accountEmployeeID.Location = new System.Drawing.Point(970, 252);
-            this.lb_accountEmployeeID.Name = "lb_accountEmployeeID";
-            this.lb_accountEmployeeID.Size = new System.Drawing.Size(185, 25);
-            this.lb_accountEmployeeID.TabIndex = 14;
-            this.lb_accountEmployeeID.Text = "Nhân viên";
-            // 
             // btn_customerInfo
             // 
             this.btn_customerInfo.BackColor = System.Drawing.Color.Transparent;
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
-            this.btn_customerInfo.Controls.Add(this.txt_accountEName);
             this.btn_customerInfo.Controls.Add(this.cb_accountEName);
             this.btn_customerInfo.Controls.Add(this.rb_employee);
             this.btn_customerInfo.Controls.Add(this.rb_manger);
@@ -229,7 +188,6 @@
             this.btn_customerInfo.Controls.Add(this.lb_accountPassword);
             this.btn_customerInfo.Controls.Add(this.lb_accountUsername);
             this.btn_customerInfo.Controls.Add(this.guna2HtmlLabel1);
-            this.btn_customerInfo.Controls.Add(this.lb_accountEmployeeID);
             this.btn_customerInfo.Controls.Add(this.txt_findAccount);
             this.btn_customerInfo.Controls.Add(this.txt_accountPassword);
             this.btn_customerInfo.Controls.Add(this.txt_accountUsername);
@@ -247,7 +205,6 @@
             this.btn_customerInfo.Size = new System.Drawing.Size(1171, 525);
             this.btn_customerInfo.TabIndex = 15;
             this.btn_customerInfo.Text = "Thông tin tài khoản";
-            this.btn_customerInfo.Click += new System.EventHandler(this.btn_customerInfo_Click);
             // 
             // cb_accountEName
             // 
@@ -269,6 +226,7 @@
             this.cb_accountEName.Size = new System.Drawing.Size(218, 36);
             this.cb_accountEName.TabIndex = 43;
             this.cb_accountEName.SelectedIndexChanged += new System.EventHandler(this.cb_accountEName_SelectedIndexChanged);
+            this.cb_accountEName.SelectedValueChanged += new System.EventHandler(this.cb_accountEName_SelectedValueChanged);
             // 
             // rb_employee
             // 
@@ -556,10 +514,8 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox txt_findAccount;
-        private Guna.UI2.WinForms.Guna2TextBox txt_accountEName;
         private Guna.UI2.WinForms.Guna2Button btn_findAccount;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_accountList;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountEmployeeID;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountPassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountUsername;
