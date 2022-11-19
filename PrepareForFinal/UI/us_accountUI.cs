@@ -57,7 +57,7 @@ namespace PrepareForFinal.UI
             txt_accountEID.Enabled = true;
             isAdd = true;
             Bill myBill = new Bill();
-            myBill.getEmployeeName(cb_accountEName);
+            /*myBill.getEmployeeName(cb_accountEName);*/
             ResetContent();
         }
 

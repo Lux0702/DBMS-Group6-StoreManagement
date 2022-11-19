@@ -25,6 +25,9 @@ namespace PrepareForFinal.UI
         Product productList;
         DataSet prdataset;
         DataTable prDataTable;
+        public Account tk = new Account();
+        public bool isRole;
+
 
         public us_paymentUI()
         {
@@ -35,7 +38,7 @@ namespace PrepareForFinal.UI
         {
             InputcontrolList.Add(txt_billID);
             InputcontrolList.Add(dtp_billDate);
-            InputcontrolList.Add(cb_billEmployeeName);
+            InputcontrolList.Add(txtEmpName);
             InputcontrolList.Add(cb_billCustomerName);
             InputcontrolList.Add(cb_billTypeName);
             InputcontrolList.Add(num_billProductQuantity);
@@ -58,7 +61,6 @@ namespace PrepareForFinal.UI
         private void ClearItems()
         {
             cb_billCustomerName.Items.Clear();
-            cb_billEmployeeName.Items.Clear();
             cb_billTypeName.Items.Clear();
             txt_billID.Clear();
             txt_billProductPrice.Clear();
@@ -75,7 +77,7 @@ namespace PrepareForFinal.UI
             this.billListForm.BringToFront();
         }
 
-        private void us_paymentUI_Load(object sender, EventArgs e)
+        public void us_paymentUI_Load(object sender, EventArgs e)
         {
             btn_billSave.Enabled = false;
             btn_billCancel.Enabled = false;
@@ -85,6 +87,8 @@ namespace PrepareForFinal.UI
             txt_billTotalPrice.Enabled = false;
             btn_billImportDetail.Enabled = false;
             dtp_billDate.Value = DateTime.Today;
+            txtEmpName.Text = tk.name;
+            txtEmpName.Enabled = false;
             ClearItems();
             UnenabledInputControl();
         }
@@ -93,7 +97,7 @@ namespace PrepareForFinal.UI
         {
             try
             {
-                String eid = myBill.getEmployeeID(cb_billEmployeeName.Text.ToString());
+                String eid = tk.eid;
                 String cid = myBill.getCustomerID(cb_billCustomerName.Text.ToString());
 
                 if (txt_billID.Text == "")
@@ -102,47 +106,41 @@ namespace PrepareForFinal.UI
                 }
                 else
                 {
-                    if (cb_billEmployeeName.Text == "")
+                    if (cb_billCustomerName.Text == "")
                     {
-                        MessageBox.Show("Vui lòng chọn nhân viên");
+                        MessageBox.Show("Vui lòng chọn khách hàng");
                     }
                     else
                     {
-                        if (cb_billCustomerName.Text == "")
+                        if (myBill.addBill(txt_billID.Text.Trim(), Convert.ToDateTime(dtp_billDate.Value), (float)0, eid, cid) == true)
                         {
-                            MessageBox.Show("Vui lòng chọn khách hàng");
+                            foreach (TemDetail detail in temDetail)
+                            {
+                                if (myDetail.addDetail(detail.amount, txt_billID.Text, myDetail.getProductID(detail.pname)) == false)
+                                {
+                                    MessageBox.Show("Thêm hóa đơn không thành công");
+                                    return;
+                                }
+                            }
+                            MessageBox.Show("Thêm hóa đơn thành công");
+                            btn_billAdd.Enabled = true;
+                            btn_billSave.Enabled = false;
+                            btn_billCancel.Enabled = false;
+                            ClearItems();
+                            UnenabledInputControl();
+                            prDataTable.Clear();
+                            temDetail.Clear();
+                            dtgv_billDetialList.DataSource = ToDataTable(temDetail);
+                            btn_billDeleteDetail.Enabled = false;
+                            btn_billImportDetail.Enabled = false;
+                            sum = 0;
                         }
                         else
                         {
-                            if (myBill.addBill(txt_billID.Text.Trim(), Convert.ToDateTime(dtp_billDate.Value), (float)0, eid, cid) == true)
-                            {
-                                foreach (TemDetail detail in temDetail)
-                                {
-                                    if (myDetail.addDetail(detail.amount, txt_billID.Text, myDetail.getProductID(detail.pname)) == false)
-                                    {
-                                        MessageBox.Show("Thêm hóa đơn không thành công");
-                                        return;
-                                    }
-                                }
-                                MessageBox.Show("Thêm hóa đơn thành công");
-                                btn_billAdd.Enabled = true;
-                                btn_billSave.Enabled = false;
-                                btn_billCancel.Enabled = false;
-                                ClearItems();
-                                UnenabledInputControl();
-                                prDataTable.Clear();
-                                temDetail.Clear();
-                                dtgv_billDetialList.DataSource = ToDataTable(temDetail);
-                                btn_billDeleteDetail.Enabled = false;
-                                btn_billImportDetail.Enabled = false;
-                                sum = 0;
-                            }
-                            else
-                            {
-                                MessageBox.Show("Thêm hóa đơn không thành công");
-                            }
+                            MessageBox.Show("Thêm hóa đơn không thành công");
                         }
                     }
+                    
                 }
             }
             catch (Exception ex)
@@ -176,7 +174,7 @@ namespace PrepareForFinal.UI
             btn_billImportDetail.Enabled = true;
             btn_findProduct.Enabled = true;
             myBill = new Bill();
-            myBill.getEmployeeName(cb_billEmployeeName);
+            /*myBill.getEmployeeName(tk.name);*/
             myBill.getCustomerName(cb_billCustomerName);
             myBill.getTypeProduct(cb_billTypeName);
             txt_billFinalPay.Text = sum.ToString();
@@ -276,7 +274,7 @@ namespace PrepareForFinal.UI
 
         private void btn_billImportDetail_Click(object sender, EventArgs e)
         {
-            String eid = myBill.getEmployeeID(cb_billEmployeeName.Text.ToString());
+            String eid = tk.eid;
             String cid = myBill.getCustomerID(cb_billCustomerName.Text.ToString());
 
             if (txt_billProductPrice.Text != "" && txt_productName.Text != "" && txt_billTotalPrice.Text != "")
@@ -541,6 +539,11 @@ namespace PrepareForFinal.UI
                 myBill = new Bill();
                 txt_customerPoint.Text = myBill.getCustomerPoint(cb_billCustomerName.Text);
             }
+        }
+
+        private void cb_billEmployeeName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

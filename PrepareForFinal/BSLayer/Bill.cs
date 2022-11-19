@@ -94,7 +94,7 @@ namespace PrepareForFinal.BSLayer
             return ds;
         }
 
-        public void getEmployeeName(ComboBox cb_product)
+      /*  public void getEmployeeName(string name)
         { 
             //Dùng để lấy loại sản phẩm để load lên combobox
             db = new MyData();
@@ -109,7 +109,7 @@ namespace PrepareForFinal.BSLayer
             }
             db.closeConnectionManager();
         }
-
+*/
         public void getCustomerName(ComboBox cb_product)
         {
             //Dùng để lấy loại sản phẩm để load lên combobox

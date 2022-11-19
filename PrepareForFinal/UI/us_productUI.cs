@@ -140,6 +140,7 @@ namespace PrepareForFinal.UI
             dtp_pidate.Enabled = true;
             dtp_pvdate.Enabled = true;
             cb_product.Enabled = true;
+           
         }
 
         private void btn_productUpdate_Click(object sender, EventArgs e)
