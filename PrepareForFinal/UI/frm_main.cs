@@ -86,7 +86,10 @@ namespace PrepareForFinal.UI
             makeDefaulColor();
             hideUIItem();
             this.btn_showPaymentUI.BackColor = background2;
+            us_paymentUI.tk = this.tk;
+            us_paymentUI.isRole = this.tk.isRole;
             us_paymentUI.Visible = true;
+            us_paymentUI.us_paymentUI_Load(sender, e);
             us_paymentUI.BringToFront();
         }
 
