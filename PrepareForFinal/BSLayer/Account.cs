@@ -14,16 +14,11 @@ namespace PrepareForFinal.BSLayer
     {
         MyData db = null; //Lớp dữ liệu thực hiện các thao tác đóng, mở kết nối, lấy chuỗi, lấy dữ liệu
         SqlCommand cmd;
-
         public string username { get; set; }
         public string password { get; set; }
-        public bool isRole  { get; set; }
-
+        public bool isRole { get; set; }
         public string name { get; set; }
-
         public string eid { get; set; }
-
-
         public Account(string Username, string Password, string Name, string Eid, bool Role)
         {
             username = Username;
@@ -32,14 +27,10 @@ namespace PrepareForFinal.BSLayer
             isRole = Role;
             eid = Eid;
         }
-
-
-
         public Account()
         {
             db = new MyData();
         }
-
         public bool testLogin(string username, string password)
         {
             db = new MyData();
@@ -48,27 +39,70 @@ namespace PrepareForFinal.BSLayer
             cmd.Parameters.AddWithValue("@a_username", username);
             cmd.Parameters.AddWithValue("@a_password", password);
             int result = (int)cmd.ExecuteScalar();
-            if(result > 0)
+            if (result > 0)
             {
                 return true;
             }
-            
+
             return false;
         }
-
-
         public DataSet GetAccount(string username, string password)
         {
-            return db.ExecuteQueryDataSet("Select * from dbo.uf_PermissionRole('"+username+"', '"+password+"')", CommandType.Text);
+            return db.ExecuteQueryDataSet("Select * from dbo.uf_PermissionRole('" + username + "', '" + password + "')", CommandType.Text);
         }
-
         public bool getRole(string username, string password)
         {
             db.openConnectionManager();
-
-            
             return true;
         }
+        public DataSet GetData()
+        {
+            db = new MyData();
+            DataSet ds = new DataSet();
+            ds = db.ExecuteQueryDataSet("select * from V_AccountInfo where status = 0", CommandType.Text);
+            return ds;
+        }
+        public DataSet findAccount(string aInfo)
+        {
+            db = new MyData();
+            db.openConnectionManager();
+            DataSet ds = new DataSet();
+            try
+            {
+                cmd = new SqlCommand("usp_FindAccount", db.getSqlConn);
+                cmd.Parameters.AddWithValue("@sql_findName", aInfo);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(); //Tạo một cầu nối giữa SQl command và Database
+                da.SelectCommand = cmd;
+                da.Fill(ds); //Đưa dữ liệu vừa gọi được vào DataSet
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return ds;
+        }
+
+        public bool addAccount(string username, string password, string eid)
+        {
+            db = new MyData();
+            cmd = new SqlCommand("EXEC usp_AddAccount @username, @password, @eid", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
+            cmd.Parameters.AddWithValue("@eid", eid);
+            db.openConnectionManager();
+            if ((cmd.ExecuteNonQuery() >= 1))
+            {
+                db.closeConnectionManager();
+                return true;
+            }
+            else
+            {
+                db.closeConnectionManager();
+                return false;
+            }
+        }
+
 
     }
 }

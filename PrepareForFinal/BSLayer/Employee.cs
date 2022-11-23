@@ -144,7 +144,50 @@ namespace PrepareForFinal.BSLayer
             return (int)cmd.ExecuteScalar();
         }
 
+        public String getEmployeeID(string eName)
+        {
+            db = new MyData();
+            db.openConnectionManager();
+            cmd = new SqlCommand("Select e_id from Employee where e_name=@eName and e_status=0", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@eName", eName);
+            SqlDataReader DR = cmd.ExecuteReader();
+            String eid = "";
+            while (DR.Read())
+            {
+                eid = DR[0].ToString();
+            }
+            db.closeConnectionManager();
+            return eid;
+        }
+        public String autoGenerateID()
+        {
+            string result = "";
+            db.openConnectionManager();
+            SqlCommand cmd = new SqlCommand("SELECT dbo.[uf_AutoGenerateID](@name)", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@name", "Employee");
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            result = dr[0].ToString();
+            dr.Close();
+            db.closeConnectionManager();
+            return result;
+        }
 
+        public String getEmployeeRole(string eName)
+        {
+            db = new MyData();
+            db.openConnectionManager();
+            cmd = new SqlCommand("Select e_position from Employee where e_name=@eName and e_status=0", db.getSqlConn);
+            cmd.Parameters.AddWithValue("@eName", eName);
+            SqlDataReader DR = cmd.ExecuteReader();
+            String eRole = "";
+            while (DR.Read())
+            {
+                eRole = DR[0].ToString();
+            }
+            db.closeConnectionManager();
+            return eRole;
+        }
     }
-    
 }

@@ -91,8 +91,15 @@ namespace PrepareForFinal.UI
             btn_typeSave.Enabled = true;
             btn_typeUpdate.Enabled = false;
             btn_typeAdd.Enabled = false;
+            txt_findType.Text = "";
+            txt_findType.Enabled = false;
+            btn_findType.Enabled = false;
+
 
             fillingStatus();
+            clearTextBox();
+            txt_typeID.Text = dbType.autoGenerateID();
+            txt_typeID.Enabled = false;
         }
 
         private void btn_typeUpdate_Click(object sender, EventArgs e)
@@ -104,6 +111,10 @@ namespace PrepareForFinal.UI
             btn_typeUpdate.Enabled = false;
             txt_typeID.Enabled = false;
 
+            txt_findType.Text = "";
+            txt_findType.Enabled = false;
+            btn_findType.Enabled = false;
+
             fillingStatus();
         }
 
@@ -114,9 +125,15 @@ namespace PrepareForFinal.UI
 
         private void btn_typeSave_Click(object sender, EventArgs e)
         {
-            //Check dữ liệu từ 2 Checkbox
-            if(addFlag == true)
+            if (txt_typeID.Text == "" || txt_typeID.Text == null || txt_typeName.Text == "" || txt_typeName.Text == null)
             {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //Check dữ liệu từ 2 Checkbox
+            if (addFlag == true)
+            {
+
                 try
                 {
                     dbType.addType(txt_typeID.Text.Trim(), txt_typeName.Text.Trim());

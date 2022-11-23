@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_findAccount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_accountEID = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_findAccount = new Guna.UI2.WinForms.Guna2Button();
-            this.dtgv_customerList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lb_accountEmployeeID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtgv_accountList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_customerInfo = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.cb_accountEName = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.rb_employee = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rb_manger = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lb_role = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_accountCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btn_accountDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_accountSave = new Guna.UI2.WinForms.Guna2Button();
@@ -45,9 +47,11 @@
             this.btn_accountAdd = new Guna.UI2.WinForms.Guna2Button();
             this.lb_accountPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_accountUsername = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_accountPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_accountUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).BeginInit();
+            this.txt_accountEID = new Guna.UI2.WinForms.Guna2TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_accountList)).BeginInit();
             this.btn_customerInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +69,7 @@
             this.txt_findAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_findAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_findAccount.HoverState.Parent = this.txt_findAccount;
-            this.txt_findAccount.Location = new System.Drawing.Point(731, 373);
+            this.txt_findAccount.Location = new System.Drawing.Point(730, 374);
             this.txt_findAccount.Margin = new System.Windows.Forms.Padding(14, 72, 14, 72);
             this.txt_findAccount.Name = "txt_findAccount";
             this.txt_findAccount.PasswordChar = '\0';
@@ -73,35 +77,9 @@
             this.txt_findAccount.PlaceholderText = "";
             this.txt_findAccount.SelectedText = "";
             this.txt_findAccount.ShadowDecoration.Parent = this.txt_findAccount;
-            this.txt_findAccount.Size = new System.Drawing.Size(267, 36);
+            this.txt_findAccount.Size = new System.Drawing.Size(267, 37);
             this.txt_findAccount.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_findAccount.TabIndex = 12;
-            // 
-            // txt_accountEID
-            // 
-            this.txt_accountEID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_accountEID.DefaultText = "";
-            this.txt_accountEID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_accountEID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_accountEID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEID.DisabledState.Parent = this.txt_accountEID;
-            this.txt_accountEID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_accountEID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEID.FocusedState.Parent = this.txt_accountEID;
-            this.txt_accountEID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.txt_accountEID.HoverState.Parent = this.txt_accountEID;
-            this.txt_accountEID.Location = new System.Drawing.Point(731, 213);
-            this.txt_accountEID.Margin = new System.Windows.Forms.Padding(6, 12, 6, 12);
-            this.txt_accountEID.Name = "txt_accountEID";
-            this.txt_accountEID.PasswordChar = '\0';
-            this.txt_accountEID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
-            this.txt_accountEID.PlaceholderText = "";
-            this.txt_accountEID.SelectedText = "";
-            this.txt_accountEID.ShadowDecoration.Parent = this.txt_accountEID;
-            this.txt_accountEID.Size = new System.Drawing.Size(289, 37);
-            this.txt_accountEID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.txt_accountEID.TabIndex = 13;
             // 
             // btn_findAccount
             // 
@@ -120,87 +98,77 @@
             this.btn_findAccount.Size = new System.Drawing.Size(138, 41);
             this.btn_findAccount.TabIndex = 5;
             this.btn_findAccount.Text = "Tìm kiếm";
+            this.btn_findAccount.Click += new System.EventHandler(this.btn_findAccount_Click);
             // 
-            // dtgv_customerList
+            // dtgv_accountList
             // 
-            this.dtgv_customerList.AllowUserToAddRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            this.dtgv_customerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgv_customerList.BackgroundColor = System.Drawing.Color.White;
-            this.dtgv_customerList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgv_customerList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgv_customerList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
-            this.dtgv_customerList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_customerList.DefaultCellStyle = dataGridViewCellStyle19;
-            this.dtgv_customerList.EnableHeadersVisualStyles = false;
-            this.dtgv_customerList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_customerList.Location = new System.Drawing.Point(20, 66);
-            this.dtgv_customerList.Name = "dtgv_customerList";
-            this.dtgv_customerList.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_customerList.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.dtgv_customerList.RowHeadersVisible = false;
-            this.dtgv_customerList.RowHeadersWidth = 51;
-            this.dtgv_customerList.RowTemplate.Height = 24;
-            this.dtgv_customerList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_customerList.Size = new System.Drawing.Size(689, 417);
-            this.dtgv_customerList.TabIndex = 4;
-            this.dtgv_customerList.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dtgv_customerList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dtgv_customerList.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dtgv_customerList.ThemeStyle.HeaderStyle.Height = 28;
-            this.dtgv_customerList.ThemeStyle.ReadOnly = true;
-            this.dtgv_customerList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dtgv_customerList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgv_customerList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgv_customerList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.dtgv_customerList.ThemeStyle.RowsStyle.Height = 24;
-            this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dtgv_customerList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // lb_accountEmployeeID
-            // 
-            this.lb_accountEmployeeID.AutoSize = false;
-            this.lb_accountEmployeeID.BackColor = System.Drawing.Color.Transparent;
-            this.lb_accountEmployeeID.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_accountEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            this.lb_accountEmployeeID.Location = new System.Drawing.Point(731, 186);
-            this.lb_accountEmployeeID.Name = "lb_accountEmployeeID";
-            this.lb_accountEmployeeID.Size = new System.Drawing.Size(164, 25);
-            this.lb_accountEmployeeID.TabIndex = 14;
-            this.lb_accountEmployeeID.Text = "Mã nhân viên";
+            this.dtgv_accountList.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dtgv_accountList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgv_accountList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_accountList.BackgroundColor = System.Drawing.Color.White;
+            this.dtgv_accountList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgv_accountList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgv_accountList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_accountList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgv_accountList.ColumnHeadersHeight = 28;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_accountList.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dtgv_accountList.EnableHeadersVisualStyles = false;
+            this.dtgv_accountList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgv_accountList.Location = new System.Drawing.Point(20, 66);
+            this.dtgv_accountList.Name = "dtgv_accountList";
+            this.dtgv_accountList.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_accountList.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dtgv_accountList.RowHeadersVisible = false;
+            this.dtgv_accountList.RowHeadersWidth = 51;
+            this.dtgv_accountList.RowTemplate.Height = 24;
+            this.dtgv_accountList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgv_accountList.Size = new System.Drawing.Size(689, 417);
+            this.dtgv_accountList.TabIndex = 4;
+            this.dtgv_accountList.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dtgv_accountList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgv_accountList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dtgv_accountList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dtgv_accountList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dtgv_accountList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dtgv_accountList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dtgv_accountList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dtgv_accountList.ThemeStyle.HeaderStyle.Height = 28;
+            this.dtgv_accountList.ThemeStyle.ReadOnly = true;
+            this.dtgv_accountList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtgv_accountList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtgv_accountList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("DVN-Poppins ExtBd", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgv_accountList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.dtgv_accountList.ThemeStyle.RowsStyle.Height = 24;
+            this.dtgv_accountList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dtgv_accountList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dtgv_accountList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_accountList_CellClick);
             // 
             // btn_customerInfo
             // 
@@ -208,6 +176,10 @@
             this.btn_customerInfo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.btn_customerInfo.BorderRadius = 5;
             this.btn_customerInfo.BorderThickness = 2;
+            this.btn_customerInfo.Controls.Add(this.cb_accountEName);
+            this.btn_customerInfo.Controls.Add(this.rb_employee);
+            this.btn_customerInfo.Controls.Add(this.rb_manger);
+            this.btn_customerInfo.Controls.Add(this.lb_role);
             this.btn_customerInfo.Controls.Add(this.btn_accountCancel);
             this.btn_customerInfo.Controls.Add(this.btn_accountDelete);
             this.btn_customerInfo.Controls.Add(this.btn_accountSave);
@@ -215,13 +187,13 @@
             this.btn_customerInfo.Controls.Add(this.btn_accountAdd);
             this.btn_customerInfo.Controls.Add(this.lb_accountPassword);
             this.btn_customerInfo.Controls.Add(this.lb_accountUsername);
-            this.btn_customerInfo.Controls.Add(this.lb_accountEmployeeID);
+            this.btn_customerInfo.Controls.Add(this.guna2HtmlLabel1);
             this.btn_customerInfo.Controls.Add(this.txt_findAccount);
             this.btn_customerInfo.Controls.Add(this.txt_accountPassword);
             this.btn_customerInfo.Controls.Add(this.txt_accountUsername);
             this.btn_customerInfo.Controls.Add(this.txt_accountEID);
             this.btn_customerInfo.Controls.Add(this.btn_findAccount);
-            this.btn_customerInfo.Controls.Add(this.dtgv_customerList);
+            this.btn_customerInfo.Controls.Add(this.dtgv_accountList);
             this.btn_customerInfo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
             this.btn_customerInfo.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.btn_customerInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
@@ -233,6 +205,88 @@
             this.btn_customerInfo.Size = new System.Drawing.Size(1171, 525);
             this.btn_customerInfo.TabIndex = 15;
             this.btn_customerInfo.Text = "Thông tin tài khoản";
+            // 
+            // cb_accountEName
+            // 
+            this.cb_accountEName.BackColor = System.Drawing.Color.Transparent;
+            this.cb_accountEName.BorderRadius = 5;
+            this.cb_accountEName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cb_accountEName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_accountEName.FocusedColor = System.Drawing.Color.Empty;
+            this.cb_accountEName.FocusedState.Parent = this.cb_accountEName;
+            this.cb_accountEName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_accountEName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.cb_accountEName.FormattingEnabled = true;
+            this.cb_accountEName.HoverState.Parent = this.cb_accountEName;
+            this.cb_accountEName.ItemHeight = 30;
+            this.cb_accountEName.ItemsAppearance.Parent = this.cb_accountEName;
+            this.cb_accountEName.Location = new System.Drawing.Point(730, 213);
+            this.cb_accountEName.Name = "cb_accountEName";
+            this.cb_accountEName.ShadowDecoration.Parent = this.cb_accountEName;
+            this.cb_accountEName.Size = new System.Drawing.Size(218, 36);
+            this.cb_accountEName.TabIndex = 43;
+            this.cb_accountEName.SelectedIndexChanged += new System.EventHandler(this.cb_accountEName_SelectedIndexChanged);
+            this.cb_accountEName.SelectedValueChanged += new System.EventHandler(this.cb_accountEName_SelectedValueChanged);
+            // 
+            // rb_employee
+            // 
+            this.rb_employee.AutoSize = true;
+            this.rb_employee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rb_employee.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employee.CheckedState.BorderThickness = 0;
+            this.rb_employee.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.rb_employee.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rb_employee.CheckedState.InnerOffset = -4;
+            this.rb_employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rb_employee.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_employee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employee.Location = new System.Drawing.Point(880, 305);
+            this.rb_employee.Name = "rb_employee";
+            this.rb_employee.Size = new System.Drawing.Size(93, 27);
+            this.rb_employee.TabIndex = 42;
+            this.rb_employee.TabStop = true;
+            this.rb_employee.Text = "Nhân viên";
+            this.rb_employee.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_employee.UncheckedState.BorderThickness = 2;
+            this.rb_employee.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rb_employee.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rb_employee.UseVisualStyleBackColor = true;
+            // 
+            // rb_manger
+            // 
+            this.rb_manger.AutoSize = true;
+            this.rb_manger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rb_manger.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_manger.CheckedState.BorderThickness = 0;
+            this.rb_manger.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.rb_manger.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rb_manger.CheckedState.InnerOffset = -4;
+            this.rb_manger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rb_manger.Font = new System.Drawing.Font("DVN-Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_manger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_manger.Location = new System.Drawing.Point(760, 305);
+            this.rb_manger.Name = "rb_manger";
+            this.rb_manger.Size = new System.Drawing.Size(78, 27);
+            this.rb_manger.TabIndex = 41;
+            this.rb_manger.TabStop = true;
+            this.rb_manger.Text = "Quản lý";
+            this.rb_manger.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.rb_manger.UncheckedState.BorderThickness = 2;
+            this.rb_manger.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rb_manger.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rb_manger.UseVisualStyleBackColor = true;
+            // 
+            // lb_role
+            // 
+            this.lb_role.AutoSize = false;
+            this.lb_role.BackColor = System.Drawing.Color.Transparent;
+            this.lb_role.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
+            this.lb_role.Location = new System.Drawing.Point(731, 275);
+            this.lb_role.Name = "lb_role";
+            this.lb_role.Size = new System.Drawing.Size(147, 24);
+            this.lb_role.TabIndex = 40;
+            this.lb_role.Text = "Vai trò";
             // 
             // btn_accountCancel
             // 
@@ -352,6 +406,18 @@
             this.lb_accountUsername.TabIndex = 14;
             this.lb_accountUsername.Text = "Tên đăng nhập";
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(960, 186);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(195, 25);
+            this.guna2HtmlLabel1.TabIndex = 14;
+            this.guna2HtmlLabel1.Text = "Mã nhân viên";
+            // 
             // txt_accountPassword
             // 
             this.txt_accountPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -366,7 +432,7 @@
             this.txt_accountPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_accountPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_accountPassword.HoverState.Parent = this.txt_accountPassword;
-            this.txt_accountPassword.Location = new System.Drawing.Point(731, 139);
+            this.txt_accountPassword.Location = new System.Drawing.Point(730, 140);
             this.txt_accountPassword.Margin = new System.Windows.Forms.Padding(14, 45, 14, 45);
             this.txt_accountPassword.Name = "txt_accountPassword";
             this.txt_accountPassword.PasswordChar = '\0';
@@ -374,7 +440,7 @@
             this.txt_accountPassword.PlaceholderText = "";
             this.txt_accountPassword.SelectedText = "";
             this.txt_accountPassword.ShadowDecoration.Parent = this.txt_accountPassword;
-            this.txt_accountPassword.Size = new System.Drawing.Size(289, 37);
+            this.txt_accountPassword.Size = new System.Drawing.Size(290, 37);
             this.txt_accountPassword.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_accountPassword.TabIndex = 13;
             // 
@@ -392,7 +458,7 @@
             this.txt_accountUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_accountUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.txt_accountUsername.HoverState.Parent = this.txt_accountUsername;
-            this.txt_accountUsername.Location = new System.Drawing.Point(731, 69);
+            this.txt_accountUsername.Location = new System.Drawing.Point(730, 70);
             this.txt_accountUsername.Margin = new System.Windows.Forms.Padding(9, 23, 9, 23);
             this.txt_accountUsername.Name = "txt_accountUsername";
             this.txt_accountUsername.PasswordChar = '\0';
@@ -400,9 +466,35 @@
             this.txt_accountUsername.PlaceholderText = "";
             this.txt_accountUsername.SelectedText = "";
             this.txt_accountUsername.ShadowDecoration.Parent = this.txt_accountUsername;
-            this.txt_accountUsername.Size = new System.Drawing.Size(289, 37);
+            this.txt_accountUsername.Size = new System.Drawing.Size(290, 37);
             this.txt_accountUsername.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txt_accountUsername.TabIndex = 13;
+            // 
+            // txt_accountEID
+            // 
+            this.txt_accountEID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_accountEID.DefaultText = "";
+            this.txt_accountEID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_accountEID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_accountEID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_accountEID.DisabledState.Parent = this.txt_accountEID;
+            this.txt_accountEID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_accountEID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_accountEID.FocusedState.Parent = this.txt_accountEID;
+            this.txt_accountEID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_accountEID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txt_accountEID.HoverState.Parent = this.txt_accountEID;
+            this.txt_accountEID.Location = new System.Drawing.Point(960, 213);
+            this.txt_accountEID.Margin = new System.Windows.Forms.Padding(9, 23, 9, 23);
+            this.txt_accountEID.Name = "txt_accountEID";
+            this.txt_accountEID.PasswordChar = '\0';
+            this.txt_accountEID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txt_accountEID.PlaceholderText = "";
+            this.txt_accountEID.SelectedText = "";
+            this.txt_accountEID.ShadowDecoration.Parent = this.txt_accountEID;
+            this.txt_accountEID.Size = new System.Drawing.Size(164, 37);
+            this.txt_accountEID.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txt_accountEID.TabIndex = 13;
             // 
             // us_accountUI
             // 
@@ -413,18 +505,17 @@
             this.Name = "us_accountUI";
             this.Size = new System.Drawing.Size(1171, 525);
             this.Load += new System.EventHandler(this.us_accountUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_customerList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_accountList)).EndInit();
             this.btn_customerInfo.ResumeLayout(false);
+            this.btn_customerInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2TextBox txt_findAccount;
-        private Guna.UI2.WinForms.Guna2TextBox txt_accountEID;
         private Guna.UI2.WinForms.Guna2Button btn_findAccount;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgv_customerList;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountEmployeeID;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgv_accountList;
         private Guna.UI2.WinForms.Guna2GroupBox btn_customerInfo;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountPassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel lb_accountUsername;
@@ -435,5 +526,11 @@
         private Guna.UI2.WinForms.Guna2Button btn_accountSave;
         private Guna.UI2.WinForms.Guna2Button btn_accountUpdate;
         private Guna.UI2.WinForms.Guna2Button btn_accountAdd;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_accountEID;
+        private Guna.UI2.WinForms.Guna2RadioButton rb_employee;
+        private Guna.UI2.WinForms.Guna2RadioButton rb_manger;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lb_role;
+        private Guna.UI2.WinForms.Guna2ComboBox cb_accountEName;
     }
 }
