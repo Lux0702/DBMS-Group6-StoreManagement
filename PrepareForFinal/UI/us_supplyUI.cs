@@ -129,8 +129,7 @@ namespace PrepareForFinal.UI
             {
                 try
                 {
-                    Console.WriteLine("Test = " + this.cb_nameProduct.Text + "/n");
-                    Console.WriteLine("id = " + dbSupply.getProductID(this.cb_nameProduct));
+                    
                     dbSupply.addSupply(txt_supplyID.Text.Trim(), txt_supplyName.Text.Trim(), txt_supplyAddress.Text.Trim(),
                         txt_supplyPhone.Text.Trim(), dbSupply.getProductID(this.cb_nameProduct));
 
