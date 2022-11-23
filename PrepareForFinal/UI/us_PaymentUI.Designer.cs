@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_BillInfo = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txt_billID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -72,9 +72,9 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.dtp_billDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.cb_billEmployeeName = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lb_billEmployeeName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_billDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtEmpName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_BillInfo.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_billDetialList)).BeginInit();
@@ -457,30 +457,30 @@
             // dtgv_billDetialList
             // 
             this.dtgv_billDetialList.AllowUserToAddRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.dtgv_billDetialList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgv_billDetialList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgv_billDetialList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_billDetialList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_billDetialList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_billDetialList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_billDetialList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_billDetialList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_billDetialList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv_billDetialList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_billDetialList.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_billDetialList.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_billDetialList.EnableHeadersVisualStyles = false;
             this.dtgv_billDetialList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_billDetialList.Location = new System.Drawing.Point(15, 64);
@@ -716,30 +716,30 @@
             // dtgv_productList
             // 
             this.dtgv_productList.AllowUserToAddRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.dtgv_productList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgv_productList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgv_productList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_productList.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_productList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgv_productList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgv_productList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgv_productList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(239)))), ((int)(((byte)(214)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgv_productList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgv_productList.ColumnHeadersHeight = 28;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgv_productList.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("DVN-Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_productList.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgv_productList.EnableHeadersVisualStyles = false;
             this.dtgv_productList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgv_productList.Location = new System.Drawing.Point(15, 83);
@@ -899,8 +899,8 @@
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
             this.guna2Panel1.BorderRadius = 5;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.txtEmpName);
             this.guna2Panel1.Controls.Add(this.dtp_billDate);
-            this.guna2Panel1.Controls.Add(this.cb_billEmployeeName);
             this.guna2Panel1.Controls.Add(this.lb_billEmployeeName);
             this.guna2Panel1.Controls.Add(this.lb_billDate);
             this.guna2Panel1.Location = new System.Drawing.Point(15, 37);
@@ -927,26 +927,6 @@
             this.dtp_billDate.TabIndex = 16;
             this.dtp_billDate.Value = new System.DateTime(2022, 11, 9, 11, 17, 6, 398);
             // 
-            // cb_billEmployeeName
-            // 
-            this.cb_billEmployeeName.BackColor = System.Drawing.Color.Transparent;
-            this.cb_billEmployeeName.BorderRadius = 5;
-            this.cb_billEmployeeName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cb_billEmployeeName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_billEmployeeName.FocusedColor = System.Drawing.Color.Empty;
-            this.cb_billEmployeeName.FocusedState.Parent = this.cb_billEmployeeName;
-            this.cb_billEmployeeName.Font = new System.Drawing.Font("DVN-Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_billEmployeeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(94)))), ((int)(((byte)(111)))));
-            this.cb_billEmployeeName.FormattingEnabled = true;
-            this.cb_billEmployeeName.HoverState.Parent = this.cb_billEmployeeName;
-            this.cb_billEmployeeName.ItemHeight = 30;
-            this.cb_billEmployeeName.ItemsAppearance.Parent = this.cb_billEmployeeName;
-            this.cb_billEmployeeName.Location = new System.Drawing.Point(231, 37);
-            this.cb_billEmployeeName.Name = "cb_billEmployeeName";
-            this.cb_billEmployeeName.ShadowDecoration.Parent = this.cb_billEmployeeName;
-            this.cb_billEmployeeName.Size = new System.Drawing.Size(177, 36);
-            this.cb_billEmployeeName.TabIndex = 24;
-            // 
             // lb_billEmployeeName
             // 
             this.lb_billEmployeeName.AutoSize = false;
@@ -970,6 +950,33 @@
             this.lb_billDate.Size = new System.Drawing.Size(196, 37);
             this.lb_billDate.TabIndex = 17;
             this.lb_billDate.Text = "Ngày bán";
+            // 
+            // txtEmpName
+            // 
+            this.txtEmpName.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmpName.BorderRadius = 5;
+            this.txtEmpName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmpName.DefaultText = "";
+            this.txtEmpName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmpName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmpName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmpName.DisabledState.Parent = this.txtEmpName;
+            this.txtEmpName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmpName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txtEmpName.FocusedState.Parent = this.txtEmpName;
+            this.txtEmpName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txtEmpName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(136)))), ((int)(((byte)(145)))));
+            this.txtEmpName.HoverState.Parent = this.txtEmpName;
+            this.txtEmpName.Location = new System.Drawing.Point(231, 37);
+            this.txtEmpName.Margin = new System.Windows.Forms.Padding(12, 45, 12, 45);
+            this.txtEmpName.Name = "txtEmpName";
+            this.txtEmpName.PasswordChar = '\0';
+            this.txtEmpName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(186)))));
+            this.txtEmpName.PlaceholderText = "";
+            this.txtEmpName.SelectedText = "";
+            this.txtEmpName.ShadowDecoration.Parent = this.txtEmpName;
+            this.txtEmpName.Size = new System.Drawing.Size(242, 36);
+            this.txtEmpName.TabIndex = 15;
             // 
             // us_paymentUI
             // 
@@ -1012,7 +1019,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txt_billTotalPrice;
         private Guna.UI2.WinForms.Guna2ComboBox cb_billCustomerName;
-        private Guna.UI2.WinForms.Guna2ComboBox cb_billEmployeeName;
         private Guna.UI2.WinForms.Guna2DataGridView dtgv_billDetialList;
         private Guna.UI2.WinForms.Guna2Button btn_billShowList;
         private Guna.UI2.WinForms.Guna2Button btn_billCancel;
@@ -1034,5 +1040,6 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2TextBox txt_productFindString;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmpName;
     }
 }

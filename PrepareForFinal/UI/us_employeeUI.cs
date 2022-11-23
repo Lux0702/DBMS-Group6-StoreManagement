@@ -140,7 +140,9 @@ namespace PrepareForFinal.UI
             this.cb_employeeRole.ResetText();
             this.rb_employeeFemale.Checked = false;
             this.rb_employeeMale.Checked = false;
-            
+
+            txt_employeeID.Text = dbEmployee.autoGenerateID();
+            txt_employeeID.Enabled = false;
         }
 
         private void btn_employeeUpdate_Click(object sender, EventArgs e)
