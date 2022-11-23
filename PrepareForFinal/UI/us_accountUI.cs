@@ -56,7 +56,7 @@ namespace PrepareForFinal.UI
             cb_accountEName.Enabled = true;
             isAdd = true;
             Bill myBill = new Bill();
-            /*myBill.getEmployeeName(cb_accountEName);*/
+            myBill.getEmployeeName(cb_accountEName);
             ResetContent();
         }
 
